@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
 .header {
   border: 0.5px solid #8a8d9c;
   position: relative;
@@ -113,18 +120,8 @@
   color: #333;
   font-size: 18px;
 }
-.PASEK2 ul li a:hover {
-  color: #007BFF;
-}
 
 /* styles.css */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -154,7 +151,7 @@ body {
   display: block;
   width: 443px;
   height: 2px;
-  background: linear-gradient(to right, red 10px, white 30px);
+  background: linear-gradient(to right, red 10px, rgb(54, 54, 54) 30px);
   margin-top: 5px;
 }
 
