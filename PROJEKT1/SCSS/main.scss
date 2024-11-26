@@ -25,6 +25,7 @@ $border-color: #8a8d9c;
   
     .nav {
       display: flex;
+     
       
       
   
@@ -34,54 +35,77 @@ $border-color: #8a8d9c;
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-left: 1042px; 
   
         img {
-          width: 24px;
-          height: auto;
+         
+          width: 28px;
+height: 28px;
         }
   
         span {
-          font-size: 16px;
-          font-weight: bold;
-          color: #333;
+          width: 67px;
+height: 14px;
+text-align: left;
+font: normal normal bold 14px/14px Metropolis;
+letter-spacing: -0.28px;
+color: #111111;
+text-transform: uppercase;
+opacity: 1;;
+
+          
         }
       }
   
       
       .star {
+        margin-left: 50px;
         display: flex;
         align-items: center;
         gap: 10px;
   
         img {
-          width: 24px;
-          height: auto;
+          
+          width: 28px;
+          height: 27px;
         }
   
         span {
-          font-size: 16px;
-          font-weight: bold;
-          color: #333;
+          width: 72px;
+          height: 14px;
+          text-align: left;
+          font: normal normal bold 14px/14px Metropolis;
+          letter-spacing: -0.28px;
+          color: #111111;
+          text-transform: uppercase;
+          opacity: 1;
         }
       }
   
      
       .person {
   
-          
+        margin-left: 50px;  
         display: flex;
         align-items: center;
         gap: 10px;
   
         img {
-          width: 24px;
-          height: auto;
+          width: 25px;
+          height: 29px;
         }
   
         span {
-          font-size: 16px;
-          font-weight: bold;
-          color: #333;
+          width: 120px;
+          height: 14px
+          text-align left;
+          font: normal normal bold 14px/14px Metropolis;
+          letter-spacing: -0.28px;
+          color: #111111;
+          text-transform: uppercase;
+          opacity: 1;
+          display: flex;
+          
           
         }
       }
@@ -89,7 +113,7 @@ $border-color: #8a8d9c;
     
       .cart {
   
-
+        margin-left: 50px;
         border: 1px solid #E1E2E8;
         Opacity: 1;
         display: flex;
@@ -97,31 +121,60 @@ $border-color: #8a8d9c;
         align-items: center;
         gap: 10px;
         position: relative;
+        width: 254px;
+         height: 55px;
   
         img {
          
-          width: 24px;
-          height: auto;
+          width: 39px;
+          height: 36px;
         }
+
         .cart-info {
-            border-left: 0.5px solid $border-color;
-            
-            display: flex;
-            flex-direction: column; // Ułóż tekst i cenę pionowo
-            align-items: flex-start;
+          
+        .KOSZ_CENA{
+
+          flex-direction: column;
+        }    
+          display: flex; 
+
+          align-items: center; 
+
+          gap: 10px; 
            span {
            
           font-size: 16px;
           font-weight: bold;
           color: #333;
            }
+          .SPAN{
+            display: flex;
+            width: 103px;
+            height: 14px; 
+            text-align: left;
+            font: normal normal bold 14px/14px Metropolis;
+             letter-spacing: -0.28px;
+             color: #111111;
+               text-transform: uppercase;
+              opacity: 1;
+          } 
+          .LINIA{
+            display: flex;
+           
+            width: 1px;
+            height: 41px;
+            background: #E1E2E8 0% 0% no-repeat padding-box;
+            opacity: 1;
+          } 
   
           .price {
-          font-size: 14px;
-          font-weight: bold;
-          color: rgb(0, 0, 0); 
-          margin-left: 5px;
-          display: block;
+            width: 70px;
+            height: 14px;
+            text-align: left;
+            font: normal normal normal 14px/20px Metropolis;
+            letter-spacing: -0.28px;
+            color: #111111;
+            opacity: 1;
           
         }
        }
@@ -180,10 +233,7 @@ $border-color: #8a8d9c;
                    
 
 
-                    &:hover {
-
-                        color: #007BFF; // Zmiana koloru tekstu po najechaniu
-
+                   
                     }
 
                 }
@@ -192,7 +242,7 @@ $border-color: #8a8d9c;
 
         }
 
-    }
+    
 
 
 
