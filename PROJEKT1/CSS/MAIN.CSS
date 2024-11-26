@@ -1,66 +1,106 @@
+
 .header {
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+
+
+  .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: white;
-    border-bottom: 1px solid #e5e5e5;
-  
-    .logo {
-      img {
-        height: 40px;
-      }
+
+    .logo-img {
+      width: 120px; 
+      height: auto;
     }
-  
-    .nav {
+  }
+
+
+  .nav {
+    display: flex;
+    gap: 20px;
+
+   
+    .phoneE {
       display: flex;
       align-items: center;
-      gap: 20px;
-  
-      div {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-        cursor: pointer;
-  
-        img {
-          height: 20px;
-          width: 20px;
-        }
-  
-        span {
-          font-weight: 400;
-        }
-  
-        &:hover {
-          color: #ff0000;  
-        }
+      gap: 10px;
+
+      img {
+        width: 24px;
+        height: auto;
       }
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
+    
+    .star {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 24px;
+        height: auto;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
+   
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 24px;
+        height: auto;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
   
-      .cart {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-  
-        strong {
-          font-weight: bold;
-          color: #4CAF50;
-        }
-  
-        &:before {
-          content: attr(data-count);
-          background-color: #4CAF50;
-          color: white;
-          font-size: 12px;
-          font-weight: bold;
-          border-radius: 50%;
-          padding: 2px 6px;
-          margin-right: 8px;
-        }
+    .cart {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+
+      img {
+        width: 24px;
+        height: auto;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      strong {
+        font-size: 14px;
+        font-weight: bold;
+        color: #f00; 
+        margin-left: 5px;
       }
     }
   }
-  
+}
