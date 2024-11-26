@@ -1,7 +1,9 @@
+$border-color: #8a8d9c;
+
 
 .header {
 
-    border:0.5px solid #8a8d9c;
+    border:0.5px solid $border-color;
     position: relative; 
     display: flex;
     justify-content: space-between;
@@ -102,6 +104,8 @@
           height: auto;
         }
         .cart-info {
+            border-left: 0.5px solid $border-color;
+            
             display: flex;
             flex-direction: column; // Ułóż tekst i cenę pionowo
             align-items: flex-start;
@@ -161,9 +165,9 @@
   .footer-section h4::after {
       content: "";
       display: block;
-      width: 40px;
+      width: 443px;
       height: 2px;
-      background: red;
+      background: linear-gradient(to right, red 10px, white 30px);
       margin-top: 5px;
   }
   

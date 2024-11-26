@@ -73,6 +73,7 @@
   height: auto;
 }
 .header .nav .cart .cart-info {
+  border-left: 0.5px solid #8a8d9c;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,9 +126,9 @@ body {
 .footer-section h4::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 443px;
   height: 2px;
-  background: red;
+  background: linear-gradient(to right, red 10px, white 30px);
   margin-top: 5px;
 }
 
