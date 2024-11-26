@@ -1,31 +1,44 @@
-.logo {
-  img {
-    margin-top: 26px;
-    margin-left: 30px;
-    width: 249px;
-    height: 58px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+
+  .logo {
+    .logo-img {
+      height: 60px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+
+      img {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &.cart {
+        background-color: #dff0d8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        strong {
+          margin-left: 8px;
+          font-weight: bold;
+          color: #28a745;
+        }
+      }
+    }
   }
 }
-
-.phone {
-  margin-top: 41px;
-  margin-left: 1040px;
-  width: 28px;
-  height: 28px;
-}
-
-.star {
-  margin-top: 41px;
-  margin-left: 1040px;
-  width: 28px;
-  height: 28px;
-}
-
-.person {
-  margin-top: 41px;
-  margin-left: 1040px;
-  width: 28px;
-  height: 28px;
-}
-
-/*# sourceMappingURL=main.css.map */
