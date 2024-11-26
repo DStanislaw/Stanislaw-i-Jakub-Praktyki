@@ -1,4 +1,10 @@
-
+.logo {
+  img {
+    margin-top: 26px;
+    margin-left: 30px;
+    width: 249px;
+    height: 58px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
-
