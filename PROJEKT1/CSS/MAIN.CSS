@@ -21,8 +21,8 @@
 
   .nav {
     display: flex;
-    gap: 20px;
-
+    
+    
    
     .phoneE {
       display: flex;
@@ -61,6 +61,8 @@
 
    
     .person {
+
+        
       display: flex;
       align-items: center;
       gap: 10px;
@@ -79,6 +81,15 @@
 
   
     .cart {
+
+     
+
+       
+
+
+
+      border: 1px solid #E1E2E8;
+      Opacity: 1;
       display: flex;
       align-items: center;
       gap: 10px;
