@@ -130,6 +130,78 @@ $border-color: #8a8d9c;
   }
   
   
+
+
+    .PASEK2 {
+
+        background-color: #f0f0f0; 
+
+        padding: 20px 0;
+
+        border: 1px solid #ccc; 
+
+       
+
+        
+
+        margin: 0 auto; 
+
+
+        ul {
+
+            display: flex; 
+
+            justify-content: space-around; 
+
+            list-style-type: none; 
+
+            padding: 0; 
+
+            margin: 0;
+
+            height: 100%; 
+
+
+            li {
+
+                margin: 0 15px; 
+
+
+                a {
+
+                    text-decoration: none; 
+
+                    color: #333; 
+
+                    font-size: 18px; 
+
+                    
+
+                   
+
+
+                    &:hover {
+
+                        color: #007BFF; // Zmiana koloru tekstu po najechaniu
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+  
   /* styles.css */
   body {
       margin: 0;

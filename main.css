@@ -91,6 +91,32 @@
   display: block;
 }
 
+.PASEK2 {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.PASEK2 ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.PASEK2 ul li {
+  margin: 0 15px;
+}
+.PASEK2 ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+.PASEK2 ul li a:hover {
+  color: #007BFF;
+}
+
 /* styles.css */
 body {
   margin: 0;
