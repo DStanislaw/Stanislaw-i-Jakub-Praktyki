@@ -1,0 +1,155 @@
+.header {
+  border: 0.5px solid #8a8d9c;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo .logo-img {
+  width: 120px;
+  height: auto;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav .phoneE {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .phoneE img {
+  width: 24px;
+  height: auto;
+}
+.header .nav .phoneE span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header .nav .star {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .star img {
+  width: 24px;
+  height: auto;
+}
+.header .nav .star span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header .nav .person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .person img {
+  width: 24px;
+  height: auto;
+}
+.header .nav .person span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header .nav .cart {
+  border: 1px solid #E1E2E8;
+  Opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.header .nav .cart img {
+  width: 24px;
+  height: auto;
+}
+.header .nav .cart .cart-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header .nav .cart .cart-info span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header .nav .cart .cart-info .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  display: block;
+}
+
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: red;
+  margin-top: 5px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+a .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
