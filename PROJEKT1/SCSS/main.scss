@@ -1,10 +1,5 @@
 $border-color: #8a8d9c;
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
+
 
 .header {
 
@@ -176,7 +171,7 @@ body {
 
                     text-decoration: none; 
 
-                    color: #333; 
+                    color: #333; // Kolor tekstu
 
                     font-size: 18px; 
 
@@ -185,7 +180,11 @@ body {
                    
 
 
-                    
+                    &:hover {
+
+                        color: #007BFF; // Zmiana koloru tekstu po najechaniu
+
+                    }
 
                 }
 
@@ -204,7 +203,12 @@ body {
 
   
   /* styles.css */
-  
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+  }
   
   .footer {
       display: flex;
@@ -235,7 +239,7 @@ body {
       display: block;
       width: 443px;
       height: 2px;
-      background: linear-gradient(to right, red 10px, rgb(54, 54, 54) 30px);
+      background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
       margin-top: 5px;
   }
   
