@@ -109,7 +109,7 @@ $border-color: #8a8d9c;
         margin-left: 10px;
       }
 
-      .cart-info {
+      .koszyk-info {
         .KOSZ_CENA {
           flex-direction: column;
         }
@@ -142,7 +142,7 @@ $border-color: #8a8d9c;
           opacity: 1;
         }
 
-        .price {
+        .cena {
           width: 80px;
           height: 14px;
           text-align: left;
@@ -183,7 +183,7 @@ $border-color: #8a8d9c;
       a {
         text-decoration: none;
 
-        color: #333; // Kolor tekstu
+        color: #333; 
 
         font-size: 18px;
       }
@@ -191,7 +191,7 @@ $border-color: #8a8d9c;
   }
 }
 
-/* styles.css */
+
 body {
   margin: 0;
   padding: 0;
@@ -217,7 +217,7 @@ body {
 
       padding: 21px;
        
-        width: 1860px;
+      width: 1860px;
       height: 595px;
   
    
@@ -254,7 +254,73 @@ body {
   
   }
 
- 
+  .ZDJECIA_OBOK_3 {
+    display: flex;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 1860px;
+    height: 400px;
+
+    
+  
+  
+    img.ZDJECIE_OBOK1 {
+  
+      
+  
+    }
+  
+  
+    .ZDJ3OBOK_1 {
+      position: absolute;
+        text-align: left;
+  
+      
+  
+      p {
+        
+  
+        
+  
+      }
+  
+    }
+  
+  
+    .ZDJ3OBOK_2 {
+      position: absolute;
+        text-align: left;
+      
+  
+      
+  
+      p {
+        
+  
+       
+  
+      }
+  
+    }
+  
+  
+    .ZDJ3OBOK_3 {
+      position: absolute;
+        text-align: left;
+  
+      
+  
+      p {
+        
+  
+       
+  
+      }
+  
+    }
+  
+  }
 
 
 

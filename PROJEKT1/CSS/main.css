@@ -94,20 +94,20 @@
   height: 36px;
   margin-left: 10px;
 }
-.header .nav .cart .cart-info {
+.header .nav .cart .koszyk-info {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.header .nav .cart .cart-info .KOSZ_CENA {
+.header .nav .cart .koszyk-info .KOSZ_CENA {
   flex-direction: column;
 }
-.header .nav .cart .cart-info span {
+.header .nav .cart .koszyk-info span {
   font-size: 16px;
   font-weight: bold;
   color: #333;
 }
-.header .nav .cart .cart-info .SPAN {
+.header .nav .cart .koszyk-info .SPAN {
   width: 103px;
   height: 14px;
   text-align: left;
@@ -117,14 +117,14 @@
   text-transform: uppercase;
   opacity: 1;
 }
-.header .nav .cart .cart-info .LINIA {
+.header .nav .cart .koszyk-info .LINIA {
   display: flex;
   width: 1px;
   height: 41px;
   background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.header .nav .cart .cart-info .price {
+.header .nav .cart .koszyk-info .cena {
   width: 80px;
   height: 14px;
   text-align: left;
@@ -156,7 +156,6 @@
   font-size: 18px;
 }
 
-/* styles.css */
 body {
   margin: 0;
   padding: 0;
@@ -193,6 +192,26 @@ body .image-container .text-overlay {
 body .image-container .text-overlay p {
   margin: 0;
   font-size: 44px;
+}
+body .ZDJECIA_OBOK_3 {
+  display: flex;
+  gap: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1860px;
+  height: 400px;
+}
+body .ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
+  position: absolute;
+  text-align: left;
+}
+body .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
+  position: absolute;
+  text-align: left;
+}
+body .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
+  position: absolute;
+  text-align: left;
 }
 body .footer {
   display: flex;
