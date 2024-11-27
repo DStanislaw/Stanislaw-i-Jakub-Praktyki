@@ -12,8 +12,8 @@
   align-items: center;
 }
 .header .logo .logo-img {
-  width: 120px;
-  height: auto;
+  width: 249px;
+  height: 58px;
 }
 .header .nav {
   display: flex;
@@ -80,8 +80,8 @@
 }
 .header .nav .cart {
   margin-left: 50px;
-  border: 1px solid #E1E2E8;
-  Opacity: 1;
+  border: 1px solid #e1e2e8;
+  opacity: 1;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -121,7 +121,7 @@
   display: flex;
   width: 1px;
   height: 41px;
-  background: #E1E2E8 0% 0% no-repeat padding-box;
+  background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 .header .nav .cart .cart-info .price {
