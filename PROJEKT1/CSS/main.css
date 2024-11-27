@@ -164,12 +164,6 @@ body {
 }
 body .image-container {
   position: relative;
-}
-body .image-container img {
-  width: 100%;
-  height: auto;
-}
-body .image-container .ZDJECIEJS_1 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 21px;
@@ -179,24 +173,25 @@ body .image-container .ZDJECIEJS_1 {
   background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-body .image-container .text-overlay {
+body .text-overlay {
   text-align: left;
   font: normal normal bold 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   position: absolute;
   top: 115.4px;
-  left: 127px;
+  margin-left: 157px;
   width: 514px;
   height: 44px;
   font-size: 20px;
 }
-body .image-container .text-overlay p {
+body .text-overlay p {
   margin: 0;
   font-size: 44px;
 }
-body .ZDJECIA_OBOK_3 {
+
+.ZDJECIA_OBOK_3 {
   display: flex;
   gap: 30px;
   padding-left: 30px;
@@ -204,19 +199,19 @@ body .ZDJECIA_OBOK_3 {
   width: 1860px;
   height: 400px;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
   position: absolute;
   text-align: left;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
   position: absolute;
   text-align: left;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
   position: absolute;
   text-align: left;
 }
-body .footer {
+.footer {
   display: flex;
   justify-content: space-between;
   background-color: #2b2b2b;
@@ -224,20 +219,23 @@ body .footer {
   padding: 30px 10px;
   flex-wrap: wrap;
 }
-body .footer-section {
+
+.footer-section {
   flex: 1;
   min-width: 200px;
   margin: 0 10px;
   text-align: left;
 }
-body .footer-section h4 {
+
+.footer-section h4 {
   font-size: 14px;
   margin-bottom: 10px;
   color: white;
   text-transform: uppercase;
   position: relative;
 }
-body .footer-section h4::after {
+
+.footer-section h4::after {
   content: "";
   display: block;
   width: 443px;
@@ -245,21 +243,25 @@ body .footer-section h4::after {
   background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
   margin-top: 5px;
 }
-body .footer-section ul {
+
+.footer-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-body .footer-section ul li {
+
+.footer-section ul li {
   margin-bottom: 8px;
 }
-body a .footer-section ul li a {
+
+a .footer-section ul li a {
   color: white;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
-body .footer-section ul li a:hover {
+
+.footer-section ul li a:hover {
   color: red;
 }
 
