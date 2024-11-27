@@ -99,13 +99,14 @@ $border-color: #8a8d9c;
 
       align-items: center;
       gap: 10px;
-      position: relative;
+      position: sticky;
       width: 254px;
       height: 55px;
 
       img {
         width: 39px;
         height: 36px;
+        margin-left: 10px;
       }
 
       .cart-info {
@@ -123,7 +124,6 @@ $border-color: #8a8d9c;
           color: #333;
         }
         .SPAN {
-          display: flex;
           width: 103px;
           height: 14px;
           text-align: left;
