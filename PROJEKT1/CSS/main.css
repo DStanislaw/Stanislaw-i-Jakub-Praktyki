@@ -32,7 +32,7 @@
   width: 67px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis1;
+  font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   width: 72px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis1;
+  font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -71,7 +71,7 @@
 .header .nav .person span {
   width: 120px;
   height: 14px text-align left;
-  font: normal normal bold 14px/14px Metropolis1;
+  font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
