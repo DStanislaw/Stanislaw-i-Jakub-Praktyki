@@ -157,7 +157,6 @@ $border-color: #8a8d9c;
 }
 
 .PASEK2 {
-  
   padding: 20px 0;
 
   border: 1px solid #ccc;
@@ -183,7 +182,7 @@ $border-color: #8a8d9c;
       a {
         text-decoration: none;
 
-        color: #333; 
+        color: #333;
 
         font-size: 18px;
       }
@@ -191,67 +190,53 @@ $border-color: #8a8d9c;
   }
 }
 
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 
-
-
-
   .image-container {
-
     position: relative;
-  
-  
-    img {
-  
-      width: 100%;
-  
-      height: auto;
-  
-    }
-    .ZDJECIEJS_1{
 
-      padding: 21px;
-       
+    img {
+      width: 100%;
+
+      height: auto;
+    }
+    .ZDJECIEJS_1 {
+      padding-top: 21px;
+      padding-bottom: 29px;
+      margin-left: 30px;
+      margin-right: 30px;
+
       width: 1860px;
       height: 595px;
-  
-   
-  
-  background: transparent url('img/Group 40.png') 0% 0% no-repeat padding-box;
-  opacity: 1;
+
+      background: transparent url("img/Group 40.png") 0% 0% no-repeat
+        padding-box;
+      opacity: 1;
     }
-  
-  
+
     .text-overlay {
-  
       text-align: left;
       font: normal normal bold 44px/200px Metropolis;
       letter-spacing: 0px;
-      color: #FFFFFF;
+      color: #ffffff;
       opacity: 1;
       position: absolute;
       top: 115.4px;
-      left: 127px;
+      margin-left: 157px;
       width: 514px;
       height: 44px;
       font-size: 20px;
-      
-  
+
       p {
-  
         margin: 0;
-  
+
         font-size: 44px;
-  
       }
-  
     }
-  
   }
 
   .ZDJECIA_OBOK_3 {
@@ -262,119 +247,84 @@ body {
     width: 1860px;
     height: 400px;
 
-    
-  
-  
     img.ZDJECIE_OBOK1 {
-  
-      
-  
     }
-  
-  
+
     .ZDJ3OBOK_1 {
       position: absolute;
-        text-align: left;
-  
-      
-  
+      text-align: left;
+
       p {
-        
-  
-        
-  
       }
-  
     }
-  
-  
+
     .ZDJ3OBOK_2 {
       position: absolute;
-        text-align: left;
-      
-  
-      
-  
+      text-align: left;
+
       p {
-        
-  
-       
-  
       }
-  
     }
-  
-  
+
     .ZDJ3OBOK_3 {
       position: absolute;
-        text-align: left;
-  
-      
-  
+      text-align: left;
+
       p {
-        
-  
-       
-  
       }
-  
     }
-  
   }
 
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
 
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+    text-align: left;
+  }
 
+  .footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #2b2b2b;
-  color: white;
-  padding: 30px 10px;
-  flex-wrap: wrap;
-}
+  .footer-section h4::after {
+    content: "";
+    display: block;
+    width: 443px;
+    height: 2px;
+    background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
+    margin-top: 5px;
+  }
 
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 0 10px;
-  text-align: left;
-}
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.footer-section h4 {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: white;
-  text-transform: uppercase;
-  position: relative;
-}
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  a .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
 
-.footer-section h4::after {
-  content: "";
-  display: block;
-  width: 443px;
-  height: 2px;
-  background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
-  margin-top: 5px;
-}
-
-.footer-section ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-a .footer-section ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
-.footer-section ul li a:hover {
-  color: red;
-}
+  .footer-section ul li a:hover {
+    color: red;
+  }
 }
