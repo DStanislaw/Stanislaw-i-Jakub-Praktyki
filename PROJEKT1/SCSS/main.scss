@@ -198,7 +198,31 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-}
+
+
+ .ZDJECIEJS{
+
+
+
+  .IMG{
+    top: 187px;
+    left: 30px;
+    width: 1860px;
+    height: 595px;
+    
+   
+    
+    background: transparent url('img/Group 40.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+  
+
+
+
+  }
+ 
+ }
+
+
 
 .footer {
   display: flex;
@@ -251,4 +275,5 @@ a .footer-section ul li a {
 
 .footer-section ul li a:hover {
   color: red;
+}
 }
