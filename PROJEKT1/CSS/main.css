@@ -5,9 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f8f8f8;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .header .logo {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
   display: flex;
   align-items: center;
 }
@@ -19,10 +21,13 @@
   display: flex;
 }
 .header .nav .phoneE {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  right: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 842px;
+  margin-left: 762px;
 }
 .header .nav .phoneE img {
   width: 28px;
@@ -32,14 +37,17 @@
   width: 67px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis;
+  font-size: 18px;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
+  margin-left: 17.14px;
 }
 .header .nav .star {
-  margin-left: 50px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  margin-left: 72.66px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -49,17 +57,20 @@
   height: 27px;
 }
 .header .nav .star span {
+  margin-left: 17.14px;
   width: 72px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis;
+  font-size: 18px;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
 }
 .header .nav .person {
-  margin-left: 50px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  margin-left: 62.34px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -69,9 +80,11 @@
   height: 29px;
 }
 .header .nav .person span {
+  margin-top: 7px;
+  font-size: 18px;
+  margin-left: 18.67px;
   width: 120px;
   height: 14px text-align left;
-  font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -79,6 +92,8 @@
   display: flex;
 }
 .header .nav .cart {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
   margin-left: 50px;
   border: 1px solid #e1e2e8;
   opacity: 1;
@@ -102,12 +117,8 @@
 .header .nav .cart .koszyk-info .KOSZ_CENA {
   flex-direction: column;
 }
-.header .nav .cart .koszyk-info span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-.header .nav .cart .koszyk-info .SPAN {
+.header .nav .cart .SPAN {
+  font-size: 18px;
   width: 103px;
   height: 14px;
   text-align: left;
@@ -117,14 +128,41 @@
   text-transform: uppercase;
   opacity: 1;
 }
-.header .nav .cart .koszyk-info .LINIA {
+.header .nav .cart .KOSZ_ILOSC {
+  position: absolute;
+  top: 11px;
+  right: 190px;
+  color: white;
+  width: 26px;
+  height: 14px;
   display: flex;
+  font-size: 13px;
+  background: #9BCB3B 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+}
+.header .nav .cart .KOSZYK_ILOSC_TEKST {
+  position: absolute;
+  top: 12.2px;
+  right: 195px;
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: -0.2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.header .nav .cart .LINIA {
+  margin-left: 15px;
+  position: static;
+  display: flex;
+  right: 10px;
   width: 1px;
   height: 41px;
   background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.header .nav .cart .koszyk-info .cena {
+.header .nav .cart .cena {
   width: 80px;
   height: 14px;
   text-align: left;
@@ -135,7 +173,8 @@
 }
 
 .PASEK2 {
-  padding: 20px 0;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding: 20px;
   border: 1px solid #ccc;
   margin: 0 auto;
 }
@@ -152,7 +191,7 @@
 }
 .PASEK2 ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-size: 18px;
 }
 
@@ -160,7 +199,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: #F2F3F4 0% 0% no-repeat padding-box;
 }
 body .image-container {
   position: relative;
