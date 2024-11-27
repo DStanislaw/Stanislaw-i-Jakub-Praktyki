@@ -135,7 +135,6 @@
 }
 
 .PASEK2 {
-  background-color: #f0f0f0;
   padding: 20px 0;
   border: 1px solid #ccc;
   margin: 0 auto;
@@ -164,11 +163,12 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
-body .ZDJECIEJS .IMG {
-  margin-top: 187px;
-  margin-left: 30px;
+body .ZDJECIEJS_1 {
+  padding: 21px;
   width: 1860px;
   height: 595px;
+  background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 body .footer {
   display: flex;
