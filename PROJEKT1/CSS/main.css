@@ -170,7 +170,10 @@ body .image-container img {
   height: auto;
 }
 body .image-container .ZDJECIEJS_1 {
-  padding: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 21px;
+  padding-bottom: 29px;
   width: 1860px;
   height: 595px;
   background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
@@ -195,7 +198,7 @@ body .image-container .text-overlay p {
 }
 body .ZDJECIA_OBOK_3 {
   display: flex;
-  gap: 15px;
+  gap: 30px;
   padding-left: 30px;
   padding-right: 30px;
   width: 1860px;
