@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
@@ -20,6 +21,7 @@
   background: #ffffff 0% 0% no-repeat padding-box;
 }
 .header .logo {
+  margin-left: 11px;
   max-width: 100%;
   margin-top: 12.5px;
   margin-bottom: 12.5px;
@@ -101,7 +103,6 @@
   height: 29px;
 }
 .header .nav .person span {
-  margin-top: 7px;
   font-size: 18px;
   margin-left: 18.67px;
   width: 120px;
@@ -115,7 +116,7 @@
 .header .nav .cart {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
-  margin-left: 50px;
+  margin-left: 62px;
   border: 1px solid #e1e2e8;
   opacity: 1;
   display: flex;
@@ -153,7 +154,7 @@
 .header .nav .cart .KOSZ_ILOSC {
   position: absolute;
   top: 10px;
-  right: 194px;
+  right: 180px;
   color: white;
   width: 26px;
   height: 14px;
@@ -173,7 +174,7 @@
 .header .nav .cart .KOSZYK_ILOSC_TEKST {
   position: absolute;
   top: 11.1px;
-  right: 199px;
+  right: 184px;
   text-align: left;
   font-size: 11px;
   letter-spacing: -0.2px;
@@ -224,27 +225,61 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   border: 1px solid #ccc;
-  margin: 0 auto;
+  margin: 0;
+  /* Media Queries: Dopasowanie do mniejszych ekranów */
 }
 .PASEK2 ul {
-  position: relative;
-  margin-left: 15px;
-  margin-left: -5px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  height: 100%;
+  gap: 7%;
 }
-.PASEK2 ul li {
-  margin: 0 15px;
+.PASEK2 li {
+  flex: 1 1 auto;
+  min-width: 150px;
+  text-align: center;
 }
-.PASEK2 ul li a {
+.PASEK2 li a {
+  text-align: left;
+  font: normal normal bold 14px/14px Metropolis;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
   text-decoration: none;
   color: #000000;
   font-family: "Metropolis", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .PASEK2 ul {
+    justify-content: center;
+    gap: 10px;
+  }
+  .PASEK2 li {
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+  .PASEK2 a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .PASEK2 ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .PASEK2 li {
+    flex: 1 1 100%;
+  }
+  .PASEK2 a {
+    font-size: 0.8rem;
+  }
 }
 
 body {
@@ -260,6 +295,22 @@ body .image-container {
   width: 1860px;
   height: 595px;
   background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+body .image-container .button-overlay {
+  position: absolute;
+  top: 400px; /* Dopasuj, aby było zgodne z obrazem */
+  margin-left: 127px; /* Wyrównanie z tekstem */
+}
+body .image-container .button-overlay .cta-button {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: #F74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  font: normal normal bold 14px/17px Metropolis;
+  letter-spacing: -0.28px;
+  color: #FFFFFF;
   opacity: 1;
 }
 body .image-container .image-wrapper {
@@ -283,13 +334,14 @@ body .image-container .image-wrapper::after {
   pointer-events: none;
 }
 body .image-container .text-overlay {
+  font: normal normal bold 44px/200px Metropolis;
   text-align: left;
   font-family: "Metropolis", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
   position: absolute;
-  top: 110px;
+  top: 106px;
   margin-left: 127px;
   width: 514px;
   height: 44px;
@@ -306,7 +358,7 @@ body .image-container .text-overlay2 {
   color: #ffffff;
   opacity: 1;
   position: absolute;
-  top: 164px;
+  top: 234px;
   margin-left: 127px;
   width: 571px;
   height: 44px;
@@ -316,7 +368,26 @@ body .image-container .text-overlay2 p {
   margin: 0;
   font-size: 44px;
 }
-body .ZDJECIA_OBOK_3 {
+body .image-container .text-overlay3 {
+  text-align: left;
+  letter-spacing: -0.44px;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 294px;
+  margin-left: 127px;
+  width: 371px;
+  height: 74px;
+  letter-spacing: -0.44px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+body .image-container .text-overlay3 p {
+  margin: 0;
+  font: normal normal normal 22px/26px Metropolis;
+}
+
+.ZDJECIA_OBOK_3 {
   display: flex;
   gap: 30px;
   padding-left: 30px;
@@ -324,43 +395,43 @@ body .ZDJECIA_OBOK_3 {
   width: 1860px;
   height: 400px;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
   position: absolute;
   text-align: left;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
   position: absolute;
   text-align: left;
 }
-body .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
+.ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
   position: absolute;
   text-align: left;
 }
-body .produkty {
+.produkty {
   border-radius: 2px;
   width: 1920px;
   height: 851px;
   border: 1px, red;
   background-color: 0;
 }
-body .produkty .text_products {
+.produkty .text_products {
   text-align: center;
   font: normal normal bold 44px/200px Metropolis;
   letter-spacing: 0px;
   color: #111111;
   opacity: 1;
 }
-body .produkty .red_line {
+.produkty .red_line {
   width: 60px;
   height: 3px;
-  background: #F74137 0% 0% no-repeat padding-box;
+  background: #f74137 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
   align-items: center;
   top: -70px;
   right: -920px;
 }
-body .footer {
+.footer {
   display: flex;
   justify-content: space-between;
   background-color: #2b2b2b;
@@ -368,20 +439,23 @@ body .footer {
   padding: 30px 10px;
   flex-wrap: wrap;
 }
-body .footer-section {
+
+.footer-section {
   flex: 1;
   min-width: 200px;
   margin: 0 10px;
   text-align: left;
 }
-body .footer-section h4 {
+
+.footer-section h4 {
   font-size: 14px;
   margin-bottom: 10px;
   color: white;
   text-transform: uppercase;
   position: relative;
 }
-body .footer-section h4::after {
+
+.footer-section h4::after {
   content: "";
   display: block;
   width: 443px;
@@ -389,21 +463,25 @@ body .footer-section h4::after {
   background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
   margin-top: 5px;
 }
-body .footer-section ul {
+
+.footer-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-body .footer-section ul li {
+
+.footer-section ul li {
   margin-bottom: 8px;
 }
-body a .footer-section ul li a {
+
+a .footer-section ul li a {
   color: white;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
-body .footer-section ul li a:hover {
+
+.footer-section ul li a:hover {
   color: red;
 }
 

@@ -1,13 +1,13 @@
 $border-color: #8a8d9c;
 @font-face {
-  font-family: 'Metropolis';
+  font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Metropolis-regular';
+  font-family: "Metropolis-regular";
   src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
   font-weight: normal;
   font-style: normal;
@@ -23,6 +23,7 @@ $border-color: #8a8d9c;
   background: #ffffff 0% 0% no-repeat padding-box;
 
   .logo {
+    margin-left: 11px;
     max-width: 100%;
     margin-top: 12.5px;
     margin-bottom: 12.5px;
@@ -37,7 +38,7 @@ $border-color: #8a8d9c;
 
   .nav {
     justify-content: space-around;
-    font-family: 'Metropolis', sans-serif;
+    font-family: "Metropolis", sans-serif;
 
     width: 100vw;
 
@@ -59,7 +60,6 @@ $border-color: #8a8d9c;
       }
 
       span {
-        
         width: 67px;
         height: 14px;
         text-align: left;
@@ -69,6 +69,7 @@ $border-color: #8a8d9c;
         text-transform: uppercase;
         opacity: 1;
         margin-left: 17.14px;
+        
       }
     }
 
@@ -87,7 +88,6 @@ $border-color: #8a8d9c;
       }
 
       span {
-       
         margin-left: 17.14px;
         width: 72px;
         height: 14px;
@@ -118,7 +118,6 @@ $border-color: #8a8d9c;
 
       span {
         
-        margin-top: 7px;
         font-size: 18px;
         margin-left: 18.67px;
         width: 120px;
@@ -135,7 +134,8 @@ $border-color: #8a8d9c;
     .cart {
       margin-top: 12.5px;
       margin-bottom: 12.5px;
-      margin-left: 50px;
+      margin-left: 62px;
+      
       border: 1px solid #e1e2e8;
       opacity: 1;
       display: flex;
@@ -169,7 +169,7 @@ $border-color: #8a8d9c;
         width: 20px;
         height: 14px;
         text-align: left;
-        font-family: 'Metropolis-regular', sans-serif;
+        font-family: "Metropolis-regular", sans-serif;
         letter-spacing: -0.28px;
         color: #111111;
         text-transform: uppercase;
@@ -181,7 +181,7 @@ $border-color: #8a8d9c;
 
         top: 10px;
 
-        right: 194px;
+        right: 180px;
 
         color: white;
 
@@ -212,7 +212,7 @@ $border-color: #8a8d9c;
 
         top: 11.1px;
 
-        right: 199px;
+        right: 184px;
 
         text-align: left;
         font-size: 11px;
@@ -247,7 +247,7 @@ $border-color: #8a8d9c;
       width: 80px;
       height: 14px;
       text-align: left;
-      font-family: 'Metropolis', sans-serif;
+      font-family: "Metropolis", sans-serif;
       letter-spacing: -0.28px;
       color: #111111;
       opacity: 1;
@@ -267,48 +267,80 @@ $border-color: #8a8d9c;
 }
 
 .PASEK2 {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box; // Tło paska
   padding: 20px;
-
   border: 1px solid #ccc;
-
-  margin: 0 auto;
+  margin: 0;
+  
 
   ul {
-    position: relative;
-    margin-left:  15px;
-
-    margin-left: -5px;
-    display: flex;
-
-    justify-content: space-around;
-
+    display: flex; // Ustaw elementy w poziomej linii
+    flex-wrap: wrap; // Pozwala zawijać elementy na mniejszych ekranach
+    justify-content: flex-start; // Wyrównuje elementy do lewej
+    align-items: center; // Ustawia elementy w pionie na środku
     list-style-type: none;
-
     padding: 0;
-
     margin: 0;
+    gap: 7%; // Dynamiczne odstępy między elementami (zamiast stałych px)
+  }
 
-    height: 100%;
+  li {
+    flex: 1 1 auto; // Elastyczna szerokość dla elementów listy
+    min-width: 150px; // Minimalna szerokość elementu
+    text-align: center;
+
+    a {
+      text-align: left;
+font: normal normal bold 14px/14px Metropolis;
+letter-spacing: -0.28px;
+color: #111111;
+text-transform: uppercase;
+opacity: 1;
+      text-decoration: none;
+      color: #000000;
+      font-family: "Metropolis", sans-serif;
+      font-size: 1rem; // Dynamiczny rozmiar czcionki
+      white-space: nowrap; // Zapobiega zawijaniu tekstu
+    }
+  }
+
+  /* Media Queries: Dopasowanie do mniejszych ekranów */
+  @media (max-width: 768px) {
+    ul {
+      justify-content: center; // Centruj elementy na węższych ekranach
+      gap: 10px; // Zmniejsz odstępy między elementami
+    }
 
     li {
-      margin: 0 15px;
+      flex: 1 1 45%; // Elementy zajmują 45% szerokości (2 elementy w rzędzie)
+      min-width: 120px; // Minimalna szerokość elementu
+    }
 
-      a {
-        text-decoration: none;
+    a {
+      font-size: 0.9rem; // Zmniejsz rozmiar czcionki
+    }
+  }
 
-        color: #000000;
-        font-family: 'Metropolis', sans-serif;
-        font-size: 18px;
-      }
+  @media (max-width: 480px) {
+    ul {
+      flex-direction: column; // Elementy jeden pod drugim
+      gap: 5px; // Zmniejsz odstępy
+    }
+
+    li {
+      flex: 1 1 100%; // Elementy zajmują 100% szerokości na bardzo małych ekranach
+    }
+
+    a {
+      font-size: 0.8rem; // Jeszcze mniejsza czcionka dla telefonów
     }
   }
 }
 
+
+
 body {
   margin: 0;
-
-  
 
   .image-container {
     display: flex;
@@ -323,6 +355,36 @@ body {
 
     background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
     opacity: 1;
+
+
+    .button-overlay {
+      position: absolute;
+      top: 400px; /* Dopasuj, aby było zgodne z obrazem */
+      margin-left: 127px; /* Wyrównanie z tekstem */
+      
+      .cta-button {
+        text-decoration: none;
+        
+        padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+        background: #F74137 0% 0% no-repeat padding-box;
+         opacity: 1;
+         text-align: center;
+font: normal normal bold 14px/17px Metropolis;
+letter-spacing: -0.28px;
+color: #FFFFFF;
+
+opacity: 1;
+        
+        
+       
+        
+        
+       
+        
+        
+      }
+    }
+    
 
     .image-wrapper {
       display: flex;
@@ -353,13 +415,14 @@ body {
     }
 
     .text-overlay {
+      font: normal normal bold 44px/200px Metropolis;
       text-align: left;
-      font-family: 'Metropolis', sans-serif;
+      font-family: "Metropolis", sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       position: absolute;
-      top: 110px;
+      top: 106px;
       margin-left: 127px;
       width: 514px;
       height: 44px;
@@ -372,13 +435,15 @@ body {
     }
 
     .text-overlay2 {
+      
+      
       text-align: left;
-      font-family: 'Metropolis-regular', sans-serif;
+      font-family: "Metropolis-regular", sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       position: absolute;
-      top: 164px;
+      top: 234px;
       margin-left: 127px;
       width: 571px;
       height: 44px;
@@ -388,6 +453,44 @@ body {
         margin: 0;
         font-size: 44px;
       }
+    }
+
+
+
+    .text-overlay3 {
+      
+      text-align: left;
+      
+      letter-spacing: -0.44px;
+      color: #ffffff;
+      opacity: 1;
+      position: absolute;
+      top: 294px;
+      margin-left: 127px;
+      width: 371px;
+height: 74px;
+     
+      
+      
+
+letter-spacing: -0.44px;
+color: #FFFFFF;
+opacity: 1;
+
+      p {
+        margin: 0;
+        font: normal normal normal 22px/26px Metropolis;
+       
+      }
+
+
+
+
+
+      }
+
+
+      
     }
   }
 
@@ -427,66 +530,36 @@ body {
     }
   }
 
+  .produkty {
+    border-radius: 2px;
+    width: 1920px;
+    height: 851px;
+    border: 1px, red;
+    background-color: red($color: #000000);
 
-
-.produkty{
-  border-radius: 2px;
-  width: 1920px;
-  height: 851px;
-  border: 1px, red ;
-  background-color: red($color: #000000);
-
-
-
-
-
-
-  .text_products{
-    text-align: center;
-    font: normal normal bold 44px/200px Metropolis;
-letter-spacing: 0px;
-color: #111111;
-opacity: 1;
-
-
-    
-  }
-
-  .red_line{
-
-    width: 60px;
-    height: 3px;
-    background: #F74137 0% 0% no-repeat padding-box;
-    opacity: 1;
-    position: relative;
-    align-items: center;
-    top: -70px;
-    right: -920px;
-  }
-
-
-
-
-
-  .box_all{
-
-
-
-
-
-
-
-    box1{
-
-
-
-
-      
+    .text_products {
+      text-align: center;
+      font: normal normal bold 44px/200px Metropolis;
+      letter-spacing: 0px;
+      color: #111111;
+      opacity: 1;
     }
 
+    .red_line {
+      width: 60px;
+      height: 3px;
+      background: #f74137 0% 0% no-repeat padding-box;
+      opacity: 1;
+      position: relative;
+      align-items: center;
+      top: -70px;
+      right: -920px;
+    }
 
-
-  }
+    .box_all {
+      box1 {
+      }
+    }
   }
 
   .footer {
@@ -530,6 +603,7 @@ opacity: 1;
 
   .footer-section ul li {
     margin-bottom: 8px;
+    
   }
   a .footer-section ul li a {
     color: white;
@@ -541,4 +615,4 @@ opacity: 1;
   .footer-section ul li a:hover {
     color: red;
   }
-}
+
