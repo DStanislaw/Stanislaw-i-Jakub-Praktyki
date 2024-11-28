@@ -1,9 +1,16 @@
 $border-color: #8a8d9c;
 @font-face {
   font-family: 'Metropolis'; 
-  src: url('../IMG/etap_01/fonts/Metropolis-Bold.otf') format('otf'), /* Ścieżka do czcionki */
-       url('../IMG/etap_01/fonts/Metropolis-Regular.otf ') format('otf');  /* Wspieraj różne formaty */
- 
+  src: url('../IMG/etap_01/fonts/Metropolis-Bold.otf') format('otf');
+  font-weight: normal; // Opcjonalnie: normal, bold, itp.
+  font-style: normal bold;
+}
+       
+@font-face {
+  font-family: 'Metropolis-regular';
+  src: url('../IMG/etap_01/fonts/Metropolis-Regular.otf ') format('otf');
+  font-weight: normal; // Opcjonalnie: normal, bold, itp.
+  font-style: normal 300;
 }
 
 
@@ -325,7 +332,7 @@ $border-color: #8a8d9c;
 body {
   margin: 0;
  
-  font-family: 'CustomFont', sans-serif;
+  font-family: 'Metropolis', sans-serif;
   
 
   .image-container {
@@ -374,7 +381,7 @@ body {
 
     .text-overlay {
       text-align: left;
-      font: normal normal bold 44px/200px Metropolis;
+      font-family:'Metropolis', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -393,7 +400,7 @@ body {
 
     .text-overlay2 {
       text-align: left;
-      font: normal normal 300 44px/200px Metropolis;
+      font-family: 'Metropolis-regular', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;

@@ -1,7 +1,14 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
-  src: url("../IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf"), url("../IMG/etap_01/fonts/Metropolis-Regular.otf ") format("otf"); /* Wspieraj różne formaty */
+  src: url("../IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal bold;
+}
+@font-face {
+  font-family: "Metropolis-regular";
+  src: url("../IMG/etap_01/fonts/Metropolis-Regular.otf ") format("otf");
+  font-weight: normal;
+  font-style: normal 300;
 }
 .header {
   border: 0.5px solid #8a8d9c;
@@ -241,7 +248,7 @@
 
 body {
   margin: 0;
-  font-family: "CustomFont", sans-serif;
+  font-family: "Metropolis", sans-serif;
 }
 body .image-container {
   display: flex;
@@ -277,7 +284,7 @@ body .image-container .image-wrapper::after {
 }
 body .image-container .text-overlay {
   text-align: left;
-  font: normal normal bold 44px/200px Metropolis;
+  font-family: "Metropolis", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -294,7 +301,7 @@ body .image-container .text-overlay p {
 }
 body .image-container .text-overlay2 {
   text-align: left;
-  font: normal normal 300 44px/200px Metropolis;
+  font-family: "Metropolis-regular", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
