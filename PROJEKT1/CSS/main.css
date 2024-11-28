@@ -152,6 +152,13 @@
 }
 .header .nav .cart .KOSZYK_ILOSC_TEKST {
   position: absolute;
+  top: 12.2px;
+  background: #9BCB3B 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+}
+.header .nav .cart .KOSZYK_ILOSC_TEKST {
+  position: absolute;
   top: 11.1px;
   right: 199px;
   text-align: left;
@@ -171,7 +178,17 @@
   background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.header .nav .cart .cena {
+.header .nav .LINIA {
+  margin-left: 15px;
+  position: static;
+  display: flex;
+  right: 10px;
+  width: 1px;
+  height: 41px;
+  background: #e1e2e8 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.header .nav .cena {
   width: 80px;
   height: 14px;
   text-align: left;
@@ -180,7 +197,7 @@
   color: #111111;
   opacity: 1;
 }
-.header .nav .cart .ZIELONE_POLE_STRZALKA {
+.header .nav .ZIELONE_POLE_STRZALKA {
   top: 27px;
   left: 1855px;
   width: 35px;
