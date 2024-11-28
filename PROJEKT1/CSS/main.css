@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Metropolis";
-  src: url("../IMG/etap_01/fonts/Metropolis.otf") format("otf");
+  src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Metropolis-regular";
-  src: url("../IMG/etap_01/fonts/Metropolis-thin.otf ") format("otf");
+  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -227,6 +227,9 @@
   margin: 0 auto;
 }
 .PASEK2 ul {
+  position: relative;
+  margin-left: 15px;
+  margin-left: -5px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -332,6 +335,30 @@ body .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
 body .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
   position: absolute;
   text-align: left;
+}
+body .produkty {
+  border-radius: 2px;
+  width: 1920px;
+  height: 851px;
+  border: 1px, red;
+  background-color: 0;
+}
+body .produkty .text_products {
+  text-align: center;
+  font: normal normal bold 44px/200px Metropolis;
+  letter-spacing: 0px;
+  color: #111111;
+  opacity: 1;
+}
+body .produkty .red_line {
+  width: 60px;
+  height: 3px;
+  background: #F74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+  align-items: center;
+  top: -70px;
+  right: -920px;
 }
 body .footer {
   display: flex;

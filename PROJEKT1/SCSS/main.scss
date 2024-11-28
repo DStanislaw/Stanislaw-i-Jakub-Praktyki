@@ -1,14 +1,14 @@
 $border-color: #8a8d9c;
 @font-face {
   font-family: 'Metropolis';
-  src: url("../IMG/etap_01/fonts/Metropolis.otf") format("otf");
+  src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis-regular';
-  src: url("../IMG/etap_01/fonts/Metropolis-thin.otf ") format("otf");
+  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -275,6 +275,10 @@ $border-color: #8a8d9c;
   margin: 0 auto;
 
   ul {
+    position: relative;
+    margin-left:  15px;
+
+    margin-left: -5px;
     display: flex;
 
     justify-content: space-around;
@@ -421,6 +425,68 @@ body {
       p {
       }
     }
+  }
+
+
+
+.produkty{
+  border-radius: 2px;
+  width: 1920px;
+  height: 851px;
+  border: 1px, red ;
+  background-color: red($color: #000000);
+
+
+
+
+
+
+  .text_products{
+    text-align: center;
+    font: normal normal bold 44px/200px Metropolis;
+letter-spacing: 0px;
+color: #111111;
+opacity: 1;
+
+
+    
+  }
+
+  .red_line{
+
+    width: 60px;
+    height: 3px;
+    background: #F74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    align-items: center;
+    top: -70px;
+    right: -920px;
+  }
+
+
+
+
+
+  .box_all{
+
+
+
+
+
+
+
+    box1{
+
+
+
+
+      
+    }
+
+
+
+  }
   }
 
   .footer {
