@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
 }
 .header .logo {
   max-width: 100%;
@@ -150,7 +150,7 @@
   height: 14px;
   display: flex;
   font-size: 13px;
-  background: #9BCB3B 0% 0% no-repeat padding-box;
+  background: #9bcb3b 0% 0% no-repeat padding-box;
   border-radius: 2px;
   opacity: 1;
 }
@@ -161,7 +161,7 @@
   text-align: left;
   font-size: 11px;
   letter-spacing: -0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   opacity: 1;
 }
@@ -195,7 +195,7 @@
 }
 
 .PASEK2 {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0 auto;
@@ -221,7 +221,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #F2F3F4 0% 0% no-repeat padding-box;
+  background: #f2f3f4 0% 0% no-repeat padding-box;
 }
 body .image-container {
   position: relative;
@@ -233,6 +233,25 @@ body .image-container {
   height: 595px;
   background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
   opacity: 1;
+}
+body .image-container .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+body .image-container .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body .image-container .image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  pointer-events: none;
 }
 body .image-container .text-overlay {
   text-align: left;
