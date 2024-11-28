@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Metropolis";
   src: url("../IMG/etap_01/fonts/Metropolis.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Metropolis-regular";
@@ -142,7 +144,7 @@
   width: 20px;
   height: 14px;
   text-align: left;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-regular", sans-serif;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -238,12 +240,12 @@
 .PASEK2 ul li a {
   text-decoration: none;
   color: #000000;
+  font-family: "Metropolis", sans-serif;
   font-size: 18px;
 }
 
 body {
   margin: 0;
-  font-family: "Metropolis", sans-serif;
 }
 body .image-container {
   display: flex;
