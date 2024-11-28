@@ -283,7 +283,6 @@ body {
 
   .image-container {
     position: relative;
-
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 21px;
@@ -295,6 +294,28 @@ body {
     background: transparent url('img/Group 40.png') 0% 0% no-repeat padding-box;
     opacity: 1;
   
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+
+      img {
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      // Gradient tylko na obrazie
+      &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+          pointer-events: none; // Gradient nie blokuje interakcji z obrazem
+      }
+  }
 
   .text-overlay {
     text-align: left;
@@ -309,11 +330,10 @@ body {
     height: 44px;
     font-size: 20px;
 
-    p {
-      margin: 0;
-
-      font-size: 44px;
-    }
+      p {
+          margin: 0;
+          font-size: 44px;
+      }
   }
 }
 }
