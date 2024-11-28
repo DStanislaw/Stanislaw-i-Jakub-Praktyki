@@ -1,20 +1,15 @@
 $border-color: #8a8d9c;
 @font-face {
-  font-family: 'Metropolis'; 
-  src: url('../IMG/etap_01/fonts/Metropolis-Bold.otf') format('otf');
-  font-weight: normal; // Opcjonalnie: normal, bold, itp.
-  font-style: normal bold;
+  font-family: 'Metropolis';
+  src: url("../IMG/etap_01/fonts/Metropolis.otf") format("otf");
 }
-       
+
 @font-face {
   font-family: 'Metropolis-regular';
-  src: url('../IMG/etap_01/fonts/Metropolis-Regular.otf ') format('otf');
-  font-weight: normal; // Opcjonalnie: normal, bold, itp.
-  font-style: normal 300;
+  src: url("../IMG/etap_01/fonts/Metropolis-thin.otf ") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
- 
 
 .header {
   border: 0.5px solid $border-color;
@@ -40,9 +35,8 @@ $border-color: #8a8d9c;
 
   .nav {
     justify-content: space-around;
-    font-family: 'CustomFont', sans-serif;
-    
-    
+    font-family: 'Metropolis', sans-serif;
+
     width: 100vw;
 
     display: flex;
@@ -167,26 +161,25 @@ $border-color: #8a8d9c;
         align-items: center;
 
         gap: 10px;
-       
-        }
-        .SPAN {
-          font-size: 18px;
-          width: 20px;
-          height: 14px;
-          text-align: left;
-          font: normal normal bold 14px/14px Metropolis;
-          letter-spacing: -0.28px;
-          color: #111111;
-          text-transform: uppercase;
-          opacity: 1;
-        }
+      }
+      .SPAN {
+        font-size: 18px;
+        width: 20px;
+        height: 14px;
+        text-align: left;
+        font-family: 'Metropolis', sans-serif;
+        letter-spacing: -0.28px;
+        color: #111111;
+        text-transform: uppercase;
+        opacity: 1;
+      }
 
       .KOSZ_ILOSC {
         position: absolute;
 
-        top: 10px; 
+        top: 10px;
 
-        right: 194px; 
+        right: 194px;
 
         color: white;
 
@@ -207,29 +200,17 @@ $border-color: #8a8d9c;
 
         top: 12.2px;
 
+        background: #9bcb3b 0% 0% no-repeat padding-box;
+        border-radius: 2px;
+        opacity: 1;
+      }
 
-           background: #9BCB3B 0% 0% no-repeat padding-box;
-             border-radius: 2px;
-             opacity: 1;
-           
-             
-          
+      .KOSZYK_ILOSC_TEKST {
+        position: absolute;
 
+        top: 11.1px;
 
-
-
-
-
-        }
-
-        .KOSZYK_ILOSC_TEKST{
-          position: absolute; 
-
-        top: 11.1px; 
-
-        right: 199px; 
-
-      
+        right: 199px;
 
         text-align: left;
         font-size: 11px;
@@ -248,51 +229,40 @@ $border-color: #8a8d9c;
         background: #e1e2e8 0% 0% no-repeat padding-box;
         opacity: 1;
       }
-
-
-        }
-        .LINIA {
-          margin-left: 15px;
-          position: static;
-          display: flex;
-          right: 10px;
-          width: 1px;
-          height: 41px;
-          background: #e1e2e8 0% 0% no-repeat padding-box;
-          opacity: 1;
-        }
-
-        .cena {
-          
-          width: 80px;
-          height: 14px;
-          text-align: left;
-          font: normal normal normal 14px/20px Metropolis;
-          letter-spacing: -0.28px;
-          color: #111111;
-          opacity: 1;
-
-
-        }
-        .ZIELONE_POLE_STRZALKA{
-
-          top: 27px;
-          left: 1855px;
-          width: 35px;
-           height: 55px;
-
-/* UI Properties */
-
-          background: #9BCB3B 0% 0% no-repeat padding-box;
-            opacity: 1;
-
-
-
-        }
-      }
     }
-  
+    .LINIA {
+      margin-left: 15px;
+      position: static;
+      display: flex;
+      right: 10px;
+      width: 1px;
+      height: 41px;
+      background: #e1e2e8 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
 
+    .cena {
+      width: 80px;
+      height: 14px;
+      text-align: left;
+      font-family: 'Metropolis', sans-serif;
+      letter-spacing: -0.28px;
+      color: #111111;
+      opacity: 1;
+    }
+    .ZIELONE_POLE_STRZALKA {
+      top: 27px;
+      left: 1855px;
+      width: 35px;
+      height: 55px;
+
+      /* UI Properties */
+
+      background: #9bcb3b 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
+  }
+}
 
 .PASEK2 {
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -331,13 +301,10 @@ $border-color: #8a8d9c;
 
 body {
   margin: 0;
- 
+
   font-family: 'Metropolis', sans-serif;
-  
 
   .image-container {
-    
-    
     display: flex;
     position: relative;
     padding-left: 30px;
@@ -381,7 +348,7 @@ body {
 
     .text-overlay {
       text-align: left;
-      font-family:'Metropolis', sans-serif;
+      font-family: 'Metropolis', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;

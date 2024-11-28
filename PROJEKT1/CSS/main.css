@@ -1,14 +1,12 @@
 @font-face {
   font-family: "Metropolis";
-  src: url("../IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf");
-  font-weight: normal;
-  font-style: normal bold;
+  src: url("../IMG/etap_01/fonts/Metropolis.otf") format("otf");
 }
 @font-face {
   font-family: "Metropolis-regular";
-  src: url("../IMG/etap_01/fonts/Metropolis-Regular.otf ") format("otf");
+  src: url("../IMG/etap_01/fonts/Metropolis-thin.otf ") format("otf");
   font-weight: normal;
-  font-style: normal 300;
+  font-style: normal;
 }
 .header {
   border: 0.5px solid #8a8d9c;
@@ -32,7 +30,7 @@
 }
 .header .nav {
   justify-content: space-around;
-  font-family: "CustomFont", sans-serif;
+  font-family: "Metropolis", sans-serif;
   width: 100vw;
   display: flex;
 }
@@ -147,7 +145,7 @@
   width: 20px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis;
+  font-family: "Metropolis", sans-serif;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -169,7 +167,7 @@
 .header .nav .cart .KOSZYK_ILOSC_TEKST {
   position: absolute;
   top: 12.2px;
-  background: #9BCB3B 0% 0% no-repeat padding-box;
+  background: #9bcb3b 0% 0% no-repeat padding-box;
   border-radius: 2px;
   opacity: 1;
 }
@@ -208,7 +206,7 @@
   width: 80px;
   height: 14px;
   text-align: left;
-  font: normal normal normal 14px/20px Metropolis;
+  font-family: "Metropolis", sans-serif;
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
@@ -219,7 +217,7 @@
   width: 35px;
   height: 55px;
   /* UI Properties */
-  background: #9BCB3B 0% 0% no-repeat padding-box;
+  background: #9bcb3b 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
