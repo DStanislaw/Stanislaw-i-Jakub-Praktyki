@@ -1,5 +1,3 @@
-
-
 $border-color: #8a8d9c;
 
 .header {
@@ -9,7 +7,7 @@ $border-color: #8a8d9c;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
 
   .logo {
     margin-top: 12.5px;
@@ -27,7 +25,6 @@ $border-color: #8a8d9c;
     display: flex;
 
     .phoneE {
-      
       margin-top: 12.5px;
       margin-bottom: 12.5px;
       right: 10px;
@@ -35,7 +32,6 @@ $border-color: #8a8d9c;
       align-items: center;
       gap: 10px;
       margin-left: 762px;
-      
 
       img {
         width: 28px;
@@ -62,7 +58,6 @@ $border-color: #8a8d9c;
       display: flex;
       align-items: center;
       gap: 10px;
-      
 
       img {
         width: 28px;
@@ -80,7 +75,6 @@ $border-color: #8a8d9c;
         text-transform: uppercase;
         opacity: 1;
       }
-      
     }
 
     .person {
@@ -102,7 +96,7 @@ $border-color: #8a8d9c;
         margin-left: 18.67px;
         width: 120px;
         height: 14px text-align left;
-        
+
         letter-spacing: -0.28px;
         color: #111111;
         text-transform: uppercase;
@@ -140,109 +134,81 @@ $border-color: #8a8d9c;
         align-items: center;
 
         gap: 10px;
-       
-        }
-        .SPAN {
-          font-size: 18px;
-          width: 103px;
-          height: 14px;
-          text-align: left;
-          font: normal normal bold 14px/14px Metropolis;
-          letter-spacing: -0.28px;
-          color: #111111;
-          text-transform: uppercase;
-          opacity: 1;
-        }
+      }
+      .SPAN {
+        font-size: 18px;
+        width: 103px;
+        height: 14px;
+        text-align: left;
+        font: normal normal bold 14px/14px Metropolis;
+        letter-spacing: -0.28px;
+        color: #111111;
+        text-transform: uppercase;
+        opacity: 1;
+      }
 
-        
-        .KOSZ_ILOSC{
-          
-        position: absolute; 
+      .KOSZ_ILOSC {
+        position: absolute;
 
-        top: 11px; 
+        top: 11px;
 
-        right: 190px; 
+        right: 190px;
 
-        
+        color: white;
 
-        color: white; 
-
-        
         width: 26px;
         height: 14px;
 
-        display: flex; 
+        display: flex;
 
-       
+        font-size: 13px;
 
-        
+        background: #9bcb3b 0% 0% no-repeat padding-box;
+        border-radius: 2px;
+        opacity: 1;
+      }
 
-        font-size: 13px; 
-          
+      .KOSZYK_ILOSC_TEKST {
+        position: absolute;
 
+        top: 12.2px;
 
-
-           background: #9BCB3B 0% 0% no-repeat padding-box;
-             border-radius: 2px;
-             opacity: 1;
-           
-             
-          
-
-
-
-
-
-
-        }
-
-        .KOSZYK_ILOSC_TEKST{
-          position: absolute; 
-
-        top: 12.2px; 
-
-        right: 195px; 
-
-      
+        right: 195px;
 
         text-align: left;
         font-size: 11px;
         letter-spacing: -0.2px;
-        color: #FFFFFF;
+        color: #ffffff;
         text-transform: uppercase;
         opacity: 1;
+      }
+      .LINIA {
+        margin-left: 15px;
+        position: static;
+        display: flex;
+        right: 10px;
+        width: 1px;
+        height: 41px;
+        background: #e1e2e8 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
 
-
-        }
-        .LINIA {
-          margin-left: 15px;
-          position: static;
-          display: flex;
-          right: 10px;
-          width: 1px;
-          height: 41px;
-          background: #e1e2e8 0% 0% no-repeat padding-box;
-          opacity: 1;
-        }
-
-        .cena {
-          
-          width: 80px;
-          height: 14px;
-          text-align: left;
-          font: normal normal normal 14px/20px Metropolis;
-          letter-spacing: -0.28px;
-          color: #111111;
-          opacity: 1;
-        }
+      .cena {
+        width: 80px;
+        height: 14px;
+        text-align: left;
+        font: normal normal normal 14px/20px Metropolis;
+        letter-spacing: -0.28px;
+        color: #111111;
+        opacity: 1;
       }
     }
   }
-
+}
 
 .PASEK2 {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  padding: 20px ;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 20px;
 
   border: 1px solid #ccc;
 
@@ -279,7 +245,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #F2F3F4 0% 0% no-repeat padding-box;
+  background: #f2f3f4 0% 0% no-repeat padding-box;
 
   .image-container {
     position: relative;
@@ -291,51 +257,55 @@ body {
     width: 1860px;
     height: 595px;
 
-    background: transparent url('img/Group 40.png') 0% 0% no-repeat padding-box;
+    background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
     opacity: 1;
-  
+
     .image-wrapper {
       position: relative;
       display: inline-block;
 
       img {
-          display: block;
-          width: 100%;
-          height: auto;
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
       // Gradient tylko na obrazie
       &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-          pointer-events: none; // Gradient nie blokuje interakcji z obrazem
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0)
+        );
+        pointer-events: none; // Gradient nie blokuje interakcji z obrazem
       }
-  }
+    }
 
-  .text-overlay {
-    text-align: left;
-    font: normal normal bold 44px/200px Metropolis;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    position: absolute;
-    top: 110px;
-    margin-left: 127px;
-    width: 514px;
-    height: 44px;
-    font-size: 20px;
+    .text-overlay {
+      text-align: left;
+      font: normal normal bold 44px/200px Metropolis;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      position: absolute;
+      top: 110px;
+      margin-left: 127px;
+      width: 514px;
+      height: 44px;
+      font-size: 20px;
 
       p {
-          margin: 0;
-          font-size: 44px;
+        margin: 0;
+        font-size: 44px;
       }
+    }
   }
-}
 }
 
 .ZDJECIA_OBOK_3 {

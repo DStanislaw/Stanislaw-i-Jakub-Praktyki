@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
 }
 .header .logo {
   margin-top: 12.5px;
@@ -137,7 +137,7 @@
   height: 14px;
   display: flex;
   font-size: 13px;
-  background: #9BCB3B 0% 0% no-repeat padding-box;
+  background: #9bcb3b 0% 0% no-repeat padding-box;
   border-radius: 2px;
   opacity: 1;
 }
@@ -148,7 +148,7 @@
   text-align: left;
   font-size: 11px;
   letter-spacing: -0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   opacity: 1;
 }
@@ -173,7 +173,7 @@
 }
 
 .PASEK2 {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0 auto;
@@ -199,7 +199,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #F2F3F4 0% 0% no-repeat padding-box;
+  background: #f2f3f4 0% 0% no-repeat padding-box;
 }
 body .image-container {
   position: relative;
