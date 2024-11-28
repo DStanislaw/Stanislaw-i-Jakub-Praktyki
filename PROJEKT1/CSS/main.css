@@ -3,12 +3,6 @@
   src: url("./IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf");
   font-style: normal;
 }
-@font-face {
-  font-family: "Metropolis-regular";
-  src: url("../IMG/etap_01/fonts/Metropolis-Regular.otf ") format("otf");
-  font-weight: normal;
-  font-style: normal 300;
-}
 .header {
   border: 0.5px solid #8a8d9c;
   position: relative;
