@@ -10,6 +10,7 @@ $border-color: #8a8d9c;
   background: #ffffff 0% 0% no-repeat padding-box;
 
   .logo {
+    max-width: 100%;
     margin-top: 12.5px;
     margin-bottom: 12.5px;
     display: flex;
@@ -22,6 +23,11 @@ $border-color: #8a8d9c;
   }
 
   .nav {
+    justify-content: space-around;
+    
+    
+    width: 100vw;
+    
     display: flex;
 
     .phoneE {
@@ -34,6 +40,7 @@ $border-color: #8a8d9c;
       margin-left: 762px;
 
       img {
+        max-width: 100%;
         width: 28px;
         height: 28px;
       }
@@ -60,6 +67,7 @@ $border-color: #8a8d9c;
       gap: 10px;
 
       img {
+        max-width: 100%;
         width: 28px;
         height: 27px;
       }
@@ -86,6 +94,9 @@ $border-color: #8a8d9c;
       gap: 10px;
 
       img {
+        width: 100vw; // Pełna szerokość ekranu
+        height: 100vh; // Pełna wysokość ekranu
+        object-fit: cover;
         width: 25px;
         height: 29px;
       }
@@ -120,6 +131,7 @@ $border-color: #8a8d9c;
       height: 55px;
 
       img {
+        max-width: 100%;
         width: 39px;
         height: 36px;
         margin-left: 10px;
