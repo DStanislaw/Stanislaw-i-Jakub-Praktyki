@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @font-face {
-  font-family: Mertropolis-Bold;
-  src: url(../IMG/etap_01/fonts/Metropolis-Bold.otf);
+  font-family: "Metropolis";
+  src: url("../IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf"), url("../IMG/etap_01/fonts/Metropolis-Regular.otf ") format("otf"); /* Wspieraj różne formaty */
 }
 .header {
   border: 0.5px solid #8a8d9c;
@@ -24,6 +25,7 @@
 }
 .header .nav {
   justify-content: space-around;
+  font-family: "CustomFont", sans-serif;
   width: 100vw;
   display: flex;
 }
@@ -42,6 +44,7 @@
   height: 28px;
 }
 .header .nav .phoneE span {
+  font-family: "Metropolis", sans-serif;
   width: 67px;
   height: 14px;
   text-align: left;
@@ -66,6 +69,7 @@
   height: 27px;
 }
 .header .nav .star span {
+  font-family: "Metropolis", sans-serif;
   margin-left: 17.14px;
   width: 72px;
   height: 14px;
@@ -92,6 +96,7 @@
   height: 29px;
 }
 .header .nav .person span {
+  font-family: "Metropolis", sans-serif;
   margin-top: 7px;
   font-size: 18px;
   margin-left: 18.67px;
@@ -156,6 +161,13 @@
 }
 .header .nav .cart .KOSZYK_ILOSC_TEKST {
   position: absolute;
+  top: 12.2px;
+  background: #9BCB3B 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+}
+.header .nav .cart .KOSZYK_ILOSC_TEKST {
+  position: absolute;
   top: 11.1px;
   right: 199px;
   text-align: left;
@@ -175,7 +187,17 @@
   background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.header .nav .cart .cena {
+.header .nav .LINIA {
+  margin-left: 15px;
+  position: static;
+  display: flex;
+  right: 10px;
+  width: 1px;
+  height: 41px;
+  background: #e1e2e8 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.header .nav .cena {
   width: 80px;
   height: 14px;
   text-align: left;
@@ -184,7 +206,7 @@
   color: #111111;
   opacity: 1;
 }
-.header .nav .cart .ZIELONE_POLE_STRZALKA {
+.header .nav .ZIELONE_POLE_STRZALKA {
   top: 27px;
   left: 1855px;
   width: 35px;
@@ -219,11 +241,10 @@
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f3f4 0% 0% no-repeat padding-box;
+  font-family: "CustomFont", sans-serif;
 }
 body .image-container {
+  display: flex;
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
@@ -235,6 +256,7 @@ body .image-container {
   opacity: 1;
 }
 body .image-container .image-wrapper {
+  display: flex;
   position: relative;
   display: inline-block;
 }

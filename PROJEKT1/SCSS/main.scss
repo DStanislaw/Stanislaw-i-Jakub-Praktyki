@@ -1,4 +1,13 @@
 $border-color: #8a8d9c;
+@font-face {
+  font-family: 'Metropolis'; 
+  src: url('../IMG/etap_01/fonts/Metropolis-Bold.otf') format('otf'), /* Ścieżka do czcionki */
+       url('../IMG/etap_01/fonts/Metropolis-Regular.otf ') format('otf');  /* Wspieraj różne formaty */
+ 
+}
+
+
+ 
 
 .header {
   border: 0.5px solid $border-color;
@@ -24,6 +33,7 @@ $border-color: #8a8d9c;
 
   .nav {
     justify-content: space-around;
+    font-family: 'CustomFont', sans-serif;
     
     
     width: 100vw;
@@ -46,6 +56,7 @@ $border-color: #8a8d9c;
       }
 
       span {
+        font-family: 'Metropolis', sans-serif;
         width: 67px;
         height: 14px;
         text-align: left;
@@ -73,6 +84,7 @@ $border-color: #8a8d9c;
       }
 
       span {
+        font-family: 'Metropolis', sans-serif;
         margin-left: 17.14px;
         width: 72px;
         height: 14px;
@@ -102,6 +114,7 @@ $border-color: #8a8d9c;
       }
 
       span {
+        font-family: 'Metropolis', sans-serif;
         margin-top: 7px;
         font-size: 18px;
         margin-left: 18.67px;
@@ -311,11 +324,14 @@ $border-color: #8a8d9c;
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f3f4 0% 0% no-repeat padding-box;
+ 
+  font-family: 'CustomFont', sans-serif;
+  
 
   .image-container {
+    
+    
+    display: flex;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -329,6 +345,7 @@ body {
     opacity: 1;
 
     .image-wrapper {
+      display: flex;
       position: relative;
       display: inline-block;
 
