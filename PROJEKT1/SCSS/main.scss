@@ -69,7 +69,6 @@ $border-color: #8a8d9c;
         text-transform: uppercase;
         opacity: 1;
         margin-left: 17.14px;
-        
       }
     }
 
@@ -117,7 +116,6 @@ $border-color: #8a8d9c;
       }
 
       span {
-        
         font-size: 18px;
         margin-left: 18.67px;
         width: 120px;
@@ -135,7 +133,7 @@ $border-color: #8a8d9c;
       margin-top: 12.5px;
       margin-bottom: 12.5px;
       margin-left: 62px;
-      
+
       border: 1px solid #e1e2e8;
       opacity: 1;
       display: flex;
@@ -271,7 +269,6 @@ $border-color: #8a8d9c;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
-  
 
   ul {
     display: flex; // Ustaw elementy w poziomej linii
@@ -291,11 +288,11 @@ $border-color: #8a8d9c;
 
     a {
       text-align: left;
-font: normal normal bold 14px/14px Metropolis;
-letter-spacing: -0.28px;
-color: #111111;
-text-transform: uppercase;
-opacity: 1;
+      font: normal normal bold 14px/14px Metropolis;
+      letter-spacing: -0.28px;
+      color: #111111;
+      text-transform: uppercase;
+      opacity: 1;
       text-decoration: none;
       color: #000000;
       font-family: "Metropolis", sans-serif;
@@ -337,8 +334,6 @@ opacity: 1;
   }
 }
 
-
-
 body {
   margin: 0;
 
@@ -356,35 +351,25 @@ body {
     background: transparent url("img/Group 40.png") 0% 0% no-repeat padding-box;
     opacity: 1;
 
-
     .button-overlay {
       position: absolute;
       top: 400px; /* Dopasuj, aby było zgodne z obrazem */
       margin-left: 127px; /* Wyrównanie z tekstem */
-      
+
       .cta-button {
         text-decoration: none;
-        
-        padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
-        background: #F74137 0% 0% no-repeat padding-box;
-         opacity: 1;
-         text-align: center;
-font: normal normal bold 14px/17px Metropolis;
-letter-spacing: -0.28px;
-color: #FFFFFF;
 
-opacity: 1;
-        
-        
-       
-        
-        
-       
-        
-        
+        padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+        background: #f74137 0% 0% no-repeat padding-box;
+        opacity: 1;
+        text-align: center;
+        font: normal normal bold 14px/17px Metropolis;
+        letter-spacing: -0.28px;
+        color: #ffffff;
+
+        opacity: 1;
       }
     }
-    
 
     .image-wrapper {
       display: flex;
@@ -435,8 +420,6 @@ opacity: 1;
     }
 
     .text-overlay2 {
-      
-      
       text-align: left;
       font-family: "Metropolis-regular", sans-serif;
       letter-spacing: 0px;
@@ -455,12 +438,9 @@ opacity: 1;
       }
     }
 
-
-
     .text-overlay3 {
-      
       text-align: left;
-      
+
       letter-spacing: -0.44px;
       color: #ffffff;
       opacity: 1;
@@ -468,151 +448,208 @@ opacity: 1;
       top: 294px;
       margin-left: 127px;
       width: 371px;
-height: 74px;
-     
-      
-      
+      height: 74px;
 
-letter-spacing: -0.44px;
-color: #FFFFFF;
-opacity: 1;
+      letter-spacing: -0.44px;
+      color: #ffffff;
+      opacity: 1;
 
       p {
         margin: 0;
         font: normal normal normal 22px/26px Metropolis;
-       
-      }
-
-
-
-
-
-      }
-
-
-      
-    }
-  }
-
-  .ZDJECIA_OBOK_3 {
-    display: flex;
-    gap: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 1860px;
-    height: 400px;
-
-    img.ZDJECIE_OBOK1 {
-    }
-
-    .ZDJ3OBOK_1 {
-      position: absolute;
-      text-align: left;
-
-      p {
-      }
-    }
-
-    .ZDJ3OBOK_2 {
-      position: absolute;
-      text-align: left;
-
-      p {
-      }
-    }
-
-    .ZDJ3OBOK_3 {
-      position: absolute;
-      text-align: left;
-
-      p {
       }
     }
   }
+}
 
-  .produkty {
-    border-radius: 2px;
-    width: 1920px;
-    height: 851px;
-    border: 1px, red;
-    background-color: red($color: #000000);
+.ZDJECIA_OBOK_3 {
+  display: flex;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1860px;
+  height: 400px;
 
-    .text_products {
-      text-align: center;
-      font: normal normal bold 44px/200px Metropolis;
-      letter-spacing: 0px;
-      color: #111111;
-      opacity: 1;
-    }
-
-    .red_line {
-      width: 60px;
-      height: 3px;
-      background: #f74137 0% 0% no-repeat padding-box;
-      opacity: 1;
-      position: relative;
-      align-items: center;
-      top: -70px;
-      right: -920px;
-    }
-
-    .box_all {
-      box1 {
-      }
-    }
+  img.ZDJECIE_OBOK1 {
   }
 
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2b2b2b;
-    color: white;
-    padding: 30px 10px;
-    flex-wrap: wrap;
-  }
+  .ZDJ3OBOK_1 {
+    position: absolute;
 
-  .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 10px;
+    margin-left: 79px;
     text-align: left;
+    font: normal normal bold 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    width: 352px;
+    height: 44px;
+
+    p {
+    }
+  }
+  .zdj3obok_1_1{
+    position: absolute;
+    margin-left: 79px;
+    text-align: left;
+    margin-top: 50px;;
+    width: 242px;
+height: 44px;
+font: normal normal 300 44px/200px Metropolis;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+
+
   }
 
-  .footer-section h4 {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: white;
-    text-transform: uppercase;
-    position: relative;
-  }
-
-  .footer-section h4::after {
-    content: "";
-    display: block;
-    width: 443px;
-    height: 2px;
-    background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
-    margin-top: 5px;
-  }
-
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .footer-section ul li {
-    margin-bottom: 8px;
+  .ZDJ3OBOK_2 {
+    position: absolute;
+    text-align: left;
+    margin-left: 709px;
     
+font: normal normal bold 44px/200px Metropolis;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+width: 367px;
+height: 44px;
+
+
+    p {
+    }
   }
-  a .footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
+  .zdj3obok_1_2{
+    position: absolute;
+    margin-left: 709px;
+    text-align: left;
+    margin-top: 50px;
+    width: 242px;
+height: 44px;
+font: normal normal  44px/200px Metropolis;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+
+
   }
 
-  .footer-section ul li a:hover {
-    color: red;
+
+  .ZDJ3OBOK_3 {
+    position: absolute;
+    
+    margin-left: 1339px;
+    text-align: left;
+font: normal normal bold 44px/200px Metropolis;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+width: 244px;
+height: 44px;
+
+    p {
+    }
   }
 
+
+  .zdj3obok_1_3{
+    position: absolute;
+    margin-left: 1339px;
+    text-align: left;
+    margin-top: 50px;
+    width: 242px;
+height: 44px;
+font: normal normal 300 44px/200px Metropolis;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+
+
+  }
+
+}
+
+.produkty {
+  border-radius: 2px;
+  width: 1920px;
+  height: 851px;
+  border: 1px, red;
+  background-color: red($color: #000000);
+
+  .text_products {
+    text-align: center;
+    font: normal normal bold 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+  }
+
+  .red_line {
+    width: 60px;
+    height: 3px;
+    background: #f74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    align-items: center;
+    top: -70px;
+    right: -920px;
+  }
+
+  .box_all {
+    box1 {
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: "";
+  display: block;
+  width: 443px;
+  height: 2px;
+  background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
+  margin-top: 5px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+a .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
