@@ -136,7 +136,7 @@ $border-color: #8a8d9c;
       align-items: center;
       gap: 10px;
       position: sticky;
-      width: 254px;
+      width: 274px;
       height: 55px;
 
       img {
@@ -150,6 +150,7 @@ $border-color: #8a8d9c;
         .KOSZ_CENA {
           flex-direction: column;
         }
+
         display: flex;
 
         align-items: center;
@@ -159,7 +160,7 @@ $border-color: #8a8d9c;
         }
         .SPAN {
           font-size: 18px;
-          width: 103px;
+          width: 20px;
           height: 14px;
           text-align: left;
           font: normal normal bold 14px/14px Metropolis;
@@ -174,9 +175,9 @@ $border-color: #8a8d9c;
           
         position: absolute; 
 
-        top: 11px; 
+        top: 10px; 
 
-        right: 190px; 
+        right: 194px; 
 
         
 
@@ -214,9 +215,9 @@ $border-color: #8a8d9c;
         .KOSZYK_ILOSC_TEKST{
           position: absolute; 
 
-        top: 12.2px; 
+        top: 11.1px; 
 
-        right: 195px; 
+        right: 199px; 
 
       
 
@@ -249,6 +250,23 @@ $border-color: #8a8d9c;
           letter-spacing: -0.28px;
           color: #111111;
           opacity: 1;
+
+
+        }
+        .ZIELONE_POLE_STRZALKA{
+
+          top: 27px;
+          left: 1855px;
+          width: 35px;
+           height: 55px;
+
+/* UI Properties */
+
+          background: #9BCB3B 0% 0% no-repeat padding-box;
+            opacity: 1;
+
+
+
         }
       }
     }
