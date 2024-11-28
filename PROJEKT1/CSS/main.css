@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Metropolis";
-  src: url("../IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf");
-  font-weight: normal;
-  font-style: normal bold;
+  src: url("./IMG/etap_01/fonts/Metropolis-Bold.otf") format("otf");
+  font-style: normal;
 }
 @font-face {
   font-family: "Metropolis-regular";
@@ -32,7 +31,6 @@
 }
 .header .nav {
   justify-content: space-around;
-  font-family: "CustomFont", sans-serif;
   width: 100vw;
   display: flex;
 }
@@ -43,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 762px;
+  margin-left: 722px;
 }
 .header .nav .phoneE img {
   max-width: 100%;
@@ -51,7 +49,6 @@
   height: 28px;
 }
 .header .nav .phoneE span {
-  font-family: "Metropolis", sans-serif;
   width: 67px;
   height: 14px;
   text-align: left;
@@ -76,7 +73,6 @@
   height: 27px;
 }
 .header .nav .star span {
-  font-family: "Metropolis", sans-serif;
   margin-left: 17.14px;
   width: 72px;
   height: 14px;
@@ -103,7 +99,6 @@
   height: 29px;
 }
 .header .nav .person span {
-  font-family: "Metropolis", sans-serif;
   margin-top: 7px;
   font-size: 18px;
   margin-left: 18.67px;
@@ -125,7 +120,7 @@
   align-items: center;
   gap: 10px;
   position: sticky;
-  width: 274px;
+  width: 269px;
   height: 55px;
 }
 .header .nav .cart img {
@@ -144,10 +139,9 @@
 }
 .header .nav .cart .SPAN {
   font-size: 18px;
-  width: 20px;
+  width: 27px;
   height: 14px;
   text-align: left;
-  font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -218,7 +212,6 @@
   left: 1855px;
   width: 35px;
   height: 55px;
-  /* UI Properties */
   background: #9BCB3B 0% 0% no-repeat padding-box;
   opacity: 1;
 }
