@@ -122,8 +122,8 @@ $border-color: #FFFFFF;
       gap: 10px;
 
       img {
-        width: 100vw; 
-        height: 100vh; 
+        width: 100vw; // Pełna szerokość ekranu
+        height: 100vh; // Pełna wysokość ekranu
         object-fit: cover;
         width: 25px;
         height: 29px;
@@ -277,7 +277,7 @@ $border-color: #FFFFFF;
       width: 35px;
       height: 55px;
 
-     
+      /* UI Properties */
 
       background: #9bcb3b 0% 0% no-repeat padding-box;
       opacity: 1;
@@ -286,25 +286,25 @@ $border-color: #FFFFFF;
 }
 
 .PASEK2 {
-  background: #ffffff 0% 0% no-repeat padding-box; 
+  background: #ffffff 0% 0% no-repeat padding-box; // Tło paska
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
 
   ul {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: flex-start; 
-    align-items: center; 
+    display: flex; // Ustaw elementy w poziomej linii
+    flex-wrap: wrap; // Pozwala zawijać elementy na mniejszych ekranach
+    justify-content: flex-start; // Wyrównuje elementy do lewej
+    align-items: center; // Ustawia elementy w pionie na środku
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 7%; 
+    gap: 7%; // Dynamiczne odstępy między elementami (zamiast stałych px)
   }
 
   li {
-    flex: 1 1 auto; 
-    min-width: 150px; 
+    flex: 1 1 auto; // Elastyczna szerokość dla elementów listy
+    min-width: 150px; // Minimalna szerokość elementu
     text-align: center;
 
     a {
@@ -317,43 +317,43 @@ $border-color: #FFFFFF;
       text-decoration: none;
       color: #000000;
       font-family: "Metropolis-regular", sans-serif;
-      font-size: 1rem; 
-      white-space: nowrap; 
+      font-size: 1rem; // Dynamiczny rozmiar czcionki
+      white-space: nowrap; // Zapobiega zawijaniu tekstu
       font-style: normal;
         font-variant: normal;
         font-weight: bold;
     }
   }
 
-  
+  /* Media Queries: Dopasowanie do mniejszych ekranów */
   @media (max-width: 768px) {
     ul {
-      justify-content: center; 
-      gap: 10px; 
+      justify-content: center; // Centruj elementy na węższych ekranach
+      gap: 10px; // Zmniejsz odstępy między elementami
     }
 
     li {
-      flex: 1 1 45%; 
-      min-width: 120px; 
+      flex: 1 1 45%; // Elementy zajmują 45% szerokości (2 elementy w rzędzie)
+      min-width: 120px; // Minimalna szerokość elementu
     }
 
     a {
-      font-size: 0.9rem; 
+      font-size: 0.9rem; // Zmniejsz rozmiar czcionki
     }
   }
 
   @media (max-width: 480px) {
     ul {
-      flex-direction: column;
-      gap: 5px; 
+      flex-direction: column; // Elementy jeden pod drugim
+      gap: 5px; // Zmniejsz odstępy
     }
 
     li {
-      flex: 1 1 100%; 
+      flex: 1 1 100%; // Elementy zajmują 100% szerokości na bardzo małych ekranach
     }
 
     a {
-      font-size: 0.8rem;
+      font-size: 0.8rem; // Jeszcze mniejsza czcionka dla telefonów
     }
   }
 }
@@ -377,13 +377,13 @@ body {
 
     .button-overlay {
       position: absolute;
-      top: 400px; 
-      margin-left: 127px; 
+      top: 400px; /* Dopasuj, aby było zgodne z obrazem */
+      margin-left: 127px; /* Wyrównanie z tekstem */
 
       .cta-button {
         text-decoration: none;
 
-        padding: 21px 45px; 
+        padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
         background: #f74137 0% 0% no-repeat padding-box;
         opacity: 1;
         text-align: center;
@@ -406,7 +406,7 @@ body {
         height: auto;
       }
 
-      
+      // Gradient tylko na obrazie
       &::after {
         content: "";
         position: absolute;
@@ -419,7 +419,7 @@ body {
           rgba(0, 0, 0, 0.8),
           rgba(0, 0, 0, 0)
         );
-        pointer-events: none; 
+        pointer-events: none; // Gradient nie blokuje interakcji z obrazem
       }
     }
 
@@ -669,13 +669,15 @@ body {
         cursor: pointer;
         padding: 10px;
   
-       
+        &:hover {
+          color: #f00;
+        }
       }
   
       .carousel {
         display: flex;
-        gap: 21px;
-        overflow-x: auto; 
+        gap: 20px;
+        overflow-x: auto; // Pozwala przewijać karuzelę w poziomie
         scroll-behavior: smooth;
   
         .carousel-item {
@@ -692,8 +694,7 @@ body {
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           padding: 15px;
           text-align: center;
-          width: 306px;
-          height: 530px;
+          width: 200px;
   
           img.zarowka_1 {
             width: 100%;
@@ -703,25 +704,22 @@ body {
           }
   
           .description {
-            text-align: center;
-font: normal normal bold 14px/14px Metropolis;
-letter-spacing: -0.28px;
-color: #111111;
-text-transform: uppercase;
-opacity: 1;
+            font-size: 14px;
+            color: #333;
+            margin: 10px 0;
+            line-height: 1.4;
           }
   
           .price {
-            text-align: left;
-font: normal normal bold 14px/14px Metropolis;
-letter-spacing: -0.28px;
-color: #111111;
-opacity: 1;
+            font-weight: bold;
+            color: #f00;
+            font-size: 16px;
           }
         }
       }
     }
   }
+  
   
   
 }  
