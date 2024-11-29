@@ -1,4 +1,4 @@
-$border-color: #ffffff;
+$border-color: #FFFFFF;
 @font-face {
   font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-regular.otf") format("otf");
@@ -9,7 +9,7 @@ $border-color: #ffffff;
 
 @font-face {
   font-family: "Metropolis-regular";
-  src: url("../FONTS/fonts/Metropolis-regular.otf ") format("otf");
+  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
@@ -17,7 +17,7 @@ $border-color: #ffffff;
 
 @font-face {
   font-family: "Metropolis-thin";
-  src: url("../FONTS/fonts/Metropolis-Thin.otf") format("otf");
+  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("otf");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
@@ -56,6 +56,7 @@ $border-color: #ffffff;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
+  
 
     .phoneE {
       margin-top: 12.5px;
@@ -180,6 +181,7 @@ $border-color: #ffffff;
         width: 20px;
         height: 14px;
         text-align: left;
+        font-family: "Metropolis-regular", sans-serif;
         letter-spacing: -0.28px;
         color: #111111;
         text-transform: uppercase;
@@ -187,6 +189,7 @@ $border-color: #ffffff;
         font-style: normal;
         font-variant: normal;
         font-weight: bold;
+      
       }
 
       .KOSZ_ILOSC {
@@ -260,12 +263,13 @@ $border-color: #ffffff;
       width: 80px;
       height: 14px;
       text-align: left;
+      font-family: "Metropolis-regular", sans-serif;
       letter-spacing: -0.28px;
       color: #111111;
       opacity: 1;
       font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+        font-variant: normal;
+        font-weight: bold;
     }
     .ZIELONE_POLE_STRZALKA {
       top: 27px;
@@ -316,8 +320,8 @@ $border-color: #ffffff;
       font-size: 1rem; // Dynamiczny rozmiar czcionki
       white-space: nowrap; // Zapobiega zawijaniu tekstu
       font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+        font-variant: normal;
+        font-weight: bold;
     }
   }
 
@@ -383,12 +387,10 @@ body {
         background: #f74137 0% 0% no-repeat padding-box;
         opacity: 1;
         text-align: center;
-        font-family: "Metropolis-Thin", sans-serif;
+        font: normal normal bold 14px/17px Metropolis;
         letter-spacing: -0.28px;
         color: #ffffff;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
+
         opacity: 1;
       }
     }
@@ -434,8 +436,8 @@ body {
       height: 44px;
       font-size: 20px;
       font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+        font-variant: normal;
+        font-weight: bold;
 
       p {
         margin: 0;
@@ -446,6 +448,7 @@ body {
 
     .text-overlay2 {
       text-align: left;
+      font-family: "Metropolis-Thin", sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -455,19 +458,20 @@ body {
       width: 571px;
       height: 44px;
       font-size: 44px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
 
       p {
         margin: 0;
         font-size: 44px;
-        font-family: "Metropolis-Thin", sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 300;
+        
       }
     }
 
     .text-overlay3 {
       text-align: left;
+
       letter-spacing: -0.44px;
       color: #ffffff;
       opacity: 1;
@@ -476,58 +480,17 @@ body {
       margin-left: 127px;
       width: 371px;
       height: 74px;
+
       letter-spacing: -0.44px;
       color: #ffffff;
       opacity: 1;
+      font-family: "Metropolis-thin", sans-serif;
 
       p {
         margin: 0;
         font-size: 22px;
-        font-family: "Metropolis-thin", sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
       }
     }
-  }
-}
-
-.image-wrapper1 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7);
-  }
-}
-
-.image-wrapper2 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7);
-  }
-}
-
-.image-wrapper3 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7);
   }
 }
 
@@ -544,9 +507,10 @@ body {
 
   .ZDJ3OBOK_1 {
     position: absolute;
+
     margin-left: 79px;
-    margin-top: 72px;
     text-align: left;
+    font: normal normal bold 44px/200px Metropolis;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -554,37 +518,27 @@ body {
     height: 44px;
 
     p {
-      font-size: 44px;
-      font-family: "Metropolis-regular", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
     }
   }
   .zdj3obok_1_1 {
     position: absolute;
     margin-left: 79px;
     text-align: left;
-    margin-top: 126px;
+    margin-top: 50px;
     width: 242px;
     height: 44px;
+    font: normal normal 300 44px/200px Metropolis;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    p {
-      font-size: 44px;
-      font-family: "Metropolis-thin", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 100;
-    }
   }
 
   .ZDJ3OBOK_2 {
     position: absolute;
     text-align: left;
-    padding-left: 679px;
-    padding-top: 72px;
+    margin-left: 709px;
+
+    font: normal normal bold 44px/200px Metropolis;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -592,61 +546,49 @@ body {
     height: 44px;
 
     p {
-      font-size: 44px;
-      font-family: "Metropolis-regular", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
     }
   }
-}
-.zdj3obok_1_2 {
-  position: absolute;
-  padding-left: 679px;
-  text-align: left;
-  margin-top: 126px;
-  width: 242px;
-  height: 44px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-
-  p {
-    font-size: 44px;
-    font-family: "Metropolis-thin", sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 100;
+  .zdj3obok_1_2 {
+    position: absolute;
+    margin-left: 709px;
+    text-align: left;
+    margin-top: 50px;
+    width: 242px;
+    height: 44px;
+    font: normal normal 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
   }
-}
 
-.ZDJ3OBOK_3 {
-  position: absolute;
+  .ZDJ3OBOK_3 {
+    position: absolute;
 
-  margin-left: 1339px;
-  text-align: left;
-  font: normal normal bold 44px/200px Metropolis;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-  width: 244px;
-  height: 44px;
+    margin-left: 1339px;
+    text-align: left;
+    font: normal normal bold 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    width: 244px;
+    height: 44px;
 
-  p {
+    p {
+    }
   }
-}
 
-.zdj3obok_1_3 {
-  position: absolute;
-  margin-left: 1339px;
-  text-align: left;
-  margin-top: 50px;
-  width: 242px;
-  height: 44px;
-  font: normal normal 300 44px/200px Metropolis;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
+  .zdj3obok_1_3 {
+    position: absolute;
+    margin-left: 1339px;
+    text-align: left;
+    margin-top: 50px;
+    width: 242px;
+    height: 44px;
+    font: normal normal 300 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
 }
 
 .produkty {
@@ -675,12 +617,16 @@ body {
     right: -920px;
   }
 
-  .border_line {
-    background: #e1e2e8 0% 0% no-repeat padding-box;
-    width: 1980px;
-    height: 1px;
-    position: absolute;
-    margin-top: -70px;
+  .border_line  {
+
+
+      
+      background: #E1E2E8 0% 0% no-repeat padding-box;
+      width: 1980px;
+      height: 1px;
+      position: absolute;
+      margin-top: -70px;
+
   }
 
   .box_all {
@@ -690,7 +636,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     position: absolute;
-
+  
     .box1 img,
     .box2 img,
     .box3 img,
@@ -707,7 +653,7 @@ body {
       height: 270px;
     }
   }
-}
+}  
 
 .footer {
   display: flex;
