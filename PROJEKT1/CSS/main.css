@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 .header {
-  border: 0.5px solid #8a8d9c;
+  border: 0.5px solid #FFFFFF;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -495,6 +495,37 @@ body .image-container .text-overlay3 p {
   top: -70px;
   right: -920px;
 }
+.produkty .border_line {
+  background: #E1E2E8 0% 0% no-repeat padding-box;
+  width: 1980px;
+  height: 1px;
+  position: absolute;
+  margin-top: -70px;
+}
+.produkty .box_all {
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+}
+.produkty .box_all .box1 img,
+.produkty .box_all .box2 img,
+.produkty .box_all .box3 img,
+.produkty .box_all .box4 img,
+.produkty .box_all .box5 img,
+.produkty .box_all .box6 img,
+.produkty .box_all .box7 img {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 270px;
+  height: 270px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

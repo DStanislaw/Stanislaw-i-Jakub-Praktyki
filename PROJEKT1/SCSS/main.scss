@@ -1,4 +1,4 @@
-$border-color: #8a8d9c;
+$border-color: #FFFFFF;
 @font-face {
   font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-regular.otf") format("otf");
@@ -591,11 +591,43 @@ body {
     right: -920px;
   }
 
+  .border_line  {
+
+
+      
+      background: #E1E2E8 0% 0% no-repeat padding-box;
+      width: 1980px;
+      height: 1px;
+      position: absolute;
+      margin-top: -70px;
+
+  }
+
   .box_all {
-    box1 {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+  
+    .box1 img,
+    .box2 img,
+    .box3 img,
+    .box4 img,
+    .box5 img,
+    .box6 img,
+    .box7 img {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 270px;
+      height: 270px;
     }
   }
-}
+}  
 
 .footer {
   display: flex;
