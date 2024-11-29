@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-regular.otf") format("otf");
@@ -234,7 +233,6 @@
   left: 1855px;
   width: 35px;
   height: 55px;
-  /* UI Properties */
   background: #9bcb3b 0% 0% no-repeat padding-box;
   opacity: 1;
 }
@@ -244,7 +242,6 @@
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
-  /* Media Queries: Dopasowanie do mniejszych ekranów */
 }
 .PASEK2 ul {
   display: flex;
@@ -320,12 +317,12 @@ body .image-container {
 }
 body .image-container .button-overlay {
   position: absolute;
-  top: 400px; /* Dopasuj, aby było zgodne z obrazem */
-  margin-left: 127px; /* Wyrównanie z tekstem */
+  top: 400px;
+  margin-left: 127px;
 }
 body .image-container .button-overlay .cta-button {
   text-decoration: none;
-  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  padding: 21px 45px;
   background: #f74137 0% 0% no-repeat padding-box;
   opacity: 1;
   text-align: center;
@@ -524,28 +521,81 @@ body .image-container .text-overlay3 p {
   position: absolute;
   margin-top: -70px;
 }
-.produkty .box_all {
-  justify-content: space-between;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  position: absolute;
+.produkty .recommended-products {
+  text-align: center;
+  margin: 20px auto;
 }
-.produkty .box_all .box1 img,
-.produkty .box_all .box2 img,
-.produkty .box_all .box3 img,
-.produkty .box_all .box4 img,
-.produkty .box_all .box5 img,
-.produkty .box_all .box6 img,
-.produkty .box_all .box7 img {
+.produkty .recommended-products h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+.produkty .recommended-products h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f00;
+  margin: 10px auto 0;
+}
+.produkty .recommended-products .box_all {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
   align-items: center;
-  width: 270px;
-  height: 270px;
+  gap: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.produkty .recommended-products .box_all button.prev,
+.produkty .recommended-products .box_all button.next {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+.produkty .recommended-products .box_all .carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.produkty .recommended-products .box_all .carousel .carousel-item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produkty .recommended-products .box_all .carousel .product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 306px;
+  height: 530px;
+}
+.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1 {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.produkty .recommended-products .box_all .carousel .product-card .description {
+  text-align: center;
+  font: normal normal bold 14px/14px Metropolis;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.produkty .recommended-products .box_all .carousel .product-card .price {
+  text-align: left;
+  font: normal normal bold 14px/14px Metropolis;
+  letter-spacing: -0.28px;
+  color: #111111;
+  opacity: 1;
 }
 
 .footer {
