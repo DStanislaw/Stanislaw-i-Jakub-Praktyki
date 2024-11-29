@@ -643,30 +643,49 @@ body .image-container .text-overlay3 p {
 }
 .produkty .recommended-products .box_all button.prev,
 .produkty .recommended-products .box_all button.next {
-  background-color: transparent;
+  background-color: #ccc;
   border: none;
-  font-size: 24px;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 .produkty .recommended-products .box_all button.prev:hover,
 .produkty .recommended-products .box_all button.next:hover {
-  color: #f00;
+  background-color: #aaa;
 }
-.produkty .recommended-products .box_all .carousel {
+.produkty .recommended-products .prev {
+  position: absolute;
+  margin-left: 30px;
+}
+.produkty .recommended-products .next {
+  margin-left: 1840px;
+  position: absolute;
+}
+.produkty .recommended-products .carousel {
+  margin-left: 30px;
+  scrollbar-width: none;
+  width: 1860px;
   display: flex;
   gap: 20px;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
-.produkty .recommended-products .box_all .carousel .carousel-item {
+.produkty .recommended-products .carousel .carousel-item {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -15px;
 }
-.produkty .recommended-products .box_all .carousel .product-card {
+.produkty .recommended-products .carousel .product-card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -674,22 +693,25 @@ body .image-container .text-overlay3 p {
   padding: 15px;
   text-align: center;
   width: 330px;
-  height: 530px;
+  height: 510px;
 }
-.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1 {
+.produkty .recommended-products .carousel .product-card img.zarowka_1 {
   height: auto;
   margin-bottom: 10px;
   margin-top: 100px;
   width: 240px;
   height: 240px;
 }
-.produkty .recommended-products .box_all .carousel .product-card .description {
+.produkty .recommended-products .carousel .product-card .description {
   font-size: 14px;
   color: #333;
   margin: 10px 0;
   line-height: 1.4;
 }
-.produkty .recommended-products .box_all .carousel .product-card .price {
+.produkty .recommended-products .carousel .product-card .description2 {
+  margin-top: -10px;
+}
+.produkty .recommended-products .carousel .product-card .price {
   text-align: left;
   font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
