@@ -221,6 +221,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
+  margin-right: -15px;
   /* Media Queries: Dopasowanie do mniejszych ekranów */
 }
 .PASEK2 ul {
@@ -231,7 +232,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap: 10px;
+  gap: 105px;
 }
 .PASEK2 li {
   flex: 1 1 auto;

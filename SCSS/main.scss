@@ -55,9 +55,8 @@ $border-color: #ffffff;
     width: 100vw;
     display: flex;
     font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
- 
+    font-variant: normal;
+    font-weight: bold;
 
     .phoneE {
       margin-top: 12.5px;
@@ -154,19 +153,19 @@ $border-color: #ffffff;
       max-width: 320px; // Ograniczenie szerokości dla responsywności
       height: 55px;
       position: sticky;
-    
+
       img {
         width: 39px;
         height: 36px;
         margin-left: 10px;
       }
-    
+
       .koszyk-info {
         display: flex;
         flex: 1; // Zajmuje dostępne miejsce
         align-items: center;
         gap: 10px;
-    
+
         .KOSZ_ILOSC_WRAPPER {
           position: relative;
           .KOSZ_ILOSC {
@@ -184,19 +183,19 @@ $border-color: #ffffff;
             margin-left: -20px;
           }
         }
-    
+
         .LINIA {
           width: 1px;
           height: 41px;
           background: #e1e2e8;
         }
-    
+
         .KOSZ_CENA {
           flex: 1; // Pozwala rozciągnąć sekcję
           display: flex;
           flex-direction: column;
           gap: 2px;
-    
+
           .KOSZ_NAZWA {
             font-size: 14px;
             font-family: "Metropolis", sans-serif;
@@ -206,7 +205,7 @@ $border-color: #ffffff;
             letter-spacing: -0.28px;
             color: #111111;
           }
-    
+
           .CENA {
             font-size: 16px; // Większy rozmiar dla ceny
             font-family: 'Metropolis-regular', sans-serif;
@@ -220,38 +219,37 @@ $border-color: #ffffff;
         }
       }
     }
-    
-      .ZIELONE_POLE_STRZALKA {
-        width: 35px;
-        height: 55px;
-        background: #9bcb3b;
-      }
+
+    .ZIELONE_POLE_STRZALKA {
+      width: 35px;
+      height: 55px;
+      background: #9bcb3b;
     }
-    
-    // Dodaj media queries dla responsywności
-    @media screen and (max-width: 400px) {
-      .cart {
+  }
+
+  // Dodaj media queries dla responsywności
+  @media screen and (max-width: 400px) {
+    .cart {
+      flex-direction: column;
+      height: auto;
+
+      .koszyk-info {
         flex-direction: column;
-        height: auto;
-    
-        .koszyk-info {
-          flex-direction: column;
-          align-items: flex-start;
-    
-          .KOSZ_CENA {
-            .CENA {
-              font-size: 14px; // Zmniejsz rozmiar tekstu na mniejszych ekranach
-            }
+        align-items: flex-start;
+
+        .KOSZ_CENA {
+          .CENA {
+            font-size: 14px; // Zmniejsz rozmiar tekstu na mniejszych ekranach
           }
         }
-    
-        .ZIELONE_POLE_STRZALKA {
-          width: 100%;
-          height: 35px;
-        }
+      }
+
+      .ZIELONE_POLE_STRZALKA {
+        width: 100%;
+        height: 35px;
       }
     }
-    
+  }
 }
 
 .PASEK2 {
@@ -259,6 +257,7 @@ $border-color: #ffffff;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
+  margin-right: -15px;
 
   ul {
     display: flex; // Ustaw elementy w poziomej linii
@@ -268,7 +267,7 @@ $border-color: #ffffff;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 10px; 
+    gap: 105px;
   }
 
   li {
@@ -404,7 +403,6 @@ body {
       width: 514px;
       height: 44px;
       font-size: 20px;
-      
 
       p {
         font-family: "Metropolis", sans-serif;
@@ -412,8 +410,8 @@ body {
         font-size: 44px;
         line-height: 200px;
         font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+        font-variant: normal;
+        font-weight: bold;
       }
     }
 
@@ -428,7 +426,6 @@ body {
       width: 571px;
       height: 44px;
       font-size: 44px;
-
 
       p {
         font-family: "Metropolis-thin", sans-serif;
@@ -570,7 +567,6 @@ body {
   width: 1920px;
   height: 851px;
   border: 1px, red;
-  
 
   .text_products {
     text-align: center;
