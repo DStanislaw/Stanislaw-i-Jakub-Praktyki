@@ -556,7 +556,7 @@ body .image-container .text-overlay3 p {
 }
 .produkty .recommended-products .box_all .carousel {
   display: flex;
-  gap: 20px;
+  gap: 21px;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
