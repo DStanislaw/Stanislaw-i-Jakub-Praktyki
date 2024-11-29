@@ -614,7 +614,7 @@ body {
         margin: 10px auto 0;
       }
     }
-
+  
     .box_all {
       display: flex;
       align-items: center;
@@ -624,22 +624,44 @@ body {
 
       button.prev,
       button.next {
-        background-color: transparent;
+        
+        background-color: #ccc; // Szary kolor tła
         border: none;
-        font-size: 24px;
+        font-size: 14px;
+        font-weight: bold;
         cursor: pointer;
-        padding: 10px;
-
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+  
         &:hover {
-          color: #f00;
+          background-color: #aaa; // Ciemniejszy szary podczas najechania
         }
+      }
+      }
+
+      .prev{
+        position: absolute;
+        margin-left: 30px;
+      }
+      .next{
+        margin-left: 1840px;
+        position: absolute;
       }
 
       .carousel {
+        margin-left: 30px;
+        scrollbar-width: none;
+        width: 1860px;
         display: flex;
         gap: 20px;
         overflow-x: auto; // Pozwala przewijać karuzelę w poziomie
-        scroll-behavior: smooth;
+        scrollbar-width: none;
 
         .carousel-item {
           flex: 0 0 auto;
@@ -657,7 +679,7 @@ body {
           padding: 15px;
           text-align: center;
           width: 330px;
-          height: 530px;
+          height: 510px;
 
           img.zarowka_1 {
             height: auto;
@@ -674,6 +696,17 @@ body {
             line-height: 1.4;
           }
 
+          .description2{
+
+            margin-top: -10px;
+
+          }
+
+          .old_price{
+
+
+          }
+
           .price {
             text-align: left;
             font: normal normal bold 14px/14px Metropolis;
@@ -685,7 +718,7 @@ body {
       }
     }
   }
-}
+
 
 .footer {
   display: flex;
