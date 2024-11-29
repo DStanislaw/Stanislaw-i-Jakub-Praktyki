@@ -1,15 +1,17 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
-  src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
-  font-weight: normal;
+  src: url("/FONTS/fonts/Metropolis-regular.otf") format("otf");
   font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 @font-face {
   font-family: "Metropolis-regular";
   src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
-  font-weight: normal;
   font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
 }
 .header {
   border: 0.5px solid #8a8d9c;
@@ -34,7 +36,7 @@
 }
 .header .nav {
   justify-content: space-around;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-regular", sans-serif;
   width: 100vw;
   display: flex;
 }
@@ -206,7 +208,7 @@
   width: 80px;
   height: 14px;
   text-align: left;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-regular", sans-serif;
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
@@ -252,7 +254,7 @@
   opacity: 1;
   text-decoration: none;
   color: #000000;
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-regular", sans-serif;
   font-size: 1rem;
   white-space: nowrap;
 }
@@ -334,9 +336,8 @@ body .image-container .image-wrapper::after {
   pointer-events: none;
 }
 body .image-container .text-overlay {
-  font: normal normal bold 44px/200px Metropolis;
-  text-align: left;
   font-family: "Metropolis", sans-serif;
+  text-align: left;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -350,6 +351,7 @@ body .image-container .text-overlay {
 body .image-container .text-overlay p {
   margin: 0;
   font-size: 44px;
+  line-height: 200px;
 }
 body .image-container .text-overlay2 {
   text-align: left;
@@ -362,11 +364,14 @@ body .image-container .text-overlay2 {
   margin-left: 127px;
   width: 571px;
   height: 44px;
-  font-size: 20px;
+  font-size: 44px;
 }
 body .image-container .text-overlay2 p {
   margin: 0;
   font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
 }
 body .image-container .text-overlay3 {
   text-align: left;
@@ -381,10 +386,11 @@ body .image-container .text-overlay3 {
   letter-spacing: -0.44px;
   color: #ffffff;
   opacity: 1;
+  font-family: "Metropolis-thin", sans-serif;
 }
 body .image-container .text-overlay3 p {
   margin: 0;
-  font: normal normal normal 22px/26px Metropolis;
+  font-size: 22px;
 }
 
 .ZDJECIA_OBOK_3 {
@@ -415,7 +421,7 @@ body .image-container .text-overlay3 p {
   height: 44px;
   font: normal normal 300 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 {
@@ -424,7 +430,7 @@ body .image-container .text-overlay3 p {
   margin-left: 709px;
   font: normal normal bold 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   width: 367px;
   height: 44px;
@@ -438,7 +444,7 @@ body .image-container .text-overlay3 p {
   height: 44px;
   font: normal normal 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 {
@@ -447,7 +453,7 @@ body .image-container .text-overlay3 p {
   text-align: left;
   font: normal normal bold 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   width: 244px;
   height: 44px;
@@ -461,7 +467,7 @@ body .image-container .text-overlay3 p {
   height: 44px;
   font: normal normal 300 44px/200px Metropolis;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
