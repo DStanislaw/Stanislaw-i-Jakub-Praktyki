@@ -8,8 +8,8 @@ $border-color: #ffffff;
 }
 
 @font-face {
-  font-family: "Metropolis-thin";
-  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("opentype");
+  font-family: "Metropolis-regular";
+  src: url("../FONTS/fonts/Metropolis-Regular.otf ") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -23,21 +23,8 @@ $border-color: #ffffff;
   font-weight: 300;
 }
 
-@font-face {
-  font-family: "Metropolis-thin2";
-  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("opentype");
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-}
 
-@font-face {
-  font-family: "Metropolis-regular";
-  src: url("../FONTS/fonts/Metropolis-regular.otf") format("opentype");
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
-}
+
 
 .header {
   border: 0.5px solid $border-color;
@@ -212,7 +199,9 @@ $border-color: #ffffff;
     
           .KOSZ_NAZWA {
             font-size: 14px;
-            font-family: "Metropolis-regular", sans-serif;
+            font-family: "Metropolis", sans-serif;
+            font-style: normal;
+            font-variant: normal;
             font-weight: bold;
             letter-spacing: -0.28px;
             color: #111111;
@@ -220,7 +209,10 @@ $border-color: #ffffff;
     
           .CENA {
             font-size: 16px; // Większy rozmiar dla ceny
-            font-weight: bold;
+            font-family: 'Metropolis-regular', sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
             text-align: left;
             white-space: nowrap; // Zapobiega łamaniu tekstu
             color: #111111;
@@ -450,8 +442,6 @@ body {
 
     .text-overlay3 {
       text-align: left;
-
-      letter-spacing: -0.44px;
       color: #ffffff;
       opacity: 1;
       position: absolute;
@@ -459,15 +449,19 @@ body {
       margin-left: 127px;
       width: 371px;
       height: 74px;
-
-      letter-spacing: -0.44px;
       color: #ffffff;
       opacity: 1;
-      font-family: "Metropolis-thin", sans-serif;
+      
 
       p {
         margin: 0;
         font-size: 22px;
+        font-family: "Metropolis-thin", sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: -1px;
+        line-height: 26px;
       }
     }
   }
