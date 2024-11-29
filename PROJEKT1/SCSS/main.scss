@@ -647,12 +647,72 @@ body {
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      flex-wrap: wrap;
-      align-items: center;
-      width: 270px;
-      height: 270px;
+      margin: 0 auto;
+      overflow: hidden;
+  
+      button.prev,
+      button.next {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+  
+       
+      }
+  
+      .carousel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto; 
+        scroll-behavior: smooth;
+  
+        .carousel-item {
+          flex: 0 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .product-card {
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          padding: 15px;
+          text-align: center;
+          width: 306px;
+          height: 530px;
+  
+          img.zarowka_1 {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+          }
+  
+          .description {
+            text-align: center;
+font: normal normal bold 14px/14px Metropolis;
+letter-spacing: -0.28px;
+color: #111111;
+text-transform: uppercase;
+opacity: 1;
+          }
+  
+          .price {
+            text-align: left;
+font: normal normal bold 14px/14px Metropolis;
+letter-spacing: -0.28px;
+color: #111111;
+opacity: 1;
+          }
+        }
+      }
     }
   }
+  
+  
 }  
 
 .footer {
