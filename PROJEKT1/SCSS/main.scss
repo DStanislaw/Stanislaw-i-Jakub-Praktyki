@@ -15,6 +15,14 @@ $border-color: #FFFFFF;
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "Metropolis-thin";
+  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("otf");
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
+
 .header {
   border: 0.5px solid $border-color;
   position: relative;
@@ -45,6 +53,10 @@ $border-color: #FFFFFF;
     width: 100vw;
 
     display: flex;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+  
 
     .phoneE {
       margin-top: 12.5px;
@@ -174,6 +186,10 @@ $border-color: #FFFFFF;
         color: #111111;
         text-transform: uppercase;
         opacity: 1;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+      
       }
 
       .KOSZ_ILOSC {
@@ -251,6 +267,9 @@ $border-color: #FFFFFF;
       letter-spacing: -0.28px;
       color: #111111;
       opacity: 1;
+      font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
     }
     .ZIELONE_POLE_STRZALKA {
       top: 27px;
@@ -300,6 +319,9 @@ $border-color: #FFFFFF;
       font-family: "Metropolis-regular", sans-serif;
       font-size: 1rem; // Dynamiczny rozmiar czcionki
       white-space: nowrap; // Zapobiega zawijaniu tekstu
+      font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
     }
   }
 
@@ -402,7 +424,7 @@ body {
     }
 
     .text-overlay {
-      font-family: "Metropolis", sans-serif;
+      font-family: "Metropolis-regular", sans-serif;
       text-align: left;
       letter-spacing: 0px;
       color: #ffffff;
@@ -413,6 +435,9 @@ body {
       width: 514px;
       height: 44px;
       font-size: 20px;
+      font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
 
       p {
         margin: 0;
@@ -423,7 +448,7 @@ body {
 
     .text-overlay2 {
       text-align: left;
-      font-family: "Metropolis-regular", sans-serif;
+      font-family: "Metropolis-Thin", sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -433,13 +458,14 @@ body {
       width: 571px;
       height: 44px;
       font-size: 44px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
 
       p {
         margin: 0;
         font-size: 44px;
-        font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
+        
       }
     }
 
