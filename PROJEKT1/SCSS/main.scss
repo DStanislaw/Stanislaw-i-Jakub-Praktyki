@@ -121,8 +121,8 @@ $border-color: #ffffff;
       gap: 10px;
 
       img {
-        width: 100vw; // Pełna szerokość ekranu
-        height: 100vh; // Pełna wysokość ekranu
+        width: 100vw; 
+        height: 100vh; 
         object-fit: cover;
         width: 25px;
         height: 29px;
@@ -273,7 +273,7 @@ $border-color: #ffffff;
       width: 35px;
       height: 55px;
 
-      /* UI Properties */
+     
 
       background: #9bcb3b 0% 0% no-repeat padding-box;
       opacity: 1;
@@ -282,25 +282,25 @@ $border-color: #ffffff;
 }
 
 .PASEK2 {
-  background: #ffffff 0% 0% no-repeat padding-box; // Tło paska
+  background: #ffffff 0% 0% no-repeat padding-box; 
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
 
   ul {
-    display: flex; // Ustaw elementy w poziomej linii
-    flex-wrap: wrap; // Pozwala zawijać elementy na mniejszych ekranach
-    justify-content: flex-start; // Wyrównuje elementy do lewej
-    align-items: center; // Ustawia elementy w pionie na środku
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: center; 
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 7%; // Dynamiczne odstępy między elementami (zamiast stałych px)
+    gap: 7%; 
   }
 
   li {
-    flex: 1 1 auto; // Elastyczna szerokość dla elementów listy
-    min-width: 150px; // Minimalna szerokość elementu
+    flex: 1 1 auto; 
+    min-width: 150px; 
     text-align: center;
 
     a {
@@ -313,43 +313,43 @@ $border-color: #ffffff;
       text-decoration: none;
       color: #000000;
       font-family: "Metropolis-regular", sans-serif;
-      font-size: 1rem; // Dynamiczny rozmiar czcionki
-      white-space: nowrap; // Zapobiega zawijaniu tekstu
+      font-size: 1rem; 
+      white-space: nowrap; 
       font-style: normal;
       font-variant: normal;
       font-weight: bold;
     }
   }
 
-  /* Media Queries: Dopasowanie do mniejszych ekranów */
+  
   @media (max-width: 768px) {
     ul {
-      justify-content: center; // Centruj elementy na węższych ekranach
-      gap: 10px; // Zmniejsz odstępy między elementami
+      justify-content: center; 
+      gap: 10px; 
     }
 
     li {
-      flex: 1 1 45%; // Elementy zajmują 45% szerokości (2 elementy w rzędzie)
-      min-width: 120px; // Minimalna szerokość elementu
+      flex: 1 1 45%; 
+      min-width: 120px; 
     }
 
     a {
-      font-size: 0.9rem; // Zmniejsz rozmiar czcionki
+      font-size: 0.9rem; 
     }
   }
 
   @media (max-width: 480px) {
     ul {
-      flex-direction: column; // Elementy jeden pod drugim
-      gap: 5px; // Zmniejsz odstępy
+      flex-direction: column;
+      gap: 5px; 
     }
 
     li {
-      flex: 1 1 100%; // Elementy zajmują 100% szerokości na bardzo małych ekranach
+      flex: 1 1 100%; 
     }
 
     a {
-      font-size: 0.8rem; // Jeszcze mniejsza czcionka dla telefonów
+      font-size: 0.8rem;
     }
   }
 }
@@ -373,13 +373,13 @@ body {
 
     .button-overlay {
       position: absolute;
-      top: 400px; /* Dopasuj, aby było zgodne z obrazem */
-      margin-left: 127px; /* Wyrównanie z tekstem */
+      top: 400px; 
+      margin-left: 127px; 
 
       .cta-button {
         text-decoration: none;
 
-        padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+        padding: 21px 45px; 
         background: #f74137 0% 0% no-repeat padding-box;
         opacity: 1;
         text-align: center;
@@ -404,7 +404,7 @@ body {
         height: auto;
       }
 
-      // Gradient tylko na obrazie
+      
       &::after {
         content: "";
         position: absolute;
@@ -417,7 +417,7 @@ body {
           rgba(0, 0, 0, 0.8),
           rgba(0, 0, 0, 0)
         );
-        pointer-events: none; // Gradient nie blokuje interakcji z obrazem
+        pointer-events: none; 
       }
     }
 
@@ -682,6 +682,33 @@ body {
     position: absolute;
     margin-top: -70px;
   }
+  
+  
+
+
+
+
+  .recommended-products {
+    text-align: center;
+    margin: 20px auto;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      position: relative;
+  
+      &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #f00;
+        margin: 10px auto 0;
+      }
+    }
+  
+    .box_all {
 
   .box_all {
     justify-content: space-between;
@@ -699,7 +726,7 @@ body {
     .box6 img,
     .box7 img {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
       align-items: center;
@@ -707,7 +734,7 @@ body {
       height: 270px;
     }
   }
-}
+}  
 
 .footer {
   display: flex;
