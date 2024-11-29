@@ -1,27 +1,27 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
-  src: url("/FONTS/fonts/Metropolis-regular.otf") format("otf");
+  src: url("/FONTS/fonts/Metropolis-regular.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "Metropolis-regular";
-  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("otf");
+  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Metropolis-thin";
-  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("otf");
+  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
 }
 .header {
-  border: 0.5px solid #FFFFFF;
+  border: 0.5px solid #ffffff;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -304,7 +304,7 @@
 }
 
 body {
-  background: #F2F3F4 0% 0% no-repeat padding-box;
+  background: #f2f3f4 0% 0% no-repeat padding-box;
   margin: 0;
 }
 body .image-container {
@@ -495,7 +495,7 @@ body .image-container .text-overlay3 p {
 }
 
 .produkty {
-  background: #F2F3F4 0% 0% no-repeat padding-box;
+  background: #f2f3f4 0% 0% no-repeat padding-box;
   border-radius: 2px;
   width: 1920px;
   height: 851px;
@@ -520,7 +520,7 @@ body .image-container .text-overlay3 p {
   right: -920px;
 }
 .produkty .border_line {
-  background: #E1E2E8 0% 0% no-repeat padding-box;
+  background: #e1e2e8 0% 0% no-repeat padding-box;
   width: 1920px;
   height: 1px;
   position: absolute;
@@ -584,12 +584,12 @@ body .image-container .text-overlay3 p {
   padding: 15px;
   text-align: center;
   width: 330px;
-  height: 530PX;
+  height: 530px;
 }
 .produkty .recommended-products .box_all .carousel .product-card img.zarowka_1 {
   height: auto;
   margin-bottom: 10px;
-  margin-top: 100PX;
+  margin-top: 100px;
   width: 240px;
   height: 240px;
 }
