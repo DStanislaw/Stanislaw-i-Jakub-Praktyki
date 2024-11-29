@@ -12,7 +12,7 @@
   font-style: normal;
 }
 .header {
-  border: 0.5px solid #8a8d9c;
+  border: 0.5px solid #FFFFFF;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -488,6 +488,13 @@ body .image-container .text-overlay3 p {
   align-items: center;
   top: -70px;
   right: -920px;
+}
+.produkty .border_line {
+  background: #E1E2E8 0% 0% no-repeat padding-box;
+  width: 1980px;
+  height: 1px;
+  position: absolute;
+  margin-top: -70px;
 }
 .footer {
   display: flex;

@@ -1,4 +1,4 @@
-$border-color: #8a8d9c;
+$border-color: #FFFFFF;
 @font-face {
   font-family: "Metropolis";
   src: url("/FONTS/fonts/Metropolis-Regular.otf") format("otf");
@@ -593,6 +593,18 @@ opacity: 1;
     align-items: center;
     top: -70px;
     right: -920px;
+  }
+
+  .border_line  {
+
+
+      
+      background: #E1E2E8 0% 0% no-repeat padding-box;
+      width: 1980px;
+      height: 1px;
+      position: absolute;
+      margin-top: -70px;
+
   }
 
   .box_all {
