@@ -13,6 +13,13 @@
   font-variant: normal;
   font-weight: 300;
 }
+@font-face {
+  font-family: "Metropolis-thin";
+  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("otf");
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
 .header {
   border: 0.5px solid #FFFFFF;
   position: relative;
@@ -39,6 +46,9 @@
   font-family: "Metropolis-regular", sans-serif;
   width: 100vw;
   display: flex;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 .header .nav .phoneE {
   margin-top: 12.5px;
@@ -152,6 +162,9 @@
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 .header .nav .cart .KOSZ_ILOSC {
   position: absolute;
@@ -212,6 +225,9 @@
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 .header .nav .ZIELONE_POLE_STRZALKA {
   top: 27px;
@@ -257,6 +273,9 @@
   font-family: "Metropolis-regular", sans-serif;
   font-size: 1rem;
   white-space: nowrap;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .PASEK2 ul {
@@ -336,7 +355,7 @@ body .image-container .image-wrapper::after {
   pointer-events: none;
 }
 body .image-container .text-overlay {
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-regular", sans-serif;
   text-align: left;
   letter-spacing: 0px;
   color: #ffffff;
@@ -347,6 +366,9 @@ body .image-container .text-overlay {
   width: 514px;
   height: 44px;
   font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 body .image-container .text-overlay p {
   margin: 0;
@@ -355,7 +377,7 @@ body .image-container .text-overlay p {
 }
 body .image-container .text-overlay2 {
   text-align: left;
-  font-family: "Metropolis-regular", sans-serif;
+  font-family: "Metropolis-Thin", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -365,13 +387,13 @@ body .image-container .text-overlay2 {
   width: 571px;
   height: 44px;
   font-size: 44px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
 }
 body .image-container .text-overlay2 p {
   margin: 0;
   font-size: 44px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
 }
 body .image-container .text-overlay3 {
   text-align: left;
