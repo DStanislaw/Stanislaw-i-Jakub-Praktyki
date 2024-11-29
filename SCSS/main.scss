@@ -1,23 +1,39 @@
 $border-color: #ffffff;
 @font-face {
   font-family: "Metropolis";
-  src: url("/FONTS/fonts/Metropolis-regular.otf") format("opentype");
+  src: url("../FONTS/fonts/Metropolis-bold.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Metropolis-regular";
+  font-family: "Metropolis-thin";
   src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("opentype");
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Metropolis-thin";
+  src: url("../FONTS/fonts/Metropolis-Thin.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Metropolis-thin";
-  src: url("../IMG/etap_01/fonts/Metropolis-ThinItalic.otf") format("opentype");
+  font-family: "Metropolis-thin2";
+  src: url("../FONTS/fonts/Metropolis-Thin.otf ") format("opentype");
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Metropolis-regular";
+  src: url("../FONTS/fonts/Metropolis-regular.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
@@ -48,14 +64,13 @@ $border-color: #ffffff;
 
   .nav {
     justify-content: space-around;
-    font-family: "Metropolis-regular", sans-serif;
-
+    font-family: "Metropolis", sans-serif;
     width: 100vw;
-
     display: flex;
     font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
+  font-variant: normal;
+  font-weight: bold;
+ 
 
     .phoneE {
       margin-top: 12.5px;
@@ -187,7 +202,7 @@ $border-color: #ffffff;
         opacity: 1;
         font-style: normal;
         font-variant: normal;
-        font-weight: bold;
+        font-weight: normal;
       }
 
       .KOSZ_ILOSC {
@@ -267,7 +282,7 @@ $border-color: #ffffff;
       opacity: 1;
       font-style: normal;
       font-variant: normal;
-      font-weight: bold;
+      font-weight: normal;
     }
     .ZIELONE_POLE_STRZALKA {
       top: 27px;
@@ -314,7 +329,7 @@ $border-color: #ffffff;
       opacity: 1;
       text-decoration: none;
       color: #000000;
-      font-family: "Metropolis-regular", sans-serif;
+      font-family: "Metropolis", sans-serif;
       font-size: 1rem; // Dynamiczny rozmiar czcionki
       white-space: nowrap; // Zapobiega zawijaniu tekstu
       font-style: normal;
@@ -423,7 +438,6 @@ body {
     }
 
     .text-overlay {
-      font-family: "Metropolis-regular", sans-serif;
       text-align: left;
       letter-spacing: 0px;
       color: #ffffff;
@@ -434,20 +448,21 @@ body {
       width: 514px;
       height: 44px;
       font-size: 20px;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+      
 
       p {
+        font-family: "Metropolis", sans-serif;
         margin: 0;
         font-size: 44px;
         line-height: 200px;
+        font-style: normal;
+      font-variant: normal;
+      font-weight: bold;
       }
     }
 
     .text-overlay2 {
       text-align: left;
-      font-family: "Metropolis-Thin", sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -457,11 +472,13 @@ body {
       width: 571px;
       height: 44px;
       font-size: 44px;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 100;
+
 
       p {
+        font-family: "Metropolis-thin", sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
         margin: 0;
         font-size: 44px;
       }
