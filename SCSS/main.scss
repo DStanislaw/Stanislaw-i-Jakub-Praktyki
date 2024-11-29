@@ -143,144 +143,108 @@ $border-color: #ffffff;
     }
 
     .cart {
-      margin-top: 12.5px;
-      margin-bottom: 12.5px;
-      margin-left: 62px;
-
+      margin: 12.5px 0 12.5px 62px;
       border: 1px solid #e1e2e8;
-      opacity: 1;
       display: flex;
-
       align-items: center;
       gap: 10px;
-      position: sticky;
-      width: 269px;
+      width: 100%;
+      max-width: 320px; // Ograniczenie szerokości dla responsywności
       height: 55px;
-
+      position: sticky;
+    
       img {
-        max-width: 100%;
         width: 39px;
         height: 36px;
         margin-left: 10px;
       }
-
+    
       .koszyk-info {
-        .KOSZ_CENA {
-          flex-direction: column;
-        }
-
         display: flex;
-
+        flex: 1; // Zajmuje dostępne miejsce
         align-items: center;
-
         gap: 10px;
-      }
-      .SPAN {
-        font-size: 18px;
-        width: 20px;
-        height: 14px;
-        text-align: left;
-        font-family: "Metropolis-regular", sans-serif;
-        letter-spacing: -0.28px;
-        color: #111111;
-        text-transform: uppercase;
-        opacity: 1;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-      }
+    
+        .KOSZ_ILOSC_WRAPPER {
+          position: relative;
+          .KOSZ_ILOSC {
+            font-size: 13px;
+            color: #ffffff;
+            background: #9bcb3b;
+            border-radius: 2px;
+            width: 26px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-      .KOSZ_ILOSC {
-        position: absolute;
-
-        top: 10px;
-
-        right: 180px;
-
-        color: white;
-
-        width: 26px;
-        height: 14px;
-
-        display: flex;
-
-        font-size: 13px;
-
-        background: #9bcb3b 0% 0% no-repeat padding-box;
-        border-radius: 2px;
-        opacity: 1;
-      }
-
-      .KOSZYK_ILOSC_TEKST {
-        position: absolute;
-
-        top: 12.2px;
-
-        background: #9bcb3b 0% 0% no-repeat padding-box;
-        border-radius: 2px;
-        opacity: 1;
-      }
-
-      .KOSZYK_ILOSC_TEKST {
-        position: absolute;
-
-        top: 11.1px;
-
-        right: 184px;
-
-        text-align: left;
-        font-size: 11px;
-        letter-spacing: -0.2px;
-        color: #ffffff;
-        text-transform: uppercase;
-        opacity: 1;
-      }
-      .LINIA {
-        margin-left: 15px;
-        position: static;
-        display: flex;
-        right: 10px;
-        width: 1px;
-        height: 41px;
-        background: #e1e2e8 0% 0% no-repeat padding-box;
-        opacity: 1;
+            margin-top: -16px;
+            margin-left: -20px;
+          }
+        }
+    
+        .LINIA {
+          width: 1px;
+          height: 41px;
+          background: #e1e2e8;
+        }
+    
+        .KOSZ_CENA {
+          flex: 1; // Pozwala rozciągnąć sekcję
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+    
+          .KOSZ_NAZWA {
+            font-size: 14px;
+            font-family: "Metropolis-regular", sans-serif;
+            font-weight: bold;
+            letter-spacing: -0.28px;
+            color: #111111;
+          }
+    
+          .CENA {
+            font-size: 16px; // Większy rozmiar dla ceny
+            font-weight: bold;
+            text-align: left;
+            white-space: nowrap; // Zapobiega łamaniu tekstu
+            color: #111111;
+          }
+        }
       }
     }
-    .LINIA {
-      margin-left: 15px;
-      position: static;
-      display: flex;
-      right: 10px;
-      width: 1px;
-      height: 41px;
-      background: #e1e2e8 0% 0% no-repeat padding-box;
-      opacity: 1;
+    
+      .ZIELONE_POLE_STRZALKA {
+        width: 35px;
+        height: 55px;
+        background: #9bcb3b;
+      }
     }
-
-    .cena {
-      width: 80px;
-      height: 14px;
-      text-align: left;
-      font-family: "Metropolis-regular", sans-serif;
-      letter-spacing: -0.28px;
-      color: #111111;
-      opacity: 1;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+    
+    // Dodaj media queries dla responsywności
+    @media screen and (max-width: 400px) {
+      .cart {
+        flex-direction: column;
+        height: auto;
+    
+        .koszyk-info {
+          flex-direction: column;
+          align-items: flex-start;
+    
+          .KOSZ_CENA {
+            .CENA {
+              font-size: 14px; // Zmniejsz rozmiar tekstu na mniejszych ekranach
+            }
+          }
+        }
+    
+        .ZIELONE_POLE_STRZALKA {
+          width: 100%;
+          height: 35px;
+        }
+      }
     }
-    .ZIELONE_POLE_STRZALKA {
-      top: 27px;
-      left: 1855px;
-      width: 35px;
-      height: 55px;
-
-      /* UI Properties */
-
-      background: #9bcb3b 0% 0% no-repeat padding-box;
-      opacity: 1;
-    }
-  }
+    
 }
 
 .PASEK2 {
@@ -297,7 +261,7 @@ $border-color: #ffffff;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 10px; // Dynamiczne odstępy między elementami (zamiast stałych px)
+    gap: 10px; 
   }
 
   li {
@@ -595,7 +559,7 @@ body {
   width: 1920px;
   height: 851px;
   border: 1px, red;
-  background-color: red($color: #000000);
+  
 
   .text_products {
     text-align: center;
