@@ -406,23 +406,46 @@ body .image-container .text-overlay3 p {
 }
 
 .image-container-2 {
-  background: linear-gradient(to right, #2c2c54, rgba(0, 0, 0, 0.7)), url("img/your_image_name_here.png") center/cover no-repeat;
+  display: flex;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 21px;
+  padding-bottom: 29px;
+  width: 1860px;
+  height: 595px;
+  background: transparent url("../IMG/etap_01/photos/img_08.jpg") 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.image-container-2 .image-wrapper-2 {
+.image-container-2 .button-overlay {
+  position: absolute;
+  padding-top: 406px; /* Dopasuj, aby było zgodne z obrazem */
+  margin-left: 127px; /* Wyrównanie z tekstem */
+}
+.image-container-2 .button-overlay .cta-button {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: #f74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  font: normal normal bold 14px/17px Metropolis;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  opacity: 1;
+}
+.image-container-2 .image-wrapper {
   display: flex;
   position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.image-container-2 .image-wrapper-2 img {
+.image-container-2 .image-wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
-.image-container-2 .image-wrapper-2::after {
+.image-container-2 .image-wrapper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -432,34 +455,68 @@ body .image-container .text-overlay3 p {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   pointer-events: none;
 }
-.image-container-2 .text-overlay-2 {
+.image-container-2 .text-overlay {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
   top: 106px;
-  left: 50px;
-  font-size: 40px;
+  margin-left: 127px;
+  width: 514px;
+  height: 44px;
+  font-size: 20px;
+}
+.image-container-2 .text-overlay p {
+  font-family: "Metropolis", sans-serif;
+  margin: 0;
+  font-size: 44px;
+  line-height: 200px;
+  font-style: normal;
+  font-variant: normal;
   font-weight: bold;
 }
-.image-container-2 .text-overlay2-2 {
-  top: 180px;
-  left: 50px;
-  font-size: 32px;
+.image-container-2 .text-overlay2 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 234px;
+  margin-left: 127px;
+  width: 571px;
+  height: 44px;
+  font-size: 44px;
+}
+.image-container-2 .text-overlay2 p {
+  font-family: "Metropolis-Light", sans-serif;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 300;
+  margin: 0;
+  font-size: 44px;
 }
-.image-container-2 .text-overlay3-2 {
-  top: 260px;
-  left: 50px;
-  font-size: 18px;
-  width: 300px;
-  line-height: 1.5;
+.image-container-2 .text-overlay3 {
+  text-align: left;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 294px;
+  margin-left: 127px;
+  width: 371px;
+  height: 74px;
+  color: #ffffff;
+  opacity: 1;
 }
-.image-container-2 .button-overlay-2 {
-  top: 360px;
-  left: 50px;
-}
-.image-container-2 .button-overlay-2 .cta-button-2 {
-  font-size: 16px;
-  padding: 12px 24px;
-  background-color: #f74137;
-  border-radius: 4px;
+.image-container-2 .text-overlay3 p {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Metropolis-regular", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: -0.44px;
+  line-height: 26px;
 }
 
 .image-container {
@@ -754,7 +811,7 @@ body .image-container .text-overlay3 p {
   font-size: 44px;
   text-align: left;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -853,7 +910,7 @@ body .image-container .text-overlay3 p {
   display: flex;
   overflow: hidden;
   padding: 10px;
-  width: 1780px;
+  width: 1860px;
 }
 .produkty .recommended-products .box_all .carousel .carousel-item {
   flex: 0 0 330px;
@@ -870,7 +927,7 @@ body .image-container .text-overlay3 p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
-  width: 310px;
+  width: 324px;
   height: 510px;
   position: relative;
   overflow: hidden;
@@ -960,7 +1017,7 @@ body .image-container .text-overlay3 p {
   display: flex;
   position: absolute;
   left: 195px;
-  background: #9BCB3B 0% 0% no-repeat padding-box;
+  background: #9bcb3b 0% 0% no-repeat padding-box;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -1032,25 +1089,18 @@ body .image-container .text-overlay3 p {
   font-size: 44px;
 }
 .overlay p {
-  width: 1019px; /* Szerokość */
-  height: 82px; /* Wysokość */
-  line-height: 24px; /* Odstęp między liniami */
-  text-align: center; /* Wyśrodkowanie tekstu */
-  color: white; /* Kolor tekstu */
-  letter-spacing: -0.36px; /* Odstępy między literami */
-  opacity: 1; /* Widoczność */
+  text-align: center;
+  color: white;
+  letter-spacing: -0.36px;
+  opacity: 1;
   font-family: "Metropolis-regular", sans-serif;
   font-style: normal;
+  font-variant: normal;
   font-weight: normal;
-  font-size: 18px;
-  overflow: hidden; /* Ukrycie tekstu wykraczającego poza wymiary */
-  word-wrap: break-word; /* Zawijanie tekstu */
-  white-space: normal; /* Umożliwia łamanie linii */
+  font-size: 14px;
 }
 
 .icons {
-  width: 990px;
-  height: 153px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -1058,7 +1108,7 @@ body .image-container .text-overlay3 p {
 .icons .icon {
   margin: 0 25px;
   text-align: center;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 15px;
   padding-right: 77px;
   padding-left: 77px;
@@ -1098,8 +1148,8 @@ body .image-container .text-overlay3 p {
   padding-top: 40px;
 }
 .icons .icon:last-child img {
-  width: 44px;
-  height: 46px;
+  width: 40px;
+  height: 27px;
 }
 
 .red_line_2 {
@@ -1112,7 +1162,7 @@ body .image-container .text-overlay3 p {
 }
 
 .border_line_2 {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 0.1;
   width: 1900px;
   height: 1px;
@@ -1131,13 +1181,6 @@ body .image-container .text-overlay3 p {
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s;
-  color: white;
-  text-align: center;
-  font-family: "Metropolis", sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 14px;
 }
 .button:hover {
   background-color: darkred;
