@@ -1145,23 +1145,31 @@ height: 55px;
     }
 
     p {
-      text-align: center;
-      color: white;
-      letter-spacing: -0.36px;
-      opacity: 1;
+      width: 1019px; /* Szerokość */
+      height: 82px; /* Wysokość */
+      line-height: 24px; /* Odstęp między liniami */
+      text-align: center; /* Wyśrodkowanie tekstu */
+      color: white; /* Kolor tekstu */
+      letter-spacing: -0.36px; /* Odstępy między literami */
+      opacity: 1; /* Widoczność */
       font-family: 'Metropolis-regular', sans-serif;
       font-style: normal;
-              font-variant: normal;
-              font-weight: normal;
-              font-size: 14px;
-
+      font-weight: normal;
+      font-size: 18px;
+  
+      overflow: hidden; /* Ukrycie tekstu wykraczającego poza wymiary */
+      word-wrap: break-word; /* Zawijanie tekstu */
+      white-space: normal; /* Umożliwia łamanie linii */
     }
 }
 
 .icons {
+  width: 990px;
+  height: 153px;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 
     .icon {
         margin: 0 25px;
@@ -1200,7 +1208,7 @@ height: 55px;
       
       img{
         width: 62px;
-            height: 30px;
+            height: 32px;
       }
   }
 
@@ -1208,15 +1216,15 @@ height: 55px;
       
 
       img{
-        width: 40px;
-            height: 32px;
+        width: 46px;
+            height: 39px;
       }
   }
 
   .icon:last-child {
     img{
-      width: 40px;
-          height: 27px;
+      width: 44px;
+          height: 46px;
     }
 
 
@@ -1257,6 +1265,15 @@ height: 55px;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s;
+
+    color: white;
+      text-align: center;
+      font-family: 'Metropolis', sans-serif;
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 14px;
+
 
     &:hover {
         background-color: darkred;
