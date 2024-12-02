@@ -923,8 +923,26 @@ body .image-container .text-overlay3 p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.overlay h1 {
   color: white;
   text-align: center;
+  font-family: "Metropolis", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 44px;
+}
+.overlay p {
+  text-align: center;
+  color: white;
+  letter-spacing: -0.36px;
+  opacity: 1;
+  font-family: "Metropolis-regular", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .icons {
@@ -947,8 +965,15 @@ body .image-container .text-overlay3 p {
   margin-bottom: 10px;
 }
 .icons .icon p {
+  font-family: "Metropolis", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 14px;
   margin: 0;
-  font-size: 0.9rem;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  color: white;
 }
 .icons .icon:first-child img {
   width: 62px;
@@ -963,23 +988,23 @@ body .image-container .text-overlay3 p {
   height: 27px;
 }
 
-.red_line_2 {
-  width: 60px;
-  height: 3px;
-  background: #f74137 0% 0% no-repeat padding-box;
-  opacity: 1;
-  position: relative;
+.divider {
+  display: flex;
   align-items: center;
-  right: 10px;
+  justify-content: center;
+  margin: 20px 0;
 }
-
-.border_line_2 {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 0.1;
-  width: 1900px;
+.divider span {
+  flex: 1;
   height: 1px;
-  position: absolute;
-  margin-top: -166px;
+  background-color: white;
+}
+.divider .red-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 .button {
