@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Metropolis";
-  src: url("../FONTS/fonts/Metropolis-bold.otf") format("opentype");
+  src: url("../FONTS/Metropolis-bold.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "Metropolis-regular";
-  src: url("../FONTS/fonts/Metropolis-Regular.otf ") format("opentype");
+  src: url("../FONTS/Metropolis-Regular.otf ") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Metropolis-thin";
-  src: url("../FONTS/fonts/Metropolis-Thin.otf") format("opentype");
+  src: url("../FONTS/Metropolis-Thin.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Metropolis-Light";
-  src: url("../FONTS/fonts/Metropolis-Light.otf") format("opentype");
+  src: url("../FONTS/Metropolis-Light.otf") format("opentype");
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
@@ -322,11 +322,14 @@ body .image-container .image-wrapper {
   display: flex;
   position: relative;
   display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 body .image-container .image-wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 body .image-container .image-wrapper::after {
   content: "";
@@ -402,34 +405,57 @@ body .image-container .text-overlay3 p {
   line-height: 26px;
 }
 
-.image-container2 {
+.image-container-2 {
   background: linear-gradient(to right, #2c2c54, rgba(0, 0, 0, 0.7)), url("img/your_image_name_here.png") center/cover no-repeat;
   opacity: 1;
 }
-.image-container2 .text-overlay {
+.image-container-2 .image-wrapper-2 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.image-container-2 .image-wrapper-2 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.image-container-2 .image-wrapper-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+.image-container-2 .text-overlay-2 {
   top: 106px;
   left: 50px;
   font-size: 40px;
   font-weight: bold;
 }
-.image-container2 .text-overlay2 {
+.image-container-2 .text-overlay2-2 {
   top: 180px;
   left: 50px;
   font-size: 32px;
   font-weight: 300;
 }
-.image-container2 .text-overlay3 {
+.image-container-2 .text-overlay3-2 {
   top: 260px;
   left: 50px;
   font-size: 18px;
   width: 300px;
   line-height: 1.5;
 }
-.image-container2 .button-overlay {
+.image-container-2 .button-overlay-2 {
   top: 360px;
   left: 50px;
 }
-.image-container2 .button-overlay .cta-button {
+.image-container-2 .button-overlay-2 .cta-button-2 {
   font-size: 16px;
   padding: 12px 24px;
   background-color: #f74137;
@@ -445,38 +471,31 @@ body .image-container .text-overlay3 p {
 }
 
 .slider-nav {
-  z-index: 1;
   position: absolute;
   top: 50%;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  pointer-events: none; /* Strzałki nie blokują kliknięcia obrazu */
+  z-index: 10;
 }
-.slider-nav .slider-arrow {
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło */
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
+
+.slider-arrow {
   cursor: pointer;
-  pointer-events: auto; /* Aktywacja kliknięcia na strzałce */
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100; /* Ustaw wysoki z-index */
 }
-.slider-nav .slider-arrow:hover {
-  background: rgba(0, 0, 0, 0.8); /* Zmiana tła na hover */
-}
-.slider-nav .left-arrow {
+
+.left-arrow {
   z-index: 5;
   margin-left: 20px;
 }
-.slider-nav .right-arrow {
+
+.right-arrow {
   z-index: 1;
   margin-right: 20px;
 }

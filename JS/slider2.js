@@ -2,6 +2,8 @@
 const slides = document.querySelectorAll(".image-container");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
+const leftArrow_2 = document.querySelector(".left-arrow_2");
+const rightArrow_2 = document.querySelector(".right-arrow_2");
 
 let currentSlide = 0;
 
@@ -27,6 +29,9 @@ function prevSlide() {
 // Podpięcie eventów
 leftArrow.addEventListener("click", prevSlide);
 rightArrow.addEventListener("click", nextSlide);
+
+leftArrow_2.addEventListener("click", prevSlide);
+rightArrow_2.addEventListener("click", nextSlide);
 
 // Inicjalizacja
 updateSlide(currentSlide);

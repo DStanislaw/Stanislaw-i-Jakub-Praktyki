@@ -1,15 +1,17 @@
 {
-  "name": "stanislaw-i-jakub-praktyki",
+  "name": "nazwa-twojego-projektu",
   "version": "1.0.0",
+  "description": "Opis twojego projektu",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch scss:css"
-
-    
+    "sass-compile": "sass scss:css",
+    "watch": "sass --watch scss:css"
   },
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {},
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
