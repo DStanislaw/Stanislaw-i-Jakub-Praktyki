@@ -1131,8 +1131,31 @@ height: 55px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-align: center;
+    
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-family: 'Metropolis', sans-serif;
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 44px;
+
+    }
+
+    p {
+      text-align: center;
+      color: white;
+      letter-spacing: -0.36px;
+      opacity: 1;
+      font-family: 'Metropolis-regular', sans-serif;
+      font-style: normal;
+              font-variant: normal;
+              font-weight: normal;
+              font-size: 14px;
+
+    }
 }
 
 .icons {
@@ -1160,8 +1183,15 @@ height: 55px;
         }
 
         p {
+          font-family: 'Metropolis', sans-serif;
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 14px;
             margin: 0;
-            font-size: 0.9rem;
+            letter-spacing: -0.28px;
+            text-transform: uppercase;
+            color: white;
         }
         
     }
