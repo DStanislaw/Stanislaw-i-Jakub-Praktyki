@@ -904,11 +904,6 @@ body .image-container .text-overlay3 p {
   opacity: 1;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .hero-section {
   position: relative;
   width: 100%;
@@ -938,10 +933,54 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
-.icon {
-  margin: 0 15px;
+.icons .icon {
+  margin: 0 25px;
   text-align: center;
+  border: 1px solid #FFFFFF;
+  padding: 15px;
+  padding-right: 77px;
+  padding-left: 77px;
+}
+.icons .icon:hover {
+  transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+.icons .icon img {
+  margin-bottom: 10px;
+}
+.icons .icon p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.icons .icon:first-child img {
+  width: 62px;
+  height: 30px;
+}
+.icons .icon:nth-child(2) img {
+  width: 40px;
+  height: 32px;
+}
+.icons .icon:last-child img {
+  width: 40px;
+  height: 27px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.divider span {
+  flex: 1;
+  height: 1px;
+  background-color: white;
+}
+.divider .red-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 .button {
@@ -950,8 +989,13 @@ body {
   background-color: red;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: darkred;
 }
 
 .footer {
