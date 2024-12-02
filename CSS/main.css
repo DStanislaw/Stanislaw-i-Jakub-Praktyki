@@ -963,23 +963,23 @@ body .image-container .text-overlay3 p {
   height: 27px;
 }
 
-.divider {
-  display: flex;
+.red_line_2 {
+  width: 60px;
+  height: 3px;
+  background: #f74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
   align-items: center;
-  justify-content: center;
-  margin: 20px 0;
+  right: 10px;
 }
-.divider span {
-  flex: 1;
+
+.border_line_2 {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 0.1;
+  width: 1900px;
   height: 1px;
-  background-color: white;
-}
-.divider .red-dot {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 50%;
-  margin: 0 10px;
+  position: absolute;
+  margin-top: -166px;
 }
 
 .button {
