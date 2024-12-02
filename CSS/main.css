@@ -402,6 +402,85 @@ body .image-container .text-overlay3 p {
   line-height: 26px;
 }
 
+.image-container2 {
+  background: linear-gradient(to right, #2c2c54, rgba(0, 0, 0, 0.7)), url("img/your_image_name_here.png") center/cover no-repeat;
+  opacity: 1;
+}
+.image-container2 .text-overlay {
+  top: 106px;
+  left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.image-container2 .text-overlay2 {
+  top: 180px;
+  left: 50px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.image-container2 .text-overlay3 {
+  top: 260px;
+  left: 50px;
+  font-size: 18px;
+  width: 300px;
+  line-height: 1.5;
+}
+.image-container2 .button-overlay {
+  top: 360px;
+  left: 50px;
+}
+.image-container2 .button-overlay .cta-button {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #f74137;
+  border-radius: 4px;
+}
+
+.image-container {
+  display: none; /* Ukryj wszystkie slajdy domyślnie */
+}
+
+.image-container.active {
+  display: block; /* Tylko aktywny slajd jest widoczny */
+}
+
+.slider-nav {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Strzałki nie blokują kliknięcia obrazu */
+}
+.slider-nav .slider-arrow {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło */
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto; /* Aktywacja kliknięcia na strzałce */
+}
+.slider-nav .slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.8); /* Zmiana tła na hover */
+}
+.slider-nav .left-arrow {
+  z-index: 5;
+  margin-left: 20px;
+}
+.slider-nav .right-arrow {
+  z-index: 1;
+  margin-right: 20px;
+}
+
 .image-wrapper1 {
   display: flex;
   position: relative;
@@ -1053,9 +1132,11 @@ body .image-container .text-overlay3 p {
   color: white;
   text-transform: uppercase;
   position: relative;
+  text-decoration: none;
 }
 
 .footer-section h4::after {
+  text-decoration: none;
   content: "";
   display: block;
   width: 443px;
