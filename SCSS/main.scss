@@ -471,25 +471,28 @@ body {
 
 .image-container-2 {
   display: flex;
-  position: relative;
-  padding-left: 30px;
+    position: relative;
+    padding-left: 30px;
 
-  padding-top: 21px;
-  padding-bottom: 29px;
+    padding-top: 21px;
+    padding-bottom: 29px;
 
-  width: 1860px;
-  height: 595px;
+    width: 1860px;
+    height: 595px;
+
+    background-size: cover; /* Tło przycięte proporcjonalnie */
+  background-position: center; /* Wycentruj tło */
 
   background: transparent url("../IMG/etap_01/photos/img_08.jpg") 0% 0%
     no-repeat padding-box;
   opacity: 1;
 
-  .button-overlay {
+  .button-overlay2-1 {
     position: absolute;
     padding-top: 406px; /* Dopasuj, aby było zgodne z obrazem */
     margin-left: 127px; /* Wyrównanie z tekstem */
 
-    .cta-button {
+    .cta-button2-1 {
       text-decoration: none;
 
       padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
@@ -504,7 +507,7 @@ body {
     }
   }
 
-  .image-wrapper {
+  .image-wrapper1-2 {
     display: flex;
     position: relative;
     display: inline-block;
@@ -513,9 +516,9 @@ body {
 
     img {
       display: block;
-      max-width: 100%;
-      height: auto; // Możesz ustawić na `height: 100%` jeśli chcesz, aby obraz zajmował całą wysokość
-      object-fit: cover; // Użyj `cover`, aby obraz wypełnił kontener
+      width: 100%; /* Dopasowanie do szerokości kontenera */
+      height: 100%; /* Dopasowanie do wysokości kontenera */
+      object-fit: contain; /* Przycięcie obrazu, aby zachować proporcje */
     }
 
     // Gradient tylko na obrazie
@@ -535,7 +538,7 @@ body {
     }
   }
 
-  .text-overlay {
+  .text-overlay1-2 {
     text-align: left;
     letter-spacing: 0px;
     color: #ffffff;
@@ -558,7 +561,7 @@ body {
     }
   }
 
-  .text-overlay2 {
+  .text-overlay2-2 {
     text-align: left;
     letter-spacing: 0px;
     color: #ffffff;
@@ -580,7 +583,7 @@ body {
     }
   }
 
-  .text-overlay3 {
+  .text-overlay3-2 {
     text-align: left;
     color: #ffffff;
     opacity: 1;
@@ -604,6 +607,9 @@ body {
     }
   }
 }
+
+
+
 
 .image-container {
   display: none; /* Ukryj wszystkie slajdy domyślnie */
@@ -643,6 +649,13 @@ body {
   z-index: 1;
   margin-right: 20px;
 }
+
+
+
+
+
+
+
 
 .image-wrapper1 {
   display: flex;
