@@ -472,6 +472,84 @@ body .image-container .text-overlay3 p {
   width: 1860px;
   height: 400px;
 }
+.ZDJECIA_OBOK_3 .button-overlay1 {
+  position: absolute;
+  padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+  margin-left: 49px; /* Wyrównanie z tekstem */
+}
+.ZDJECIA_OBOK_3 .button-overlay1 .cta-button1 {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: transparent;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  opacity: 1;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.ZDJECIA_OBOK_3 .button-overlay1 .cta-button1:hover {
+  background: #ffffff; /* Białe tło po najechaniu */
+  color: #f74137; /* Czerwony tekst po najechaniu */
+}
+.ZDJECIA_OBOK_3 .button-overlay2 {
+  position: absolute;
+  padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+  margin-left: 679px; /* Wyrównanie z tekstem */
+}
+.ZDJECIA_OBOK_3 .button-overlay2 .cta-button2 {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: transparent;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  text-align: center;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  opacity: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+.ZDJECIA_OBOK_3 .button-overlay2 .cta-button2:hover {
+  background: #ffffff; /* Białe tło po najechaniu */
+  color: #f74137; /* Czerwony tekst po najechaniu */
+}
+.ZDJECIA_OBOK_3 .button-overlay3 {
+  position: absolute;
+  padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+  margin-left: 1309px; /* Wyrównanie z tekstem */
+}
+.ZDJECIA_OBOK_3 .button-overlay3 .cta-button3 {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: transparent;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  text-align: center;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  opacity: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+.ZDJECIA_OBOK_3 .button-overlay3 .cta-button3:hover {
+  background: #ffffff; /* Białe tło po najechaniu */
+  color: #f74137; /* Czerwony tekst po najechaniu */
+}
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_1 {
   position: absolute;
   padding-top: 72px;
@@ -484,7 +562,7 @@ body .image-container .text-overlay3 p {
   height: 44px;
 }
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_1 p {
-  font-family: "Metropolis-Bold", sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -516,11 +594,11 @@ body .image-container .text-overlay3 p {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  width: 367px;
+  width: 467px;
   height: 44px;
 }
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_2 p {
-  font-family: "Metropolis-Bold", sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -556,7 +634,7 @@ body .image-container .text-overlay3 p {
   height: 44px;
 }
 .ZDJECIA_OBOK_3 .ZDJ3OBOK_3 p {
-  font-family: "Metropolis-Bold", sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;

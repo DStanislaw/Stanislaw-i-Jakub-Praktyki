@@ -567,7 +567,101 @@ body {
   width: 1860px;
   height: 400px;
 
-  img.ZDJECIE_OBOK1 {
+  .button-overlay1 {
+    position: absolute;
+    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+    margin-left: 49px; /* Wyrównanie z tekstem */
+
+    .cta-button1 {
+      text-decoration: none;
+
+      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      background: transparent;
+      border: 1px solid #ffffff;
+      opacity: 1;
+      text-align: center;
+      letter-spacing: -0.28px;
+      color: #ffffff;
+      opacity: 1;
+      font-family: 'Metropolis';
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 14px;
+
+
+              transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background: #ffffff; /* Białe tło po najechaniu */
+      color: #f74137; /* Czerwony tekst po najechaniu */
+    }
+
+    }
+  }
+
+  .button-overlay2 {
+    position: absolute;
+    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+    margin-left: 679px; /* Wyrównanie z tekstem */
+
+    .cta-button2 {
+      text-decoration: none;
+
+      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      background: transparent;
+      border: 1px solid #ffffff;
+      opacity: 1;
+      text-align: center;
+      font-family: 'Metropolis';
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 14px;
+      letter-spacing: -0.28px;
+      color: #ffffff;
+
+      opacity: 1;
+
+      transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background: #ffffff; /* Białe tło po najechaniu */
+      color: #f74137; /* Czerwony tekst po najechaniu */
+    }
+    }
+  }
+
+  .button-overlay3 {
+    position: absolute;
+    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
+    margin-left: 1309px; /* Wyrównanie z tekstem */
+
+    .cta-button3 {
+      text-decoration: none;
+
+      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      background: transparent;
+      border: 1px solid #ffffff;
+      opacity: 1;
+      text-align: center;
+      font-family: 'Metropolis';
+      font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              font-size: 14px;
+      letter-spacing: -0.28px;
+      color: #ffffff;
+
+      opacity: 1;
+
+      transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background: #ffffff; /* Białe tło po najechaniu */
+      color: #f74137; /* Czerwony tekst po najechaniu */
+    }
+    }
   }
 
   .ZDJ3OBOK_1 {
@@ -581,8 +675,10 @@ padding-top: 72px;
     width: 352px;
     height: 44px;
 
+    
+
     p {
-font-family: 'Metropolis-Bold', sans-serif;
+font-family: 'Metropolis', sans-serif;
 font-style: normal;
         font-variant: normal;
         font-weight: bold;
@@ -608,6 +704,7 @@ font-style: normal;
               font-weight: 300;
               font-size: 44px;
           }
+
   }
 
   .ZDJ3OBOK_2 {
@@ -618,11 +715,11 @@ font-style: normal;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    width: 367px;
+    width: 467px;
     height: 44px;
 
     p {
-      font-family: 'Metropolis-Bold', sans-serif;
+      font-family: 'Metropolis', sans-serif;
       font-style: normal;
               font-variant: normal;
               font-weight: bold;
@@ -663,7 +760,7 @@ font-style: normal;
     height: 44px;
 
     p {
-      font-family: 'Metropolis-Bold', sans-serif;
+      font-family: 'Metropolis', sans-serif;
       font-style: normal;
               font-variant: normal;
               font-weight: bold;
