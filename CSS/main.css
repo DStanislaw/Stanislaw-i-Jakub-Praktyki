@@ -984,8 +984,10 @@ body .image-container .text-overlay3 p {
 }
 
 .button {
+  width: 246px;
+  height: 26px;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: red;
   color: white;
   text-decoration: none;
