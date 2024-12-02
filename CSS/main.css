@@ -637,7 +637,7 @@ body .image-container .text-overlay3 p {
   align-items: center;
   gap: 20px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: auto;
 }
 .produkty .recommended-products .box_all button.prev,
 .produkty .recommended-products .box_all button.next {
@@ -665,23 +665,29 @@ body .image-container .text-overlay3 p {
   margin-left: 30px;
 }
 .produkty .recommended-products .box_all .next {
+  z-index: 1;
   margin-left: 1840px;
   position: absolute;
+  margin-top: 250px;
 }
 .produkty .recommended-products .box_all .carousel {
+  gap: 20px;
   margin-left: 30px;
   scrollbar-width: none;
-  width: 1860px;
+  scroll-snap-type: x mandatory;
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
 }
 .produkty .recommended-products .box_all .carousel .carousel-item {
-  flex: 0 0 auto;
+  flex: 0 0 330px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -15px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  margin-right: 20px;
 }
 .produkty .recommended-products .box_all .carousel .product-card {
   background: #fff;
@@ -695,12 +701,26 @@ body .image-container .text-overlay3 p {
   position: relative;
   overflow: hidden;
 }
+.produkty .recommended-products .box_all .carousel .product-card:hover .description,
+.produkty .recommended-products .box_all .carousel .product-card:hover .description2,
+.produkty .recommended-products .box_all .carousel .product-card:hover .old_price,
+.produkty .recommended-products .box_all .carousel .product-card:hover .price {
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
 .produkty .recommended-products .box_all .carousel .product-card img.zarowka_1 {
   height: auto;
   margin-bottom: 10px;
   margin-top: 100px;
   width: 240px;
   height: 240px;
+}
+.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .description,
+.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .description2,
+.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .old_price,
+.produkty .recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .price {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 .produkty .recommended-products .box_all .carousel .product-card .description {
   font-size: 14px;
@@ -724,12 +744,10 @@ body .image-container .text-overlay3 p {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: rgb(242, 242, 242);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   transition: bottom 0.3s ease;
 }
 .produkty .recommended-products .box_all .carousel .product-card .hover-overlay .quantity-controls {
@@ -766,7 +784,7 @@ body .image-container .text-overlay3 p {
   height: 50px;
   display: flex;
   position: absolute;
-  left: 213px;
+  left: 195px;
   background: #9BCB3B 0% 0% no-repeat padding-box;
   align-items: center;
   justify-content: center;
@@ -774,14 +792,20 @@ body .image-container .text-overlay3 p {
   cursor: pointer;
 }
 .produkty .recommended-products .box_all .carousel .product-card .hover-overlay .add-to-cart img {
-  width: 100%;
-  height: auto;
+  width: 30px;
+  filter: invert(1);
 }
 .produkty .recommended-products .box_all .carousel .product-card .hover-overlay .add-to-cart:hover {
   background: #7cb342;
 }
 .produkty .recommended-products .box_all .carousel .product-card:hover .hover-overlay {
   bottom: 0;
+}
+
+.old_price,
+.price {
+  display: inline-block;
+  position: relative;
 }
 
 .button-overlay-2 {
