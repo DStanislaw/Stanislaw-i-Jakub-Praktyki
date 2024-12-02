@@ -1167,6 +1167,7 @@ height: 55px;
     }
 
     .icon:first-child {
+      padding-top: 40px;
       
       img{
         width: 62px;
@@ -1175,6 +1176,7 @@ height: 55px;
   }
 
   .icon:nth-child(2) {
+    padding-top: 40px;
       
 
       img{
@@ -1184,6 +1186,7 @@ height: 55px;
   }
 
   .icon:last-child {
+    padding-top: 40px;
     img{
       width: 40px;
           height: 27px;
@@ -1202,7 +1205,7 @@ height: 55px;
   position: relative;
   align-items: center;
   
-  right: 10px;
+  
 }
 
 .border_line_2 {
@@ -1211,12 +1214,12 @@ opacity: 0.1;
   width: 1900px;
   height: 1px;
   position: absolute;
-  margin-top: -166px;
+  margin-top: -187px;
 }
 
 .button {
   width: 246px;
- height: 26px;
+ height: 20px;
     margin-top: 20px;
     padding: 20px 20px;
     background-color: red;
@@ -1224,7 +1227,7 @@ opacity: 0.1;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 5px;
+    
     transition: background-color 0.3s;
 
     &:hover {
