@@ -1040,13 +1040,13 @@ body .image-container .text-overlay3 p {
   position: relative;
 }
 
-.button-overlay-2 {
+.button-overlay-tiruriru {
   position: relative; /* Ustawia pozycję na absolutną */
   left: 42%; /* Ustawia lewą krawędź na 50% szerokości */
   width: 318px;
   height: 55px;
 }
-.button-overlay-2 .cta-button-2 {
+.button-overlay-tiruriru .cta-button-tiruriru {
   text-decoration: none;
   padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
   background: #f74137 0% 0% no-repeat padding-box;
@@ -1080,6 +1080,7 @@ body .image-container .text-overlay3 p {
   justify-content: center;
 }
 .overlay h1 {
+  margin-top: -150px;
   color: white;
   text-align: center;
   font-family: "Metropolis", sans-serif;
@@ -1098,20 +1099,47 @@ body .image-container .text-overlay3 p {
   font-variant: normal;
   font-weight: normal;
   font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  width: 790px;
+  margin-bottom: 20px;
+}
+.overlay span {
+  text-align: center;
+  color: white;
+  letter-spacing: -0.36px;
+  opacity: 1;
+  font-family: "Metropolis-regular", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Umożliwia wyświetlanie elementów w linii */
+  justify-content: center; /* Wyrównuje elementy w poziomie */
+  align-items: center; /* Wyrównuje elementy w pionie */
   margin-top: 20px;
+  white-space: nowrap; /* Zapobiega łamaniu tekstu */
 }
-.icons .icon {
-  margin: 0 25px;
+.icons .border-icons {
+  margin: 0 15px; /* Mniejsze odstępy między ikonami */
   text-align: center;
-  border: 1px solid #ffffff;
-  padding: 15px;
-  padding-right: 77px;
-  padding-left: 77px;
+  opacity: 1; /* Upewnij się, że przezroczystość jest ustawiona na 1 */
+  position: relative; /* W razie potrzeby dla dodatkowych efektów */
+}
+.icons .border-icons::before {
+  content: ""; /* Pseudo-element musi mieć treść, nawet jeśli jest pusty */
+  position: relative; /* Pozycjonowanie absolutne */
+  padding-bottom: 153px;
+  padding-right: 310px;
+  opacity: 30%;
+  border: 2px solid white;
+  /* Umieszcza pseudo-element za zawartością */
 }
 .icons .icon:hover {
   transform: scale(1.05); /* Powiększenie przy najechaniu */
@@ -1159,31 +1187,35 @@ body .image-container .text-overlay3 p {
   opacity: 1;
   position: relative;
   align-items: center;
+  top: -30px;
 }
 
 .border_line_2 {
   background: #ffffff 0% 0% no-repeat padding-box;
-  opacity: 0.1;
-  width: 1900px;
+  opacity: 0.05;
+  width: 1960px;
   height: 1px;
   position: absolute;
-  margin-top: -187px;
+  margin-top: -398px;
 }
 
-.button {
-  width: 246px;
-  height: 20px;
-  margin-top: 20px;
-  padding: 20px 20px;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
+.button-overlay-tirurirumiru {
+  position: relative; /* Ustawia pozycję na absolutną */
+  left: 30px;
+  top: 115px;
+  width: 318px;
+  height: 55px;
 }
-.button:hover {
-  background-color: darkred;
+.button-overlay-tirurirumiru .cta-button-tirurirumiru {
+  text-decoration: none;
+  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+  background: #f74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  font: normal normal bold 14px/17px Metropolis;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .footer {
