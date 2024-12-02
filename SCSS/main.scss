@@ -891,7 +891,7 @@ font-style: normal;
       }
 
       .carousel {
-        gap: 20px;
+        
         
         margin-left: 30px;
         scrollbar-width: none;
@@ -900,7 +900,7 @@ font-style: normal;
         
         overflow: hidden;
         padding: 10px; // Na lepszy efekt wizualny
-        width: 100%; // Zamiast sztywnej szerokości
+        width: 1780px;
 
         .carousel-item {
           
@@ -911,7 +911,7 @@ font-style: normal;
           align-items: center;
           flex-shrink: 0;
           scroll-snap-align: start;
-          margin-right: 20px;
+          
          
         }
 
@@ -922,10 +922,11 @@ font-style: normal;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           padding: 15px;
           text-align: center;
-          width: 330px;
+          width: 310px;
           height: 510px;
           position: relative;
           overflow: hidden; // Ukrywa element wysuwany.
+          margin-right: 20px;
 
 
           &:hover {
@@ -969,8 +970,7 @@ font-style: normal;
             margin-top: -10px;
           }
 
-          .old_price {
-          }
+          
 
           .price {
             text-align: left;
@@ -1078,7 +1078,7 @@ font-style: normal;
 
 
   .button-overlay-2 {
-    position: absolute; /* Ustawia pozycję na absolutną */
+    position: relative; /* Ustawia pozycję na absolutną */
 
    
 

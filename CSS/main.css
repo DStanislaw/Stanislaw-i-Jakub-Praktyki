@@ -749,14 +749,13 @@ body .image-container .text-overlay3 p {
   margin-top: 250px;
 }
 .produkty .recommended-products .box_all .carousel {
-  gap: 20px;
   margin-left: 30px;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
   display: flex;
   overflow: hidden;
   padding: 10px;
-  width: 100%;
+  width: 1780px;
 }
 .produkty .recommended-products .box_all .carousel .carousel-item {
   flex: 0 0 330px;
@@ -765,7 +764,6 @@ body .image-container .text-overlay3 p {
   align-items: center;
   flex-shrink: 0;
   scroll-snap-align: start;
-  margin-right: 20px;
 }
 .produkty .recommended-products .box_all .carousel .product-card {
   background: #fff;
@@ -774,10 +772,11 @@ body .image-container .text-overlay3 p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
-  width: 330px;
+  width: 310px;
   height: 510px;
   position: relative;
   overflow: hidden;
+  margin-right: 20px;
 }
 .produkty .recommended-products .box_all .carousel .product-card:hover .description,
 .produkty .recommended-products .box_all .carousel .product-card:hover .description2,
@@ -887,7 +886,7 @@ body .image-container .text-overlay3 p {
 }
 
 .button-overlay-2 {
-  position: absolute; /* Ustawia pozycję na absolutną */
+  position: relative; /* Ustawia pozycję na absolutną */
   left: 42%; /* Ustawia lewą krawędź na 50% szerokości */
   width: 318px;
   height: 55px;
