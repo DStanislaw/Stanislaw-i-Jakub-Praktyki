@@ -165,8 +165,23 @@
   margin: 10px 0;
   line-height: 1.4;
 }
+.produkty .recommended-products .box_all .carousel .product-card .description p {
+  font-family: "Metropolis", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: -0.28px;
+}
 .produkty .recommended-products .box_all .carousel .product-card .description2 {
   margin-top: -10px;
+}
+.produkty .recommended-products .box_all .carousel .product-card .description2 p {
+  text-align: left;
+  font: normal normal normal 14px/20px Metropolis;
+  letter-spacing: -0.28px;
+  color: #111111;
+  opacity: 1;
 }
 .produkty .recommended-products .box_all .carousel .product-card .price {
   text-align: left;
