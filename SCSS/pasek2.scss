@@ -1,0 +1,214 @@
+.PASEK2 {
+    background: #ffffff 0% 0% no-repeat padding-box; // Tło paska
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0;
+  
+    ul {
+      display: flex; // Ustaw elementy w poziomej linii
+      flex-wrap: wrap; // Pozwala zawijać elementy na mniejszych ekranach
+      justify-content: flex-start; // Wyrównuje elementy do lewej
+      align-items: center; // Ustawia elementy w pionie na środku
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: 105px;
+    }
+  
+    li {
+      flex: 1 1 auto; // Elastyczna szerokość dla elementów listy
+      min-width: 10px; // Minimalna szerokość elementu
+      text-align: center;
+  
+      a {
+        text-align: left;
+        font: normal normal bold 14px/14px Metropolis;
+        letter-spacing: -0.28px;
+        color: #111111;
+        text-transform: uppercase;
+        opacity: 1;
+        text-decoration: none;
+        color: #000000;
+        font-family: "Metropolis", sans-serif;
+        font-size: 1rem; // Dynamiczny rozmiar czcionki
+        white-space: nowrap; // Zapobiega zawijaniu tekstu
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+      }
+    }
+  
+    /* Media Queries: Dopasowanie do mniejszych ekranów */
+    @media (max-width: 768px) {
+      ul {
+        justify-content: center; // Centruj elementy na węższych ekranach
+        gap: 10px; // Zmniejsz odstępy między elementami
+      }
+  
+      li {
+        flex: 1 1 45%; // Elementy zajmują 45% szerokości (2 elementy w rzędzie)
+        min-width: 120px; // Minimalna szerokość elementu
+      }
+  
+      a {
+        font-size: 0.9rem; // Zmniejsz rozmiar czcionki
+      }
+    }
+  
+    @media (max-width: 480px) {
+      ul {
+        flex-direction: column; // Elementy jeden pod drugim
+        gap: 5px; // Zmniejsz odstępy
+      }
+  
+      li {
+        flex: 1 1 100%; // Elementy zajmują 100% szerokości na bardzo małych ekranach
+      }
+  
+      a {
+        font-size: 0.8rem; // Jeszcze mniejsza czcionka dla telefonów
+      }
+    }
+  }
+  
+  body {
+    background: #f2f3f4 0% 0% no-repeat padding-box;
+    margin: 0;
+  
+    .slider {
+      position: relative;
+      width: calc(100% - 43px); // Ustal szerokość na 100% minus marginesy
+  
+      overflow: hidden;
+      height: 60vh;
+      margin-left: 30px;
+      margin-bottom: 30px;
+  
+      .image-container {
+        display: none; // Ukryj wszystkie slajdy
+        width: 100%;
+        height: 100%; // Ustal wysokość na 100%
+        position: absolute; // Ustaw pozycję na absolutną, aby nakładały się na siebie
+        top: 0;
+        left: 0;
+  
+        &.active {
+          display: block; // Pokaż aktywny slajd
+        }
+  
+        .image-wrapper {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; // Ukryj nadmiar obrazka
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          .slider-image {
+            width: 100%; // Ustaw szerokość na 100% kontenera
+            height: auto; // Zachowaj proporcje
+            max-height: 100%; // Zapewnij, że obrazek nie wykracza poza kontener
+          }
+        }
+  
+        .text-overlay,
+        .text-overlay2,
+        .text-overlay3 {
+          position: absolute;
+          color: white; // Kolor tekstu
+          text-align: left;
+          width: 100%; // Ustal szerokość na 100%
+          left: 0;
+          padding: 10px; // Odstęp wewnętrzny
+          z-index: 2; // Upewnij się, że tekst jest nad obrazem
+          padding-left: 125px;
+  
+          &.text-overlay {
+            top: 18.5%; // Pozycjonowanie tekstu
+            font-size: 44px; // Rozmiar czcionki
+            font-weight: bold; // Pogrubienie
+            font-family: "Metropolis", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+          }
+  
+          &.text-overlay2 {
+            top: 27%; // Pozycjonowanie tekstu
+            font-size: 44px; // Rozmiar czcionki
+            font-family: "Metropolis-Light";
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 300;
+          }
+  
+          &.text-overlay3 {
+            letter-spacing: -0.44px;
+            opacity: 1;
+            line-height: 26px;
+            width: 371px;
+            height: 74px;
+            top: 40%; // Pozycjonowanie tekstu
+            font-size: 22px; // Rozmiar czcionki
+            font-family: "Metropolis-regular";
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+          }
+        }
+  
+        .button-overlay {
+          text-align: center;
+          position: absolute;
+          bottom: 20px; // Pozycjonowanie przycisku
+          left: 125px;
+  
+          z-index: 2;
+  
+          top: 386px;
+  
+          .cta-button {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+            background: #f74137 0% 0% no-repeat padding-box;
+            opacity: 1;
+            text-align: center;
+            font-family: "Metropolis", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            letter-spacing: -0.28px;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 1;
+          }
+        }
+      }
+  
+      .slider-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        z-index: 3; // Upewnij się, że strzałki są nad obrazem
+  
+        .slider-arrow {
+          cursor: pointer;
+          font-size: 24px;
+          color: white; // Kolor strzałek
+          padding: 10px; // Odstęp wewnętrzny
+          background-color: rgba(0, 0, 0, 0.5); // Lekko przezroczyste tło
+          border-radius: 50%; // Zaokrąglone tło
+          transition: background-color 0.3s; // Efekt przejścia
+  
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.7); // Efekt hover
+          }
+        }
+      }
+    }
+  }

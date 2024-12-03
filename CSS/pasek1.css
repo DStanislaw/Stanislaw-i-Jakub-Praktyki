@@ -1,0 +1,197 @@
+.header {
+  border: 0.5px solid;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.header .logo {
+  margin-left: 11px;
+  max-width: 100%;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  display: flex;
+  align-items: center;
+}
+.header .logo .logo-img {
+  width: 249px;
+  height: 58px;
+}
+.header .nav {
+  justify-content: space-around;
+  font-family: "Metropolis", sans-serif;
+  width: 100vw;
+  display: flex;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+}
+.header .nav .phoneE {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 722px;
+}
+.header .nav .phoneE img {
+  max-width: 100%;
+  width: 28px;
+  height: 28px;
+}
+.header .nav .phoneE span {
+  width: 67px;
+  height: 14px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-left: 17.14px;
+}
+.header .nav .star {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  margin-left: 72.66px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .star img {
+  max-width: 100%;
+  width: 28px;
+  height: 27px;
+}
+.header .nav .star span {
+  margin-left: 17.14px;
+  width: 72px;
+  height: 14px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.header .nav .person {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  margin-left: 62.34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .person img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  width: 25px;
+  height: 29px;
+}
+.header .nav .person span {
+  font-size: 18px;
+  margin-left: 18.67px;
+  width: 120px;
+  height: 14px text-align left;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
+  display: flex;
+}
+.header .nav .cart {
+  margin: 12.5px 0 12.5px 62px;
+  border: 1px solid #e1e2e8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+  height: 55px;
+  position: sticky;
+}
+.header .nav .cart img {
+  width: 39px;
+  height: 36px;
+  margin-left: 10px;
+}
+.header .nav .cart .koszyk-info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+}
+.header .nav .cart .koszyk-info .KOSZ_ILOSC_WRAPPER {
+  position: relative;
+}
+.header .nav .cart .koszyk-info .KOSZ_ILOSC_WRAPPER .KOSZ_ILOSC {
+  font-size: 13px;
+  color: #ffffff;
+  background: #9bcb3b;
+  border-radius: 2px;
+  width: 26px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -16px;
+  margin-left: -20px;
+}
+.header .nav .cart .koszyk-info .LINIA {
+  width: 1px;
+  height: 41px;
+  background: #e1e2e8;
+}
+.header .nav .cart .koszyk-info .KOSZ_CENA {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.header .nav .cart .koszyk-info .KOSZ_CENA .KOSZ_NAZWA {
+  font-size: 14px;
+  font-family: "Metropolis", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: -0.28px;
+  color: #111111;
+}
+.header .nav .cart .koszyk-info .KOSZ_CENA .CENA {
+  font-size: 16px;
+  font-family: "Metropolis-regular", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  color: #111111;
+}
+.header .nav .ZIELONE_POLE_STRZALKA {
+  width: 35px;
+  height: 55px;
+  background: #9bcb3b;
+}
+@media screen and (max-width: 400px) {
+  .header .cart {
+    flex-direction: column;
+    height: auto;
+  }
+  .header .cart .koszyk-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .cart .koszyk-info .KOSZ_CENA .CENA {
+    font-size: 14px;
+  }
+  .header .cart .ZIELONE_POLE_STRZALKA {
+    width: 100%;
+    height: 35px;
+  }
+}
+
+/*# sourceMappingURL=pasek1.css.map */
