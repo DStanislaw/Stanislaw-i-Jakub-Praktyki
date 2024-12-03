@@ -32,28 +32,27 @@ $border-color: #ffffff;
 }
 
 .ZDJECIA_OBOK_3 {
-  display: flex; // Ustawia flexbox dla kontenera
-  justify-content: space-between; // Równomierne rozmieszczenie zdjęć
-  padding-left: 30px; // Padding dla kontenera
-  width: 100%; // Ustal szerokość na 100%
-  height: auto; // Wysokość automatyczna dla responsywności
-  gap: 30px; // Odstęp między zdjęciami
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  width: 100%;
+  height: auto;
+  gap: 30px;
 
   img {
-    flex: 1; // Każde zdjęcie zajmuje równą przestrzeń
-    max-width: 100%; // Umożliwia responsywność
-    height: auto; // Zachowuje proporcje
+    flex: 1;
+    max-width: 100%;
+    height: auto;
   }
 
   .button-overlay1 {
     position: absolute;
-    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
-    margin-left: 49px; /* Wyrównanie z tekstem */
-
+    padding-top: 246px;
+    margin-left: 49px;
     .cta-button1 {
       text-decoration: none;
 
-      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      padding: 21px 45px;
       background: transparent;
       border: 1px solid #ffffff;
       opacity: 1;
@@ -70,21 +69,21 @@ $border-color: #ffffff;
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background: #ffffff; /* Białe tło po najechaniu */
-        color: #f74137; /* Czerwony tekst po najechaniu */
+        background: #ffffff;
+        color: #f74137;
       }
     }
   }
 
   .button-overlay2 {
     position: absolute;
-    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
-    margin-left: 679px; /* Wyrównanie z tekstem */
+    padding-top: 246px;
+    margin-left: 679px;
 
     .cta-button2 {
       text-decoration: none;
 
-      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      padding: 21px 45px;
       background: transparent;
       border: 1px solid #ffffff;
       opacity: 1;
@@ -102,21 +101,21 @@ $border-color: #ffffff;
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background: #ffffff; /* Białe tło po najechaniu */
-        color: #f74137; /* Czerwony tekst po najechaniu */
+        background: #ffffff;
+        color: #f74137;
       }
     }
   }
 
   .button-overlay3 {
     position: absolute;
-    padding-top: 246px; /* Dopasuj, aby było zgodne z obrazem */
-    margin-left: 1309px; /* Wyrównanie z tekstem */
+    padding-top: 246px;
+    margin-left: 1309px;
 
     .cta-button3 {
       text-decoration: none;
 
-      padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+      padding: 21px 45px;
       background: transparent;
       border: 1px solid #ffffff;
       opacity: 1;
@@ -134,8 +133,8 @@ $border-color: #ffffff;
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background: #ffffff; /* Białe tło po najechaniu */
-        color: #f74137; /* Czerwony tekst po najechaniu */
+        background: #ffffff;
+        color: #f74137;
       }
     }
   }
@@ -149,15 +148,15 @@ $border-color: #ffffff;
     color: #ffffff;
     opacity: 1;
     width: 352px;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
 
     p {
       font-family: "Metropolis", sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: bold;
-      font-size: 2.5rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2.5rem;
+      line-height: 1.2;
     }
   }
 
@@ -167,7 +166,7 @@ $border-color: #ffffff;
     padding-top: 122px;
     text-align: left;
     width: 242px;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -177,8 +176,8 @@ $border-color: #ffffff;
       font-style: normal;
       font-variant: normal;
       font-weight: 300;
-      font-size: 2rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2rem;
+      line-height: 1.2;
     }
   }
 
@@ -191,15 +190,15 @@ $border-color: #ffffff;
     color: #ffffff;
     opacity: 1;
     width: 467px;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
 
     p {
       font-family: "Metropolis", sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: bold;
-      font-size: 2.5rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2.5rem;
+      line-height: 1.2;
     }
   }
 
@@ -209,7 +208,7 @@ $border-color: #ffffff;
     text-align: left;
     padding-top: 122px;
     width: 242px;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -219,8 +218,8 @@ $border-color: #ffffff;
       font-style: normal;
       font-variant: normal;
       font-weight: 300;
-      font-size: 2rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2rem;
+      line-height: 1.2;
     }
   }
 
@@ -232,15 +231,15 @@ $border-color: #ffffff;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
 
     p {
       font-family: "Metropolis", sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: bold;
-      font-size: 2.5rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2.5rem;
+      line-height: 1.2;
     }
   }
 
@@ -250,15 +249,15 @@ $border-color: #ffffff;
     padding-left: 1309px;
     padding-top: 122px;
     width: 360px;
-    height: auto; // Zmienione na auto dla responsywności
+    height: auto;
 
     p {
       font-family: "Metropolis-Light", sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: 300;
-      font-size: 2rem; // Użycie jednostek względnych
-      line-height: 1.2; // Ustalenie odstępu między wierszami
+      font-size: 2rem;
+      line-height: 1.2;
       color: #ffffff;
       opacity: 1;
     }
@@ -271,7 +270,7 @@ $border-color: #ffffff;
     .zdj3obok_1_2 p,
     .ZDJ3OBOK_3 p,
     .zdj3obok_1_3 p {
-      font-size: 1.5rem; // Mniejszy rozmiar czcionki dla tabletów
+      font-size: 1.5rem;
     }
   }
 
@@ -282,7 +281,7 @@ $border-color: #ffffff;
     .zdj3obok_1_2 p,
     .ZDJ3OBOK_3 p,
     .zdj3obok_1_3 p {
-      font-size: 1rem; // Jeszcze mniejszy rozmiar czcionki dla telefonów
+      font-size: 1rem;
     }
   }
 }
@@ -324,9 +323,9 @@ $border-color: #ffffff;
 
   .recommended-products {
     display: flex;
-    justify-content: center; // Wycentrowanie w poziomie
-    align-items: center; // Wycentrowanie w pionie (jeśli potrzebne)
-    flex-direction: column; // Ustawienie kierunku kolumny
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h2 {
       font-size: 24px;
@@ -351,9 +350,9 @@ $border-color: #ffffff;
       margin: 0 auto;
       overflow-x: auto;
 
-      justify-content: center; // Wycentrowanie w poziomie
-      align-items: flex-start; // Ustawienie elementów na górze
-      flex-wrap: wrap; // Umożliwia zawijanie elementów
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
 
       button.prev,
       button.next {
@@ -395,12 +394,12 @@ $border-color: #ffffff;
         scroll-snap-type: x mandatory;
 
         overflow: hidden;
-        padding: 10px; // Na lepszy efekt wizualny
+        padding: 10px;
         width: 1860px;
 
         display: flex;
-        justify-content: center; // Wycentrowanie w poziomie
-        overflow: hidden; // Ukrywa nadmiar elementów
+        justify-content: center;
+        overflow: hidden;
 
         .carousel-item {
           flex: 0 0 330px;
@@ -423,28 +422,26 @@ $border-color: #ffffff;
           width: 324px;
           height: 510px;
           position: relative;
-          overflow: hidden; // Ukrywa element wysuwany.
+          overflow: hidden;
           margin-right: 20px;
 
           &:hover {
-            // Efekt na wszystkie elementy w kartce przy hover na całej karcie (np. obrazek).
             .description,
             .description2,
             .old_price,
             .price {
-              transform: translateY(-20px); // Tekst odskakuje w górę.
-              transition: transform 0.3s ease; // Płynna animacja.
+              transform: translateY(-20px);
+              transition: transform 0.3s ease;
             }
           }
 
           img.zarowka_1 {
             margin-bottom: 10px;
             margin-top: 100px;
-            width: 100%; // Ustawienie szerokości na 100% karty
-            height: auto; // Utrzymanie proporcji
+            width: 100%;
+            height: auto;
 
             &:hover {
-              // Dodatkowo, jeśli obrazek ma sam wywoływać efekt:
               ~ .description,
               ~ .description2,
               ~ .old_price,
@@ -455,22 +452,22 @@ $border-color: #ffffff;
             }
 
             .hover-overlay {
-              display: none; // Ukryj domyślnie, pokaż na hover
+              display: none;
             }
 
             .product-card:hover .hover-overlay {
-              display: block; // Pokaż overlay na hover
+              display: block;
             }
 
             @media (max-width: 768px) {
               .product-card {
-                max-width: 80%; // Zwiększ maksymalną szerokość na mniejszych ekranach
+                max-width: 80%;
               }
             }
 
             @media (max-width: 480px) {
               .product-card {
-                max-width: 100%; // Pełna szerokość na małych ekranach
+                max-width: 100%;
               }
             }
           }
@@ -494,10 +491,9 @@ $border-color: #ffffff;
             opacity: 1;
           }
 
-          // Pasek hover-overlay z ilością i koszykiem:
           .hover-overlay {
             position: absolute;
-            bottom: -80px; // Ukryty na starcie.
+            bottom: -80px;
             left: 0;
             width: 100%;
             height: 80px;
@@ -568,7 +564,7 @@ $border-color: #ffffff;
           }
 
           &:hover .hover-overlay {
-            bottom: 0; // Wysuwanie na hover.
+            bottom: 0;
           }
         }
       }
@@ -578,13 +574,12 @@ $border-color: #ffffff;
 
 img.zarowka_1 {
   height: auto;
-  width: 100%; // Użyj procentów, aby dostosować do szerokości kontenera
-  max-width: 240px; // Ustal maksymalną szerokość
+  width: 100%;
+  max-width: 240px;
   margin-bottom: 10px;
   margin-top: 100px;
 
   &:hover {
-    // Dodatkowo, jeśli obrazek ma sam wywoływać efekt:
     ~ .description,
     ~ .description2,
     ~ .old_price,
@@ -595,31 +590,30 @@ img.zarowka_1 {
   }
 }
 
-// Media queries dla responsywności
 @media (max-width: 768px) {
   img.zarowka_1 {
-    width: 40%; // Zwiększ szerokość na mniejszych ekranach
-    margin-top: 50px; // Dostosuj marginesy
+    width: 40%;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 480px) {
   img.zarowka_1 {
-    width: 60%; // Jeszcze większa szerokość na małych ekranach
-    margin-top: 30px; // Dostosuj marginesy
+    width: 60%;
+    margin-top: 30px;
   }
 }
 
 .old_price,
 .price {
-  display: inline-block; // Upewnij się, że są traktowane jak bloki
-  position: relative; // Potrzebne, aby transform działał
+  display: inline-block;
+  position: relative;
 }
 
 .button-overlay-tiruriru {
-  position: relative; /* Ustawia pozycję na absolutną */
+  position: relative;
 
-  left: 42%; /* Ustawia lewą krawędź na 50% szerokości */
+  left: 42%;
 
   width: 318px;
   height: 55px;
@@ -627,7 +621,7 @@ img.zarowka_1 {
   .cta-button-tiruriru {
     text-decoration: none;
 
-    padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+    padding: 21px 45px;
     background: #f74137 0% 0% no-repeat padding-box;
     opacity: 1;
     text-align: center;
@@ -643,7 +637,7 @@ img.zarowka_1 {
   position: relative;
   width: 100%;
   height: 60vh;
-  background-image: url("../IMG/etap_01/photos/img_07.jpg"); /* Wstaw swoją ścieżkę */
+  background-image: url("../IMG/etap_01/photos/img_07.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -654,7 +648,7 @@ img.zarowka_1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Przyciemnienie */
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -707,23 +701,23 @@ img.zarowka_1 {
 }
 
 .icons {
-  display: flex; /* Umożliwia wyświetlanie elementów w linii */
-  justify-content: center; /* Wyrównuje elementy w poziomie */
-  align-items: center; /* Wyrównuje elementy w pionie */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 
-  white-space: nowrap; /* Zapobiega łamaniu tekstu */
+  white-space: nowrap;
 
   .border-icons {
-    margin: 0 15px; /* Mniejsze odstępy między ikonami */
+    margin: 0 15px;
     text-align: center;
-    opacity: 1; /* Upewnij się, że przezroczystość jest ustawiona na 1 */
-    position: relative; /* W razie potrzeby dla dodatkowych efektów */
+    opacity: 1;
+    position: relative;
 
     &::before {
-      content: ""; /* Pseudo-element musi mieć treść, nawet jeśli jest pusty */
+      content: "";
 
-      position: relative; /* Pozycjonowanie absolutne */
+      position: relative;
 
       padding-bottom: 153px;
       padding-right: 310px;
@@ -731,14 +725,12 @@ img.zarowka_1 {
       opacity: 30%;
 
       border: 2px solid white;
-
-      /* Umieszcza pseudo-element za zawartością */
     }
   }
 
   .icon {
     &:hover {
-      transform: scale(1.05); /* Powiększenie przy najechaniu */
+      transform: scale(1.05);
     }
 
     img {
@@ -805,7 +797,7 @@ img.zarowka_1 {
 }
 
 .button-overlay-tirurirumiru {
-  position: relative; /* Ustawia pozycję na absolutną */
+  position: relative;
 
   left: 30px;
   top: 115px;
@@ -816,7 +808,7 @@ img.zarowka_1 {
   .cta-button-tirurirumiru {
     text-decoration: none;
 
-    padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
+    padding: 21px 45px;
     background: #f74137 0% 0% no-repeat padding-box;
     opacity: 1;
     text-align: center;

@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Pliki zależności
+package-lock.json
+.npm/
+
+# Kompilowane pliki
+*.css
+*.scss
+*.map
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Logi
+*.log
+
+# Pliki konfiguracyjne IDE (np. Visual Studio Code)
+.vscode/
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+
+# Pliki środowiska
+.env
+.env.local
+.env.*.local

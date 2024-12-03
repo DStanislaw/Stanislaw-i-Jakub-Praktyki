@@ -124,7 +124,7 @@
         align-items: center;
         gap: 10px;
         width: 100%;
-        max-width: 320px; // Ograniczenie szerokości dla responsywności
+        max-width: 320px; 
         height: 55px;
         position: sticky;
   
@@ -136,7 +136,7 @@
   
         .koszyk-info {
           display: flex;
-          flex: 1; // Zajmuje dostępne miejsce
+          flex: 1; 
           align-items: center;
           gap: 10px;
   
@@ -165,7 +165,7 @@
           }
   
           .KOSZ_CENA {
-            flex: 1; // Pozwala rozciągnąć sekcję
+            flex: 1; 
             display: flex;
             flex-direction: column;
             gap: 2px;
@@ -181,13 +181,13 @@
             }
   
             .CENA {
-              font-size: 16px; // Większy rozmiar dla ceny
+              font-size: 16px;
               font-family: "Metropolis-regular", sans-serif;
               font-style: normal;
               font-variant: normal;
               font-weight: normal;
               text-align: left;
-              white-space: nowrap; // Zapobiega łamaniu tekstu
+              white-space: nowrap; 
               color: #111111;
             }
           }
