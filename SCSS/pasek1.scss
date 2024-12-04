@@ -1,140 +1,128 @@
+
+
 .header {
-  border: 0.5px solid;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-
-  .logo {
-    margin-left: 11px;
-    max-width: 100%;
-    margin-top: 12.5px;
-    margin-bottom: 12.5px;
+    width: 99.5%;
+    border: 0.5px solid ;
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    .logo-img {
-      width: 249px;
-      height: 58px;
-    }
-  }
-
-  .nav {
-    justify-content: space-around;
-    font-family: "Metropolis", sans-serif;
-    width: 100vw;
-    display: flex;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-
-    .phoneE {
+    padding: 20px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    
+  
+    .logo {
+      margin-left: 11px;
+      max-width: 100%;
       margin-top: 12.5px;
       margin-bottom: 12.5px;
-      right: 10px;
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-left: 722px;
-
-      img {
-        max-width: 100%;
-        width: 28px;
-        height: 28px;
-      }
-
-      span {
-        width: 67px;
-        height: 14px;
-        text-align: left;
-        font-size: 18px;
-        letter-spacing: -0.28px;
-        color: #111111;
-        text-transform: uppercase;
-        opacity: 1;
-        margin-left: 17.14px;
+  
+      .logo-img {
+        width: 249px;
+        height: 58px;
       }
     }
-
-    .star {
-      margin-top: 12.5px;
-      margin-bottom: 12.5px;
-      margin-left: 72.66px;
+  
+    .nav {
+      justify-content: space-around;
+      font-family: "Metropolis", sans-serif;
+      width: 100vw;
       display: flex;
-      align-items: center;
-      gap: 10px;
-
-      img {
-        max-width: 100%;
-        width: 28px;
-        height: 27px;
-      }
-
-      span {
-        margin-left: 17.14px;
-        width: 72px;
-        height: 14px;
-        text-align: left;
-        font-size: 18px;
-        letter-spacing: -0.28px;
-        color: #111111;
-        text-transform: uppercase;
-        opacity: 1;
-      }
-    }
-
-    .person {
-      margin-top: 12.5px;
-      margin-bottom: 12.5px;
-      margin-left: 62.34px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      img {
-        width: 100vw; // Pełna szerokość ekranu
-        height: 100vh; // Pełna wysokość ekranu
-        object-fit: cover;
-        width: 25px;
-        height: 29px;
-      }
-
-      span {
-        font-size: 18px;
-        margin-left: 18.67px;
-        width: 120px;
-        height: 14px text-align left;
-
-        letter-spacing: -0.28px;
-        color: #111111;
-        text-transform: uppercase;
-        opacity: 1;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: bold;
+  
+      .phoneE {
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+        right: 10px;
         display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 522px;
+  
+        img {
+          max-width: 100%;
+          width: 28px;
+          height: 28px;
+        }
+  
+        span {
+          width: 67px;
+          height: 14px;
+          text-align: left;
+          font-size: 18px;
+          letter-spacing: -0.28px;
+          color: #111111;
+          text-transform: uppercase;
+          opacity: 1;
+          margin-left: 17.14px;
+        }
       }
-    }
-
-    .cart {
-      margin: 12.5px 0 12.5px 62px;
-      border: 1px solid #e1e2e8;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      max-width: 320px; // Ograniczenie szerokości dla responsywności
-      height: 55px;
-      position: sticky;
-
-      img {
-        width: 39px;
-        height: 36px;
-        margin-left: 10px;
-      }
-
-      .koszyk-info {
+  
+      .star {
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+        
         display: flex;
-        flex: 1; // Zajmuje dostępne miejsce
+        align-items: center;
+        gap: 10px;
+  
+        img {
+          max-width: 100%;
+          width: 28px;
+          height: 27px;
+        }
+  
+        span {
+          margin-left: 17.14px;
+          width: 72px;
+          height: 14px;
+          text-align: left;
+          font-size: 18px;
+          letter-spacing: -0.28px;
+          color: #111111;
+          text-transform: uppercase;
+          opacity: 1;
+        }
+      }
+  
+      .person {
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+        margin-left: 12.5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+  
+        img {
+          width: 100vw; // Pełna szerokość ekranu
+          height: 100vh; // Pełna wysokość ekranu
+          object-fit: cover;
+          width: 25px;
+          height: 29px;
+        }
+  
+        span {
+          font-size: 18px;
+          margin-left: 18.67px;
+          width: 120px;
+          height: 14px text-align left;
+  
+          letter-spacing: -0.28px;
+          color: #111111;
+          text-transform: uppercase;
+          opacity: 1;
+          display: flex;
+        }
+      }
+  
+      .cart {
+        margin: 12.5px 0 12.5px 0;
+        border: 1px solid #e1e2e8;
+        display: flex;
         align-items: center;
         gap: 10px;
         width: 100%;
@@ -206,70 +194,35 @@
             }
           }
         }
-
-        .LINIA {
-          width: 1px;
-          height: 41px;
-          background: #e1e2e8;
-        }
-
-        .KOSZ_CENA {
-          flex: 1; // Pozwala rozciągnąć sekcję
-          display: flex;
-          flex-direction: column;
-          gap: 2px;
-
-          .KOSZ_NAZWA {
-            font-size: 14px;
-            font-family: "Metropolis", sans-serif;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: bold;
-            letter-spacing: -0.28px;
-            color: #111111;
-          }
-
-          .CENA {
-            font-size: 16px; // Większy rozmiar dla ceny
-            font-family: "Metropolis-regular", sans-serif;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal;
-            text-align: left;
-            white-space: nowrap; // Zapobiega łamaniu tekstu
-            color: #111111;
-          }
-        }
       }
-    }
-
-    .ZIELONE_POLE_STRZALKA {
-      width: 35px;
-      height: 55px;
-      background: #9bcb3b;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .cart {
-      flex-direction: column;
-      height: auto;
-
-      .koszyk-info {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .KOSZ_CENA {
-          .CENA {
-            font-size: 14px;
-          }
-        }
-      }
-
+  
       .ZIELONE_POLE_STRZALKA {
-        width: 100%;
-        height: 35px;
+        width: 35px;
+        height: 55px;
+        background: #9bcb3b;
+      }
+    }
+  
+    @media screen and (max-width: 400px) {
+      .cart {
+        flex-direction: column;
+        height: auto;
+  
+        .koszyk-info {
+          flex-direction: column;
+          align-items: flex-start;
+  
+          .KOSZ_CENA {
+            .CENA {
+              font-size: 14px;
+            }
+          }
+        }
+  
+        .ZIELONE_POLE_STRZALKA {
+          width: 100%;
+          height: 35px;
+        }
       }
     }
   }
-}

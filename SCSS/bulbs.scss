@@ -1,39 +1,8 @@
-.produkty {
-  max-width: 100%;
-  background: #f2f3f4 0% 0% no-repeat padding-box;
-  border-radius: 2px;
-  width: 1920px;
-  height: 851px;
-  border: 1px, red;
 
-  .text_products {
-    text-align: center;
-    font: normal normal bold 44px/200px Metropolis;
-    letter-spacing: 0px;
-    color: #111111;
-    opacity: 1;
-  }
-
-  .red_line {
-    width: 60px;
-    height: 3px;
-    background: #f74137 0% 0% no-repeat padding-box;
-    opacity: 1;
-    position: relative;
-    align-items: center;
-    top: -70px;
-    right: -920px;
-  }
-
-  .border_line {
-    background: #e1e2e8 0% 0% no-repeat padding-box;
-    width: 1900px;
-    height: 1px;
-    position: absolute;
-    margin-top: -70px;
-  }
 
   .recommended-products {
+
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +76,7 @@
 
         overflow: hidden;
         padding: 10px;
-        width: 1860px;
+        width: 1852px;
 
         display: flex;
         justify-content: center;
@@ -189,6 +158,15 @@
             color: #333;
             margin: 10px 0;
             line-height: 1.4;
+
+            p {
+              font-family: "Metropolis", sans-serif;
+              text-transform: uppercase;
+              font-style: normal;
+              font-variant: normal;
+              font-weight: bold;
+              letter-spacing: -0.28px;
+            }
           }
 
           .description2 {
@@ -276,10 +254,71 @@
           }
 
           &:hover .hover-overlay {
-            bottom: 0; // Wysuwanie na hover.
+            bottom: 0;
           }
         }
       }
     }
+  }
+
+
+img.zarowka_1 {
+  height: auto;
+  width: 100%;
+  max-width: 240px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+
+  &:hover {
+    ~ .description,
+    ~ .description2,
+    ~ .old_price,
+    ~ .price {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  img.zarowka_1 {
+    width: 40%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  img.zarowka_1 {
+    width: 60%;
+    margin-top: 30px;
+  }
+}
+
+.old_price,
+.price {
+  display: inline-block;
+  position: relative;
+}
+
+.button-overlay-tiruriru {
+  position: relative;
+
+  left: 42%;
+
+  width: 318px;
+  height: 55px;
+
+  .cta-button-tiruriru {
+    text-decoration: none;
+
+    padding: 21px 45px;
+    background: #f74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 14px/17px Metropolis;
+    letter-spacing: -0.28px;
+    color: #ffffff;
+
+    opacity: 1;
   }
 }

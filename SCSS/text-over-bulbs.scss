@@ -1,0 +1,35 @@
+.produkty {
+    max-width: 100%;
+    background: #f2f3f4 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    width: 1860px;
+    height: 851px;
+    border: 1px, red;
+  
+    .text_products {
+      text-align: center;
+      font: normal normal bold 44px/200px Metropolis;
+      letter-spacing: 0px;
+      color: #111111;
+      opacity: 1;
+    }
+  
+    .red_line {
+      width: 60px;
+      height: 3px;
+      background: #f74137 0% 0% no-repeat padding-box;
+      opacity: 1;
+      position: relative;
+      align-items: center;
+      top: -70px;
+      right: -920px;
+    }
+  
+    .border_line {
+      background: #e1e2e8 0% 0% no-repeat padding-box;
+      width: 1900px;
+      height: 1px;
+      position: absolute;
+      margin-top: -70px;
+    }
+}

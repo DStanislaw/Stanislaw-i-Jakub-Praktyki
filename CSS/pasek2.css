@@ -1,10 +1,10 @@
-@charset "UTF-8";
 .PASEK2 {
   background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0;
-  /* Media Queries: Dopasowanie do mniejszych ekranów */
+  width: 100%;
+  max-width: 1960px;
 }
 .PASEK2 ul {
   display: flex;
@@ -61,137 +61,6 @@
   .PASEK2 a {
     font-size: 0.8rem;
   }
-}
-
-body {
-  background: #f2f3f4 0% 0% no-repeat padding-box;
-  margin: 0;
-}
-body .slider {
-  position: relative;
-  width: calc(100% - 43px);
-  overflow: hidden;
-  height: 60vh;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-body .slider .image-container {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-body .slider .image-container.active {
-  display: block;
-}
-body .slider .image-container .image-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .slider .image-container .image-wrapper .slider-image {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-}
-body .slider .image-container .text-overlay,
-body .slider .image-container .text-overlay2,
-body .slider .image-container .text-overlay3 {
-  position: absolute;
-  color: white;
-  text-align: left;
-  width: 100%;
-  left: 0;
-  padding: 10px;
-  z-index: 2;
-  padding-left: 125px;
-}
-body .slider .image-container .text-overlay.text-overlay,
-body .slider .image-container .text-overlay2.text-overlay,
-body .slider .image-container .text-overlay3.text-overlay {
-  top: 18.5%;
-  font-size: 44px;
-  font-weight: bold;
-  font-family: "Metropolis", sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-}
-body .slider .image-container .text-overlay.text-overlay2,
-body .slider .image-container .text-overlay2.text-overlay2,
-body .slider .image-container .text-overlay3.text-overlay2 {
-  top: 27%;
-  font-size: 44px;
-  font-family: "Metropolis-Light";
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
-}
-body .slider .image-container .text-overlay.text-overlay3,
-body .slider .image-container .text-overlay2.text-overlay3,
-body .slider .image-container .text-overlay3.text-overlay3 {
-  letter-spacing: -0.44px;
-  opacity: 1;
-  line-height: 26px;
-  width: 371px;
-  height: 74px;
-  top: 40%;
-  font-size: 22px;
-  font-family: "Metropolis-regular";
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-}
-body .slider .image-container .button-overlay {
-  text-align: center;
-  position: absolute;
-  bottom: 20px;
-  left: 125px;
-  z-index: 2;
-  top: 386px;
-}
-body .slider .image-container .button-overlay .cta-button {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 21px 45px; /* Odstępy wewnętrzne przycisku */
-  background: #f74137 0% 0% no-repeat padding-box;
-  opacity: 1;
-  text-align: center;
-  font-family: "Metropolis", sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  letter-spacing: -0.28px;
-  color: #ffffff;
-  text-transform: uppercase;
-  opacity: 1;
-}
-body .slider .slider-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-body .slider .slider-nav .slider-arrow {
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-body .slider .slider-nav .slider-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=pasek2.css.map */

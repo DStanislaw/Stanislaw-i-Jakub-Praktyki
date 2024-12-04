@@ -1,4 +1,5 @@
 .header {
+  width: 99.5%;
   border: 0.5px solid;
   position: relative;
   display: flex;
@@ -35,7 +36,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 722px;
+  margin-left: 522px;
 }
 .header .nav .phoneE img {
   max-width: 100%;
@@ -56,7 +57,6 @@
 .header .nav .star {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
-  margin-left: 72.66px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -80,7 +80,7 @@
 .header .nav .person {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
-  margin-left: 62.34px;
+  margin-left: 12.5px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -104,7 +104,7 @@
   display: flex;
 }
 .header .nav .cart {
-  margin: 12.5px 0 12.5px 62px;
+  margin: 12.5px 0 12.5px 0;
   border: 1px solid #e1e2e8;
   display: flex;
   align-items: center;

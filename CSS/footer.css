@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #393e40 0% 0% no-repeat padding-box;
+  color: white;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer-section h4::after {
+  text-decoration: none;
+  content: "";
+  display: block;
+  width: 443px;
+  height: 2px;
+  background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
+  margin-top: 5px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+a .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=footer.css.map */
