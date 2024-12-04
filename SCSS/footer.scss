@@ -4,13 +4,14 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background: #393e40 0% 0% no-repeat padding-box;
+  background: #393E40 0% 0% no-repeat padding-box;
   color: white;
   padding: 30px 10px;
   flex-wrap: wrap;
 }
 
 .footer-section {
+  
   flex: 1;
   min-width: 200px;
   margin: 0 10px;
@@ -18,8 +19,10 @@
 }
 
 .footer-section h4 {
+  font: normal normal bold 14px/14px Metropolis;
+  
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   color: white;
   text-transform: uppercase;
   position: relative;
@@ -27,25 +30,33 @@
 }
 
 .footer-section h4::after {
+  
   text-decoration: none;
   content: "";
   display: block;
   width: 443px;
   height: 2px;
-  background: linear-gradient(to right, red 10px, rgb(39, 38, 38) 30px);
+  background: linear-gradient(to right, #F74137 35px, rgb(78, 78, 78) 30px);
   margin-top: 5px;
+  
 }
 
 .footer-section ul {
+  
+  
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
+  text-decoration: none;
+  font: normal normal normal 14px/20px Metropolis;
+  
+  margin-bottom: 13px;
 }
 a .footer-section ul li a {
+  
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -53,5 +64,6 @@ a .footer-section ul li a {
 }
 
 .footer-section ul li a:hover {
+  
   color: red;
 }
