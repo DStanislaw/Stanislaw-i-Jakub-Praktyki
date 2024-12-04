@@ -11,6 +11,66 @@
   max-width: 100%;
   height: auto;
 }
+.ZDJECIA_OBOK_3 .image-wrapper1 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.ZDJECIA_OBOK_3 .image-wrapper1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ZDJECIA_OBOK_3 .image-wrapper1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+.ZDJECIA_OBOK_3 .image-wrapper2 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.ZDJECIA_OBOK_3 .image-wrapper2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ZDJECIA_OBOK_3 .image-wrapper2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+.ZDJECIA_OBOK_3 .image-wrapper3 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.ZDJECIA_OBOK_3 .image-wrapper3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ZDJECIA_OBOK_3 .image-wrapper3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
 .ZDJECIA_OBOK_3 .button-overlay1 {
   position: absolute;
   padding-top: 246px;

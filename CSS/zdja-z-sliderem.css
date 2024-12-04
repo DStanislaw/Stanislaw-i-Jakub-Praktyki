@@ -36,69 +36,6 @@
   margin-right: 20px;
 }
 
-.image-wrapper1 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-}
-.image-wrapper1 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.image-wrapper1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  pointer-events: none;
-}
-
-.image-wrapper2 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-}
-.image-wrapper2 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.image-wrapper2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  pointer-events: none;
-}
-
-.image-wrapper3 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-}
-.image-wrapper3 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.image-wrapper3::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  pointer-events: none;
-}
-
 body {
   background: #f2f3f4 0% 0% no-repeat padding-box;
   margin: 0;

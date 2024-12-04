@@ -37,77 +37,7 @@
   margin-right: 20px;
 }
 
-.image-wrapper1 {
-  display: flex;
-  position: relative;
-  display: inline-block;
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  // Gradient tylko na obrazie
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    pointer-events: none; // Gradient nie blokuje interakcji z obrazem
-  }
-}
-
-.image-wrapper2 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  // Gradient tylko na obrazie
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    pointer-events: none; // Gradient nie blokuje interakcji z obrazem
-  }
-}
-
-.image-wrapper3 {
-  display: flex;
-  position: relative;
-  display: inline-block;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  // Gradient tylko na obrazie
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    pointer-events: none; // Gradient nie blokuje interakcji z obrazem
-  }
-}
 
 body {
   background: #f2f3f4 0% 0% no-repeat padding-box;
