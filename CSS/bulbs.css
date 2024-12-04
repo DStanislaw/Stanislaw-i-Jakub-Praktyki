@@ -131,7 +131,7 @@
   font-size: 14px;
   color: #333;
   margin: 10px 0;
-  line-height: 1.4;
+  line-height: 14px;
   font-family: "Metropolis", sans-serif;
   text-transform: uppercase;
   font-style: normal;
@@ -141,6 +141,15 @@
 }
 .recommended-products .box_all .carousel .product-card .description2 {
   margin-top: -10px;
+  font-family: "Metropolis-regular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: -0.28px;
+  color: #111111;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 20px;
 }
 .recommended-products .box_all .carousel .product-card .price {
   text-align: left;
@@ -240,10 +249,30 @@ img.zarowka_1:hover ~ .price {
     margin-top: 30px;
   }
 }
-.old_price,
+.old_price {
+  font-family: "Metropolis-regular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: -0.28px;
+  color: #A3A3A3;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .price {
   display: inline-block;
   position: relative;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: -0.28px;
+  color: #111111;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .button-overlay-tiruriru {
