@@ -19,14 +19,18 @@
 }
 
 .footer-section h4 {
-  font: normal normal bold 14px/14px Metropolis;
-  
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: -0.28px;
   font-size: 14px;
   margin-bottom: 13px;
   color: white;
   text-transform: uppercase;
   position: relative;
   text-decoration: none;
+  opacity: 1;
 }
 
 .footer-section h4::after {
@@ -36,7 +40,7 @@
   display: block;
   width: 443px;
   height: 2px;
-  background: linear-gradient(to right, #F74137 35px, rgb(78, 78, 78) 30px);
+  background: linear-gradient(to right, #F74137 35px, rgb(83, 83, 83) 30px);
   margin-top: 5px;
   
 }
@@ -51,8 +55,15 @@
 
 .footer-section ul li {
   text-decoration: none;
-  font: normal normal normal 14px/20px Metropolis;
-  
+  font-family: "Metropolis-regular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: -0.28px;
+color: #FFFFFF;
+opacity: 1;
+  font-size: 14px;
+  line-height: 20px;
   margin-bottom: 13px;
 }
 a .footer-section ul li a {
