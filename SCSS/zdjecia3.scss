@@ -6,311 +6,296 @@
   height: auto;
   gap: 30px;
 
+
   img {
     flex: 1;
     max-width: 100%;
     height: auto;
   }
   .image-wrapper1 {
-    display: flex;
-    position: relative;
     display: inline-block;
-
+    position: relative;
+    overflow: hidden;
+  
+    &:hover img {
+      transform: scale(1.1); /* Przybliż obraz o 10% */
+    }
+  
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-
-    // Gradient tylko na obrazie
+  
+    /* Gradient na zdjęciu, ale nie przeszkadzający w interakcji */
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 90%;
+      width: 100%; /* Poprawiony gradient na całe zdjęcie */
       height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0)
-      );
-      pointer-events: none; // Gradient nie blokuje interakcji z obrazem
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+      pointer-events: none; /* Zapewnia, że elementy mogą reagować na kliknięcia */
+      z-index: 1; /* Gradient pod innymi elementami */
+    }
+  
+    /* Napisy na zdjęciu */
+    .ZDJ3OBOK_1 {
+      position: absolute;
+      top: 72px;
+      left: 49px;
+      text-align: left;
+      color: #ffffff;
+      z-index: 2; /* Zapewnia, że napis będzie widoczny na zdjęciu */
+      
+      p {
+        font-family: "Metropolis", sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+    }
+  
+    .zdj3obok_1_1 {
+      position: absolute;
+      top: 122px;
+      left: 49px;
+      text-align: left;
+      color: #ffffff;
+      z-index: 2; /* Zapewnia, że napis będzie widoczny na zdjęciu */
+      
+      p {
+        font-family: "Metropolis-Light", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+  
+    /* Przycisk na zdjęciu */
+    .button-overlay1 {
+      position: absolute;
+      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
+      left: 49px;
+      z-index: 3; /* Zapewnia, że przycisk będzie na wierzchu */
+    }
+  
+    .cta-button1 {
+      padding: 21px 45px;
+      background: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-family: "Metropolis";
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+      
+      &:hover {
+        background: #ffffff;
+        color: #f74137;
+      }
     }
   }
+  
+  
+
+
+
+
+
+
+
+
+
 
   .image-wrapper2 {
-    display: flex;
-    position: relative;
     display: inline-block;
-
+    position: relative;
+    overflow: hidden;
+  
+    &:hover img {
+      transform: scale(1.1); /* Przybliż obraz o 10% */
+    }
+  
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-
-    // Gradient tylko na obrazie
+  
+    /* Gradient na zdjęciu */
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 90%;
+      width: 100%; /* Pełna szerokość gradientu */
       height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0)
-      );
-      pointer-events: none; // Gradient nie blokuje interakcji z obrazem
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+      pointer-events: none; /* Gradient nie blokuje interakcji z obrazem */
+      z-index: 1; /* Gradient poniżej tekstów i przycisków */
     }
-  }
-
-  .image-wrapper3 {
-    display: flex;
-    position: relative;
-    display: inline-block;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    // Gradient tylko na obrazie
-    &::after {
-      content: "";
+  
+    /* Napisy */
+    .ZDJ3OBOK_2 {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 90%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0)
-      );
-      pointer-events: none; // Gradient nie blokuje interakcji z obrazem
-    }
-  }
-  .button-overlay1 {
-    position: absolute;
-    padding-top: 246px;
-    margin-left: 49px;
-    .cta-button1 {
-      text-decoration: none;
-
-      padding: 21px 45px;
-      background: transparent;
-      border: 1px solid #ffffff;
-      opacity: 1;
-      text-align: center;
-      letter-spacing: -0.28px;
+      top: 72px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      text-align: left;
       color: #ffffff;
-      opacity: 1;
-      font-family: "Metropolis";
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
-      font-size: 14px;
-
-      transition: background-color 0.3s, color 0.3s;
-
-      &:hover {
-        background: #ffffff;
-        color: #f74137;
+      z-index: 2; /* Napisy na wierzchu zdjęcia */
+      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
+  
+      p {
+        font-family: "Metropolis", sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1.2;
       }
     }
-  }
-
-  .button-overlay2 {
-    position: absolute;
-    padding-top: 246px;
-    margin-left: 679px;
-
+  
+    .zdj3obok_1_2 {
+      position: absolute;
+      top: 122px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      text-align: left;
+      color: #ffffff;
+      z-index: 2; /* Napisy na wierzchu zdjęcia */
+      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
+  
+      p {
+        font-family: "Metropolis-Light", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+  
+    /* Przycisk */
+    .button-overlay2 {
+      position: absolute;
+      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      z-index: 3; /* Przycisk na wierzchu */
+      pointer-events: auto; /* Zapewnia, że przycisk reaguje na hover */
+    }
+  
     .cta-button2 {
       text-decoration: none;
-
       padding: 21px 45px;
       background: transparent;
       border: 1px solid #ffffff;
-      opacity: 1;
-      text-align: center;
+      color: #ffffff;
       font-family: "Metropolis";
-      font-style: normal;
-      font-variant: normal;
       font-weight: bold;
       font-size: 14px;
       letter-spacing: -0.28px;
-      color: #ffffff;
-
-      opacity: 1;
-
       transition: background-color 0.3s, color 0.3s;
-
+  
       &:hover {
         background: #ffffff;
         color: #f74137;
       }
     }
   }
+  
 
-  .button-overlay3 {
-    position: absolute;
-    padding-top: 246px;
-    margin-left: 1309px;
 
+
+
+  .image-wrapper3 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover img {
+      transform: scale(1.1); /* Przybliż obraz o 10% */
+    }
+  
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Gradient na zdjęciu */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Pełna szerokość gradientu */
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+      pointer-events: none; /* Gradient nie blokuje interakcji z obrazem */
+      z-index: 1; /* Gradient poniżej tekstów i przycisków */
+    }
+  
+    /* Napisy */
+    .ZDJ3OBOK_3 {
+      position: absolute;
+      top: 72px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      text-align: left;
+      color: #ffffff;
+      z-index: 2; /* Napisy na wierzchu zdjęcia */
+      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
+  
+      p {
+        font-family: "Metropolis", sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+    }
+  
+    .zdj3obok_1_3 {
+      position: absolute;
+      top: 122px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      text-align: left;
+      color: #ffffff;
+      z-index: 2; /* Napisy na wierzchu zdjęcia */
+      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
+  
+      p {
+        font-family: "Metropolis-Light", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+  
+    /* Przycisk */
+    .button-overlay3 {
+      position: absolute;
+      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
+      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      z-index: 3; /* Przycisk na wierzchu */
+      pointer-events: auto; /* Zapewnia, że przycisk reaguje na hover */
+    }
+  
     .cta-button3 {
       text-decoration: none;
-
       padding: 21px 45px;
       background: transparent;
       border: 1px solid #ffffff;
-      opacity: 1;
-      text-align: center;
+      color: #ffffff;
       font-family: "Metropolis";
-      font-style: normal;
-      font-variant: normal;
       font-weight: bold;
       font-size: 14px;
       letter-spacing: -0.28px;
-      color: #ffffff;
-
-      opacity: 1;
-
       transition: background-color 0.3s, color 0.3s;
-
+  
       &:hover {
         background: #ffffff;
         color: #f74137;
       }
     }
   }
-
-  .ZDJ3OBOK_1 {
-    position: absolute;
-    padding-top: 72px;
-    padding-left: 49px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    width: 352px;
-    height: auto;
-
-    p {
-      font-family: "Metropolis", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
-      font-size: 2.5rem;
-      line-height: 1.2;
-    }
-  }
-
-  .zdj3obok_1_1 {
-    position: absolute;
-    padding-left: 49px;
-    padding-top: 122px;
-    text-align: left;
-    width: 242px;
-    height: auto;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-
-    p {
-      font-family: "Metropolis-Light", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 300;
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-  }
-
-  .ZDJ3OBOK_2 {
-    position: absolute;
-    text-align: left;
-    padding-left: 679px;
-    padding-top: 72px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    width: 467px;
-    height: auto;
-
-    p {
-      font-family: "Metropolis", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
-      font-size: 2.5rem;
-      line-height: 1.2;
-    }
-  }
-
-  .zdj3obok_1_2 {
-    position: absolute;
-    padding-left: 679px;
-    text-align: left;
-    padding-top: 122px;
-    width: 242px;
-    height: auto;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-
-    p {
-      font-family: "Metropolis-Light", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 300;
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-  }
-
-  .ZDJ3OBOK_3 {
-    position: absolute;
-    padding-top: 72px;
-    padding-left: 1309px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    height: auto;
-
-    p {
-      font-family: "Metropolis", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
-      font-size: 2.5rem;
-      line-height: 1.2;
-    }
-  }
-
-  .zdj3obok_1_3 {
-    position: absolute;
-    text-align: left;
-    padding-left: 1309px;
-    padding-top: 122px;
-    width: 360px;
-    height: auto;
-
-    p {
-      font-family: "Metropolis-Light", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 300;
-      font-size: 2rem;
-      line-height: 1.2;
-      color: #ffffff;
-      opacity: 1;
-    }
-  }
+  
 
   @media (max-width: 768px) {
     .ZDJ3OBOK_1 p,
