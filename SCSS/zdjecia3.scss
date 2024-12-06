@@ -6,7 +6,6 @@
   height: auto;
   gap: 30px;
 
-
   img {
     flex: 1;
     max-width: 100%;
@@ -16,39 +15,41 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-  
+
     &:hover img {
-      transform: scale(1.1); /* Przybliż obraz o 10% */
+      transform: scale(1.1);
     }
-  
+
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-  
-    /* Gradient na zdjęciu, ale nie przeszkadzający w interakcji */
+
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; /* Poprawiony gradient na całe zdjęcie */
+      width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-      pointer-events: none; /* Zapewnia, że elementy mogą reagować na kliknięcia */
-      z-index: 1; /* Gradient pod innymi elementami */
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      pointer-events: none;
+      z-index: 1;
     }
-  
-    /* Napisy na zdjęciu */
+
     .ZDJ3OBOK_1 {
       position: absolute;
       top: 72px;
       left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Zapewnia, że napis będzie widoczny na zdjęciu */
-      
+      z-index: 2;
+
       p {
         font-family: "Metropolis", sans-serif;
         font-weight: bold;
@@ -56,15 +57,15 @@
         line-height: 1.2;
       }
     }
-  
+
     .zdj3obok_1_1 {
       position: absolute;
       top: 122px;
       left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Zapewnia, że napis będzie widoczny na zdjęciu */
-      
+      z-index: 2;
+
       p {
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
@@ -72,15 +73,14 @@
         line-height: 1.2;
       }
     }
-  
-    /* Przycisk na zdjęciu */
+
     .button-overlay1 {
       position: absolute;
-      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
+      top: 246px;
       left: 49px;
-      z-index: 3; /* Zapewnia, że przycisk będzie na wierzchu */
+      z-index: 3;
     }
-  
+
     .cta-button1 {
       padding: 21px 45px;
       background: transparent;
@@ -91,63 +91,55 @@
       font-size: 14px;
       text-align: center;
       transition: background-color 0.3s, color 0.3s;
-      
+
       &:hover {
         background: #ffffff;
         color: #f74137;
       }
     }
   }
-  
-  
-
-
-
-
-
-
-
-
-
 
   .image-wrapper2 {
     display: inline-block;
     position: relative;
     overflow: hidden;
-  
+
     &:hover img {
-      transform: scale(1.1); /* Przybliż obraz o 10% */
+      transform: scale(1.1);
     }
-  
+
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-  
-    /* Gradient na zdjęciu */
+
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; /* Pełna szerokość gradientu */
+      width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-      pointer-events: none; /* Gradient nie blokuje interakcji z obrazem */
-      z-index: 1; /* Gradient poniżej tekstów i przycisków */
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      pointer-events: none;
+      z-index: 1;
     }
-  
+
     /* Napisy */
     .ZDJ3OBOK_2 {
       position: absolute;
-      top: 72px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      top: 72px;
+      left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Napisy na wierzchu zdjęcia */
-      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
-  
+      z-index: 2;
+      pointer-events: none;
+
       p {
         font-family: "Metropolis", sans-serif;
         font-weight: bold;
@@ -155,16 +147,16 @@
         line-height: 1.2;
       }
     }
-  
+
     .zdj3obok_1_2 {
       position: absolute;
-      top: 122px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      top: 122px;
+      left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Napisy na wierzchu zdjęcia */
-      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
-  
+      z-index: 2;
+      pointer-events: none;
+
       p {
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
@@ -172,16 +164,16 @@
         line-height: 1.2;
       }
     }
-  
+
     /* Przycisk */
     .button-overlay2 {
       position: absolute;
-      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
-      z-index: 3; /* Przycisk na wierzchu */
-      pointer-events: auto; /* Zapewnia, że przycisk reaguje na hover */
+      top: 246px;
+      left: 49px;
+      z-index: 3;
+      pointer-events: auto;
     }
-  
+
     .cta-button2 {
       text-decoration: none;
       padding: 21px 45px;
@@ -193,56 +185,55 @@
       font-size: 14px;
       letter-spacing: -0.28px;
       transition: background-color 0.3s, color 0.3s;
-  
+
       &:hover {
         background: #ffffff;
         color: #f74137;
       }
     }
   }
-  
-
-
-
 
   .image-wrapper3 {
     display: inline-block;
     position: relative;
     overflow: hidden;
-  
+
     &:hover img {
-      transform: scale(1.1); /* Przybliż obraz o 10% */
+      transform: scale(1.1);
     }
-  
+
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-  
-    /* Gradient na zdjęciu */
+
     &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; /* Pełna szerokość gradientu */
+      width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-      pointer-events: none; /* Gradient nie blokuje interakcji z obrazem */
-      z-index: 1; /* Gradient poniżej tekstów i przycisków */
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      pointer-events: none;
+      z-index: 1;
     }
-  
+
     /* Napisy */
     .ZDJ3OBOK_3 {
       position: absolute;
-      top: 72px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      top: 72px;
+      left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Napisy na wierzchu zdjęcia */
-      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
-  
+      z-index: 2;
+      pointer-events: none;
+
       p {
         font-family: "Metropolis", sans-serif;
         font-weight: bold;
@@ -250,16 +241,16 @@
         line-height: 1.2;
       }
     }
-  
+
     .zdj3obok_1_3 {
       position: absolute;
-      top: 122px; /* Zgodnie z pozycjonowaniem w image-wrapper1 */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
+      top: 122px;
+      left: 49px;
       text-align: left;
       color: #ffffff;
-      z-index: 2; /* Napisy na wierzchu zdjęcia */
-      pointer-events: none; /* Zapewnia, że napisy nie blokują interakcji */
-  
+      z-index: 2;
+      pointer-events: none;
+
       p {
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
@@ -267,16 +258,15 @@
         line-height: 1.2;
       }
     }
-  
-    /* Przycisk */
+
     .button-overlay3 {
       position: absolute;
-      top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
-      left: 49px; /* Poprawienie na podobne pozycjonowanie jak w image-wrapper1 */
-      z-index: 3; /* Przycisk na wierzchu */
-      pointer-events: auto; /* Zapewnia, że przycisk reaguje na hover */
+      top: 246px;
+      left: 49px;
+      z-index: 3;
+      pointer-events: auto;
     }
-  
+
     .cta-button3 {
       text-decoration: none;
       padding: 21px 45px;
@@ -288,14 +278,13 @@
       font-size: 14px;
       letter-spacing: -0.28px;
       transition: background-color 0.3s, color 0.3s;
-  
+
       &:hover {
         background: #ffffff;
         color: #f74137;
       }
     }
   }
-  
 
   @media (max-width: 768px) {
     .ZDJ3OBOK_1 p,
