@@ -71,7 +71,7 @@
   position: absolute;
   top: 246px; /* Zwiększenie przestrzeni, aby przycisk był widoczny */
   left: 49px;
-  z-index: 3; /* Zapewnia, że przycisk będzie na wierzchu */
+  z-index: 3;
 }
 .ZDJECIA_OBOK_3 .image-wrapper1 .cta-button1 {
   padding: 21px 45px;
