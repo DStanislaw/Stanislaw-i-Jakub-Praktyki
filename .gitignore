@@ -7,7 +7,7 @@ package-lock.json
 
 # Kompilowane pliki
 *.css
-*.scss
+
 *.map
 
 # Pliki systemowe
