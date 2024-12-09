@@ -50,7 +50,7 @@
 
     .pictures__box-text1 {
       position: absolute;
-      top: 10%; 
+      top: 17%; 
     left: 5%; 
       text-align: left;
       color: #ffffff;
@@ -69,7 +69,7 @@
 
     .pictures__box-text2 {
       position: absolute;
-      top: 20%; 
+      top: 27%; 
       left: 5%; 
       text-align: left;
       color: #ffffff;
@@ -87,7 +87,7 @@
     }
     .pictures__box-button {
       position: absolute;
-      top: 50%; 
+      top: 60%; 
       left: 5%; 
       z-index: 3;
       pointer-events: auto;
@@ -148,15 +148,15 @@
     /* Napisy */
     .pictures__box2-text1 {
       position: absolute;
-      top: 72px;
-      left: 49px;
+      top: 17%; 
+      left: 5%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
       pointer-events: none;
 
       p {
-        font-size: clamp(1rem, 2vw, 2.5rem); 
+        font-size: clamp(0.5rem, 2.3vw, 10.5rem);
         line-height: 1.2;
         font-family: "Metropolis", sans-serif;
         font-weight: bold;
@@ -167,15 +167,15 @@
 
     .pictures__box2-text2 {
       position: absolute;
-      top: 122px;
-      left: 49px;
+      top: 27%; 
+    left: 5%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
       pointer-events: none;
 
       p {
-        font-size: clamp(1rem, 2vw, 2.5rem); 
+        font-size: clamp(0.5rem, 2.3vw, 10.5rem);
         line-height: 1.2;
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
@@ -187,8 +187,8 @@
     /* Przycisk */
     .pictures__box2-button {
       position: absolute;
-      top: 246px;
-      left: 49px;
+      top: 60%; 
+      left: 5%;
       z-index: 3;
       pointer-events: auto;
     }
@@ -248,15 +248,15 @@
 
     .pictures__box3-text1 {
       position: absolute;
-      top: 72px;
-      left: 49px;
+      top: 17%; 
+    left: 5%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
       pointer-events: none;
 
       p {
-        font-size: clamp(1rem, 2vw, 2.5rem); 
+        font-size: clamp(0.5rem, 2.3vw, 10.5rem); 
         line-height: 1.2;
         font-family: "Metropolis", sans-serif;
         font-weight: bold;
@@ -267,27 +267,28 @@
 
     .pictures__box3-text2 {
       position: absolute;
-      top: 122px;
-      left: 49px;
+      top: 27%; 
+      left: 5%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
       pointer-events: none;
 
       p {
-        font-size: clamp(1rem, 2vw, 2.5rem); 
+        font-size: clamp(0.5rem, 2.3vw, 10.5rem); 
+ 
         line-height: 1.2;
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
-        font-size: clamp(1rem, 2vw, 2.5rem);
+        
         line-height: 1.2;
       }
     }
 
     .pictures__box3-button {
       position: absolute;
-      top: 246px;
-      left: 49px;
+      top: 60%; 
+      left: 5%;
       z-index: 3;
       pointer-events: auto;
     }
