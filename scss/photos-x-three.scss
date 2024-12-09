@@ -122,6 +122,7 @@
       display: block;
       
       height: auto;
+      transition: transform 0.3s;
     }
 
     &::after {
@@ -216,6 +217,7 @@
       display: block;
    
       height: auto;
+      transition: transform 0.3s;
     }
 
     &::after {
