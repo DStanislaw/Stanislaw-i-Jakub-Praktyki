@@ -1,4 +1,4 @@
-.PASEK2 {
+.menu2 {
   background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   border: 1px solid #ccc;
@@ -6,7 +6,7 @@
   width: calc(100% - 43px);
  
 
-  ul {
+  .menu2__ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -17,12 +17,12 @@
     gap: 105px;
   }
 
-  li {
+   .menu2__item{
     flex: 1 1 auto;
     min-width: 10px;
     text-align: center;
 
-    a {
+    .menu2-text {
       text-align: left;
       font: normal normal bold 14px/14px Metropolis;
       letter-spacing: -0.28px;
@@ -41,32 +41,32 @@
   }
 
   @media (max-width: 768px) {
-    ul {
+    .menu2__ul {
       justify-content: center;
       gap: 10px;
     }
 
-    li {
+    .menu2__item {
       flex: 1 1 45%;
       min-width: 120px;
     }
 
-    a {
+    .menu2-text  {
       font-size: 0.9rem;
     }
   }
 
   @media (max-width: 480px) {
-    ul {
+    .menu2__ul {
       flex-direction: column;
       gap: 5px;
     }
 
-    li {
+    .menu2__itemi {
       flex: 1 1 100%;
     }
 
-    a {
+    .menu2-text  {
       font-size: 0.8rem;
     }
   }

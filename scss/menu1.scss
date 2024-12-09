@@ -1,6 +1,6 @@
 
 
-.header {
+.menu{
   width: calc(100% - 43px);
     border: 0.5px solid ;
     position: relative;
@@ -11,7 +11,7 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     
   
-    .logo {
+    .menu__logo {
       margin-left: 11px;
       max-width: 100%;
       margin-top: 12.5px;
@@ -19,22 +19,15 @@
       display: flex;
       align-items: center;
   
-      .logo-img {
+      .menu__logo-img {
         width: 249px;
         height: 58px;
       }
     }
   
-    .nav {
-      justify-content: space-around;
-      font-family: "Metropolis", sans-serif;
-      width: 100vw;
-      display: flex;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
+    
   
-      .phoneE {
+      .menu__phone {
         margin-top: 12.5px;
         margin-bottom: 12.5px;
         right: 10px;
@@ -62,7 +55,7 @@
         }
       }
   
-      .star {
+      .menu__star {
         margin-top: 12.5px;
         margin-bottom: 12.5px;
         
@@ -89,7 +82,7 @@
         }
       }
   
-      .person {
+      .menu__person {
         margin-top: 12.5px;
         margin-bottom: 12.5px;
         margin-left: 12.5px;
@@ -136,15 +129,15 @@
           margin-left: 10px;
         }
   
-        .koszyk-info {
+        .cart__info {
           display: flex;
           flex: 1; 
           align-items: center;
           gap: 10px;
   
-          .KOSZ_ILOSC_WRAPPER {
+          .cart__info-wrapper {
             position: relative;
-            .KOSZ_ILOSC {
+            .cart__info-amount {
               font-size: 13px;
               color: #ffffff;
               background: #9bcb3b;
@@ -160,19 +153,19 @@
             }
           }
   
-          .LINIA {
+          .cart__info-line {
             width: 1px;
             height: 41px;
             background: #e1e2e8;
           }
   
-          .KOSZ_CENA {
+          .cart__info__price {
             flex: 1; 
             display: flex;
             flex-direction: column;
             gap: 2px;
   
-            .KOSZ_NAZWA {
+            .cart__info__price-name {
               font-size: 14px;
               font-family: "Metropolis", sans-serif;
               font-style: normal;
@@ -182,7 +175,7 @@
               color: #111111;
             }
   
-            .CENA {
+            .cart__info__price-price {
               font-size: 16px;
               font-family: "Metropolis-regular", sans-serif;
               font-style: normal;
@@ -196,7 +189,7 @@
         }
       }
   
-      .ZIELONE_POLE_STRZALKA {
+      .cart_green-box {
         width: 35px;
         height: 55px;
         background: #9bcb3b;
@@ -225,4 +218,4 @@
         }
       }
     }
-  }
+  

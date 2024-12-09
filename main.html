@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header Example</title>
     <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="./CSS/pasek2.css" />
+    <link rel="stylesheet" href="./CSS/menu2.css" />
     <link rel="stylesheet" href="./CSS/slider-pictures.css" />
-    <link rel="stylesheet" href="./CSS/pasek1.css" />
+    <link rel="stylesheet" href="./CSS/menu1.css" />
     <link rel="stylesheet" href="./CSS/kolory_zmienne.css" />
     <link rel="stylesheet" href="./CSS/bulbs.css" />
     <link rel="stylesheet" href="./CSS/photos-x-three.css" />
@@ -24,14 +24,14 @@
 
     <header class="header" >
 
-      <nav class="nav">  
+      <nav class="menu">  
 
-      <div class="logo">
-        <img src="./IMG/photos/logo.png" alt="LOGO" class="logo-img" />
+      <div class="menu__logo">
+        <img src="./IMG/photos/logo.png" alt="LOGO" class="menu__logo-img" />
       </div>
 
 
-    <div class="phoneE">
+    <div class="menu__phone">
 
         <img src="./IMG/icons/icon_01.svg" alt="Phone Icon" />
 
@@ -40,7 +40,7 @@
     </div>
 
 
-    <div class="star">
+    <div class="menu__star">
 
         <img src="./IMG/icons/icon_02.svg" alt="Star Icon" />
 
@@ -49,7 +49,7 @@
     </div>
 
 
-    <div class="person">
+    <div class="menu__person">
 
         <img src="./IMG/icons/icon_03.svg" alt="Person Icon" />
 
@@ -60,32 +60,32 @@
 
     <div class="cart">
       <img src="./IMG/icons/icon_06.svg" alt="Cart Icon" />
-      <div class="koszyk-info">
-        <div class="KOSZ_ILOSC_WRAPPER">
-          <div class="KOSZ_ILOSC">344</div>
+      <div class="cart__info">
+        <div class="cart__info-wrapper">
+          <div class="cart__info-amount">344</div>
         </div>
-        <div class="LINIA"></div>
-        <div class="KOSZ_CENA">
-          <span class="KOSZ_NAZWA"><b>TWÓJ KOSZYK</b></span>
-          <div class="CENA">3456,00 zł</div>
+        <div class="cart__info-line"></div>
+        <div class="cart__info__price">
+          <span class="cart__info__price-name"><b>TWÓJ KOSZYK</b></span>
+          <div class="cart__info__price-price">3456,00 zł</div>
         </div>
       </div>
-      <div class="ZIELONE_POLE_STRZALKA"></div>
+      <div class="cart__green-box"></div>
     </div>
     
 
 
     </header>
 
-    <nav class="PASEK2">
-      <ul>
-        <li><a href="ŹRÓDŁA ŚWIATŁA">ŹRÓDŁA ŚWIATŁA</a></li>
-        <li><a href="OŚWIETLENIE WEWNĘTRZNE">OŚWIETLENIE WEWNĘTRZNE</a></li>
-        <li><a href="GNIAZDKA, WYŁĄCZNIKI">GNIAZDKA, WYŁĄCZNIKI</a></li>
+    <nav class="menu2">
+      <ul class="menu2__ul">
+        <li class="menu2__item"><a href="ŹRÓDŁA ŚWIATŁA" class="menu2-text">ŹRÓDŁA ŚWIATŁA</a></li>
+        <li class="menu2__item"><a href="OŚWIETLENIE WEWNĘTRZNE" class="menu2-text">OŚWIETLENIE WEWNĘTRZNE</a></li>
+        <li class="menu2__item"><a href="GNIAZDKA, WYŁĄCZNIKI" class="menu2-text">GNIAZDKA, WYŁĄCZNIKI</a></li>
        
-        <li><a href="AUTOMATYKA STEROWANIE">AUTOMATYKA STEROWANIE</a></li>
-        <li><a href="ROZDZIELENIE I APARATURA">ROZDZIELENIE I APARATURA</a></li>
-        <li><a href="MATERIAŁY INSTALACYJNE">MATERIAŁY INSTALACYJNE</a></li>
+        <li class="menu2__item"><a href="AUTOMATYKA STEROWANIE" class="menu2-text">AUTOMATYKA STEROWANIE</a></li>
+        <li class="menu2__item"><a href="ROZDZIELENIE I APARATURA" class="menu2-text">ROZDZIELENIE I APARATURA</a></li>
+        <li class="menu2__item"> <a href="MATERIAŁY INSTALACYJNE" class="menu2-text">MATERIAŁY INSTALACYJNE</a></li>
       </ul>
     </nav>
     
@@ -140,7 +140,7 @@
 
       <script src="./JS/slider2.js"></script>
 
-
+<section class="pictures-x-three">
       <div class="ZDJECIA_OBOK_3">
         <div class="image-wrapper1">
         <img src="./IMG/photos/img_02.jpg" alt="Z" class="ZDJECIE_OBOK1">
@@ -194,6 +194,8 @@
         </div>
       </div>
     </div>
+
+  </section>
 
 
 
