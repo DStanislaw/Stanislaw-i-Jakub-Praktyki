@@ -23,13 +23,14 @@ body {
 
   .slider {
     position: relative;
-    width: calc(100% - 43px);
+    width: calc(100% - 3.125vw);
 
     overflow: hidden;
     height: 595px;
     margin-left: 1.563vw;
     margin-bottom: 1.51vw;
     margin-top: 1.094vw;
+    margin-right: 100px;
     
 
     .slider__image-container {
