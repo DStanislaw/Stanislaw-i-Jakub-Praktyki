@@ -1,14 +1,14 @@
 .ZDJECIA_OBOK_3 {
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
-  width: calc(100% - 43px);
+  padding-left: 1.563vw;
+  width: calc(100% - 2.24vw);
   height: auto;
-  gap: 30px;
+  gap: 1.563vw;
 
   img {
     flex: 1;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
   .image-wrapper1 {
@@ -45,8 +45,8 @@
 
     .ZDJ3OBOK_1 {
       position: absolute;
-      top: 72px;
-      left: 49px;
+      top: 18%;
+      left: 8.25%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
@@ -61,8 +61,8 @@
 
     .zdj3obok_1_1 {
       position: absolute;
-      top: 122px;
-      left: 49px;
+      top: 30%;
+      left: 8.25%;
       text-align: left;
       color: #ffffff;
       z-index: 2;
@@ -77,13 +77,13 @@
 
     .button-overlay1 {
       position: absolute;
-      top: 246px;
-      left: 49px;
+      top: 61%;
+      left: 8.25%;
       z-index: 3; 
     }
 
     .cta-button1 {
-      padding: 21px 45px;
+      padding: 1.313rem 2.813rem;
       background: transparent;
       border: 1px solid #ffffff;
       color: #ffffff;
