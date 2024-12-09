@@ -1,4 +1,4 @@
-.header {
+.menu {
   width: calc(100% - 43px);
   border: 0.5px solid;
   position: relative;
@@ -8,7 +8,7 @@
   padding: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
 }
-.header .logo {
+.menu .menu__logo {
   margin-left: 11px;
   max-width: 100%;
   margin-top: 12.5px;
@@ -16,20 +16,11 @@
   display: flex;
   align-items: center;
 }
-.header .logo .logo-img {
+.menu .menu__logo .menu__logo-img {
   width: 249px;
   height: 58px;
 }
-.header .nav {
-  justify-content: space-around;
-  font-family: "Metropolis", sans-serif;
-  width: 100vw;
-  display: flex;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-}
-.header .nav .phoneE {
+.menu .menu__phone {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
   right: 10px;
@@ -38,12 +29,12 @@
   gap: 10px;
   margin-left: 522px;
 }
-.header .nav .phoneE img {
+.menu .menu__phone img {
   max-width: 100%;
   width: 28px;
   height: 28px;
 }
-.header .nav .phoneE span {
+.menu .menu__phone span {
   width: 67px;
   height: 14px;
   text-align: left;
@@ -54,19 +45,19 @@
   opacity: 1;
   margin-left: 17.14px;
 }
-.header .nav .star {
+.menu .menu__star {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.header .nav .star img {
+.menu .menu__star img {
   max-width: 100%;
   width: 28px;
   height: 27px;
 }
-.header .nav .star span {
+.menu .menu__star span {
   margin-left: 17.14px;
   width: 72px;
   height: 14px;
@@ -77,7 +68,7 @@
   text-transform: uppercase;
   opacity: 1;
 }
-.header .nav .person {
+.menu .menu__person {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
   margin-left: 12.5px;
@@ -85,14 +76,14 @@
   align-items: center;
   gap: 10px;
 }
-.header .nav .person img {
+.menu .menu__person img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   width: 25px;
   height: 29px;
 }
-.header .nav .person span {
+.menu .menu__person span {
   font-size: 18px;
   margin-left: 18.67px;
   width: 120px;
@@ -103,7 +94,7 @@
   opacity: 1;
   display: flex;
 }
-.header .nav .cart {
+.menu .cart {
   margin: 12.5px 0 12.5px 0;
   border: 1px solid #e1e2e8;
   display: flex;
@@ -114,21 +105,21 @@
   height: 55px;
   position: sticky;
 }
-.header .nav .cart img {
+.menu .cart img {
   width: 39px;
   height: 36px;
   margin-left: 10px;
 }
-.header .nav .cart .koszyk-info {
+.menu .cart .cart__info {
   display: flex;
   flex: 1;
   align-items: center;
   gap: 10px;
 }
-.header .nav .cart .koszyk-info .KOSZ_ILOSC_WRAPPER {
+.menu .cart .cart__info .cart__info-wrapper {
   position: relative;
 }
-.header .nav .cart .koszyk-info .KOSZ_ILOSC_WRAPPER .KOSZ_ILOSC {
+.menu .cart .cart__info .cart__info-wrapper .cart__info-amount {
   font-size: 13px;
   color: #ffffff;
   background: #9bcb3b;
@@ -141,18 +132,18 @@
   margin-top: -16px;
   margin-left: -20px;
 }
-.header .nav .cart .koszyk-info .LINIA {
+.menu .cart .cart__info .cart__info-line {
   width: 1px;
   height: 41px;
   background: #e1e2e8;
 }
-.header .nav .cart .koszyk-info .KOSZ_CENA {
+.menu .cart .cart__info .cart__info__price {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.header .nav .cart .koszyk-info .KOSZ_CENA .KOSZ_NAZWA {
+.menu .cart .cart__info .cart__info__price .cart__info__price-name {
   font-size: 14px;
   font-family: "Metropolis", sans-serif;
   font-style: normal;
@@ -161,7 +152,7 @@
   letter-spacing: -0.28px;
   color: #111111;
 }
-.header .nav .cart .koszyk-info .KOSZ_CENA .CENA {
+.menu .cart .cart__info .cart__info__price .cart__info__price-price {
   font-size: 16px;
   font-family: "Metropolis-regular", sans-serif;
   font-style: normal;
@@ -171,24 +162,25 @@
   white-space: nowrap;
   color: #111111;
 }
-.header .nav .ZIELONE_POLE_STRZALKA {
+.menu .cart_green-box {
   width: 35px;
   height: 55px;
   background: #9bcb3b;
 }
+
 @media screen and (max-width: 400px) {
-  .header .cart {
+  .cart {
     flex-direction: column;
     height: auto;
   }
-  .header .cart .koszyk-info {
+  .cart .koszyk-info {
     flex-direction: column;
     align-items: flex-start;
   }
-  .header .cart .koszyk-info .KOSZ_CENA .CENA {
+  .cart .koszyk-info .KOSZ_CENA .CENA {
     font-size: 14px;
   }
-  .header .cart .ZIELONE_POLE_STRZALKA {
+  .cart .ZIELONE_POLE_STRZALKA {
     width: 100%;
     height: 35px;
   }
