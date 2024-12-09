@@ -1,9 +1,9 @@
 // Pobieranie wszystkich slajdów
-const slides = document.querySelectorAll(".image-container");
-const leftArrow = document.querySelector(".left-arrow");
-const rightArrow = document.querySelector(".right-arrow");
-const leftArrow_2 = document.querySelector(".left-arrow_2");
-const rightArrow_2 = document.querySelector(".right-arrow_2");
+const slides = document.querySelectorAll(".slider__image-container");
+const leftArrow = document.querySelector(".left__arrow");
+const rightArrow = document.querySelector(".right__arrow");
+const leftArrow_2 = document.querySelector(".left__arrow_2");
+const rightArrow_2 = document.querySelector(".right__arrow_2");
 
 let currentSlide = 0;
 
