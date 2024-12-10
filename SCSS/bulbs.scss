@@ -77,13 +77,14 @@
 
         overflow: hidden;
         padding: 10px;
-        width: 1852px;
+        width: clamp(1800px, 80vw, 5800px); 
 
         display: flex;
         justify-content: center;
         overflow: hidden;
 
         .carousel-item {
+          
           flex: 0 0 330px;
 
           justify-content: center;
@@ -101,7 +102,7 @@
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           padding: 15px;
           text-align: center;
-          width: 324px;
+          width: clamp(324px, 14.2vw, 364px); 
           height: 510px;
           position: relative;
           overflow: hidden;
