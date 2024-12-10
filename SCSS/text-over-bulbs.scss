@@ -17,17 +17,21 @@
   }
 
   .red_line {
-    width: clamp(50px, 5vw, 80px); 
+    width: clamp(50px, 3.2vw, 280px); 
     height: clamp(2px, 0.3vw, 4px); 
     background: #f74137 0% 0% no-repeat padding-box;
     margin: 0 auto; 
+    align-items: center;
   }
 
   .border_line {
     background: #e1e2e8 0% 0% no-repeat padding-box;
-    width: clamp(90%, 60vw, 100%); 
-    max-width: 1200px; 
-    height: 1px;
-    margin: 20px auto;
+    width: clamp(100%, 100vw, 100%); 
+    max-width: 100%; 
+    height: clamp(1px, 0.1vw,  5px);
+    
+    margin: clamp(1px, 5vw, -50px) auto;
+      
+    
   }
 }
