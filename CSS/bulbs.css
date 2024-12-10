@@ -229,13 +229,6 @@ img.zarowka_1 {
   margin-bottom: 10px;
   margin-top: 100px;
 }
-img.zarowka_1:hover ~ .description,
-img.zarowka_1:hover ~ .description2,
-img.zarowka_1:hover ~ .old_price,
-img.zarowka_1:hover ~ .price {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-}
 
 @media (max-width: 768px) {
   img.zarowka_1 {
