@@ -32,7 +32,7 @@
       text-decoration: none;
       color: #000000;
       font-family: "Metropolis", sans-serif;
-      font-size: 1rem;
+      font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
       white-space: nowrap;
       font-style: normal;
       font-variant: normal;

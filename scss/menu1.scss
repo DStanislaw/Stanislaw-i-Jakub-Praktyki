@@ -46,7 +46,7 @@
           width: 67px;
           height: 14px;
           text-align: left;
-          font-size: 18px;
+          font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           letter-spacing: -0.28px;
           color: #111111;
           text-transform: uppercase;
@@ -78,7 +78,7 @@
           width: 72px;
           height: 14px;
           text-align: left;
-          font-size: 18px;
+          font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           letter-spacing: -0.28px;
           color: #111111;
           text-transform: uppercase;
@@ -107,9 +107,9 @@
         }
   
         span {
-          font-size: 18px;
+          font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           margin-left: 18.67px;
-          width: 120px;
+          max-width: 380px;
           height: 14px text-align left;
   
           letter-spacing: -0.28px;
