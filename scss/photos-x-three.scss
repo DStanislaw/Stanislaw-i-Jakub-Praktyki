@@ -86,6 +86,7 @@
       }
     }
     .pictures__box-button {
+      width: clamp(600px, 40%, 600px);
       position: absolute;
       top: 60%; 
       left: 5%; 
@@ -94,14 +95,17 @@
     }
 
     .pictures__box__button-text {
+      padding: clamp(0.1rem, 1vw, 4.2rem) ;
+        font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
       text-decoration: none;
-      padding: 21px 45px;
+      line-height: 1.2;
+      
       background: transparent;
       border: 1px solid #ffffff;
       color: #ffffff;
       font-family: "Metropolis";
       font-weight: bold;
-      font-size: 14px;
+      
       letter-spacing: -0.28px;
       transition: background-color 0.3s, color 0.3s;
 
@@ -186,6 +190,7 @@
 
     /* Przycisk */
     .pictures__box2-button {
+      width: clamp(600px, 40%, 600px);
       position: absolute;
       top: 60%; 
       left: 5%;
@@ -194,14 +199,17 @@
     }
 
     .pictures__box2__button-text {
+      padding: clamp(0.1rem, 1vw, 4.2rem) ;
+        font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
       text-decoration: none;
-      padding: 21px 45px;
+      line-height: 1.2;
+      
       background: transparent;
       border: 1px solid #ffffff;
       color: #ffffff;
       font-family: "Metropolis";
       font-weight: bold;
-      font-size: 14px;
+      
       letter-spacing: -0.28px;
       transition: background-color 0.3s, color 0.3s;
 
@@ -281,11 +289,12 @@
         font-family: "Metropolis-Light", sans-serif;
         font-weight: 300;
         
-        line-height: 1.2;
+        
       }
     }
 
     .pictures__box3-button {
+      width: clamp(600px, 40%, 600px);
       position: absolute;
       top: 60%; 
       left: 5%;
@@ -294,14 +303,18 @@
     }
 
     .pictures__box3__button-text {
+      
+      padding: clamp(0.1rem, 1vw, 4.2rem) ;
+          font-size: clamp(0.1rem, 0.8vw, 7.5rem);
       text-decoration: none;
-      padding: 21px 45px;
+      line-height: 1.2;
+      
       background: transparent;
       border: 1px solid #ffffff;
       color: #ffffff;
       font-family: "Metropolis";
       font-weight: bold;
-      font-size: 14px;
+      
       letter-spacing: -0.28px;
       transition: background-color 0.3s, color 0.3s;
 

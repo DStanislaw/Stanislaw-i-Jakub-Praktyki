@@ -88,7 +88,7 @@ body {
 
         &.slider__text1 {
           top: 18.5%;
-          font-size: 2.75rem;
+          font-size: clamp(0.5rem, 2.3vw, 10.5rem); 
           font-weight: bold;
           font-family: "Metropolis", sans-serif;
           font-style: normal;
@@ -98,7 +98,7 @@ body {
 
         &.slider__text2 {
           top: 27%;
-          font-size: 2.75rem;
+          font-size: clamp(0.5rem, 2.3vw, 10.5rem); 
           font-family: "Metropolis-Light";
           font-style: normal;
           font-variant: normal;
@@ -112,7 +112,8 @@ body {
           width: 19.323vw;
           height: 3.854vw;
           top: 40%;
-          font-size: 1.375rem;
+          font-size: clamp(0.1rem, 1.2vw, 7.5rem); 
+
           font-family: "Metropolis-regular";
           font-style: normal;
           font-variant: normal;
@@ -131,11 +132,12 @@ body {
         top: 20.104vw;
 
         .slider__button-text {
-          width: 98%;
+          width: 100%;
           text-decoration: none;
-          font-size: 14px;
+          padding: clamp(0.1rem, 1vw, 4.2rem) ;
+          font-size: clamp(0.1rem, 0.8vw, 7.5rem);
           line-height: 17px;
-          padding: 21px 45px;
+          
           background: #f74137 0% 0% no-repeat padding-box;
           opacity: 1;
           text-align: center;
