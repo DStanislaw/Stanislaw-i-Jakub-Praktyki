@@ -1,5 +1,5 @@
 .produkty {
-  max-width: 100%;
+  max-width: clamp(100vw, 100vw, 100vw); 
   background: #f2f3f4 0% 0% no-repeat padding-box;
   border-radius: 2px;
   width: 100%; 
