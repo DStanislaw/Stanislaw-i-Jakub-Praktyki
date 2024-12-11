@@ -198,7 +198,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__add-to-cart {
   color: white;
   width: 50px;
   height: 50px;
@@ -211,11 +211,11 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart img {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__add-to-cart img {
   width: 30px;
   filter: invert(1);
 }
-.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart:hover {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__add-to-cart:hover {
   background: #7cb342;
 }
 .recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__hover-overlay {
