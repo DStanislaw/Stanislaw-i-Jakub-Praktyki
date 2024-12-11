@@ -18,7 +18,7 @@
   background-color: #f00;
   margin: 10px auto 0;
 }
-.recommended-products .box_all {
+.recommended-products .recommended-products__container {
   display: flex;
   gap: 20px;
   margin: 0 auto;
@@ -27,8 +27,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.recommended-products .box_all button.prev,
-.recommended-products .box_all button.next {
+.recommended-products .recommended-products__container button.prev,
+.recommended-products .recommended-products__container button.next {
   background-color: #ccc;
   border: none;
   font-size: 14px;
@@ -43,23 +43,23 @@
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-.recommended-products .box_all button.prev:hover,
-.recommended-products .box_all button.next:hover {
+.recommended-products .recommended-products__container button.prev:hover,
+.recommended-products .recommended-products__container button.next:hover {
   background-color: #aaa;
 }
-.recommended-products .box_all .prev {
+.recommended-products .recommended-products__container .prev {
   z-index: 1;
   position: absolute;
   margin-left: -1800px;
   margin-top: 250px;
 }
-.recommended-products .box_all .next {
+.recommended-products .recommended-products__container .next {
   z-index: 1;
   margin-left: 1790px;
   position: absolute;
   margin-top: 250px;
 }
-.recommended-products .box_all .carousel {
+.recommended-products .recommended-products__container .recommended-products__carousel {
   margin-left: 30px;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
@@ -70,7 +70,7 @@
   justify-content: center;
   overflow: hidden;
 }
-.recommended-products .box_all .carousel .carousel-item {
+.recommended-products .recommended-products__container .recommended-products__carousel .recommended-products__carousel-item {
   flex: 0 0 330px;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,7 @@
   scroll-snap-align: start;
   display: flex;
 }
-.recommended-products .box_all .carousel .product-card {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -91,43 +91,43 @@
   overflow: hidden;
   margin-right: 20px;
 }
-.recommended-products .box_all .carousel .product-card:hover .description,
-.recommended-products .box_all .carousel .product-card:hover .description2,
-.recommended-products .box_all .carousel .product-card:hover .old_price,
-.recommended-products .box_all .carousel .product-card:hover .price {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__description,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__code,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__old-price,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__price {
   transform: translateY(-20px);
   transition: transform 0.3s ease;
 }
-.recommended-products .box_all .carousel .product-card img.zarowka_1 {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 {
   margin-bottom: 10px;
   margin-top: 100px;
   width: 100%;
   height: auto;
 }
-.recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .description,
-.recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .description2,
-.recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .old_price,
-.recommended-products .box_all .carousel .product-card img.zarowka_1:hover ~ .price {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1:hover ~ .product-card__description,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1:hover ~ .product-card__code,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1:hover ~ .product-card__old-price,
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1:hover ~ .product-card__price {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
-.recommended-products .box_all .carousel .product-card img.zarowka_1 .hover-overlay {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 .product-card__hover-overlay {
   display: none;
 }
-.recommended-products .box_all .carousel .product-card img.zarowka_1 .product-card:hover .hover-overlay {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 .product-card:hover .product-card__hover-overlay {
   display: block;
 }
 @media (max-width: 768px) {
-  .recommended-products .box_all .carousel .product-card img.zarowka_1 .product-card {
+  .recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 .product-card {
     max-width: 80%;
   }
 }
 @media (max-width: 480px) {
-  .recommended-products .box_all .carousel .product-card img.zarowka_1 .product-card {
+  .recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 .product-card {
     max-width: 100%;
   }
 }
-.recommended-products .box_all .carousel .product-card .description {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__description {
   font-size: 14px;
   color: #333;
   margin: 10px 0;
@@ -139,7 +139,7 @@
   font-weight: bold;
   letter-spacing: -0.28px;
 }
-.recommended-products .box_all .carousel .product-card .description2 {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__code {
   margin-top: -10px;
   font-family: "Metropolis-regular";
   font-style: normal;
@@ -151,14 +151,14 @@
   font-size: 14px;
   line-height: 20px;
 }
-.recommended-products .box_all .carousel .product-card .price {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__price {
   text-align: left;
   font: normal normal bold 14px/14px Metropolis;
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay {
   position: absolute;
   bottom: -80px;
   left: 0;
@@ -170,13 +170,13 @@
   padding: 0 15px;
   transition: bottom 0.3s ease;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .quantity-controls {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls {
   position: absolute;
   display: flex;
   align-items: center;
   left: 94px;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .quantity-controls button {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls button {
   width: 23px;
   height: 50px;
   background: #f2f2f2;
@@ -188,17 +188,17 @@
   align-items: center;
   cursor: pointer;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .quantity-controls button:hover {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls button:hover {
   background: #e1e1e1;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .quantity-controls .quantity {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls .product-card__quantity-input {
   width: 40px;
   height: 46px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .add-to-cart {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart {
   color: white;
   width: 50px;
   height: 50px;
@@ -211,14 +211,14 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .add-to-cart img {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart img {
   width: 30px;
   filter: invert(1);
 }
-.recommended-products .box_all .carousel .product-card .hover-overlay .add-to-cart:hover {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .add-to-cart:hover {
   background: #7cb342;
 }
-.recommended-products .box_all .carousel .product-card:hover .hover-overlay {
+.recommended-products .recommended-products__container .recommended-products__carousel .product-card:hover .product-card__hover-overlay {
   bottom: 0;
 }
 
@@ -242,7 +242,7 @@ img.zarowka_1 {
     margin-top: 30px;
   }
 }
-.old_price {
+.product-card__old-price {
   font-family: "Metropolis-regular";
   font-style: normal;
   font-variant: normal;
@@ -254,7 +254,7 @@ img.zarowka_1 {
   line-height: 20px;
 }
 
-.price {
+.product-card__price {
   display: inline-block;
   position: relative;
   font-family: "Metropolis";
