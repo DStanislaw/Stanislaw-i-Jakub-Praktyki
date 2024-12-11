@@ -40,14 +40,16 @@
       font-variant: normal;
       font-weight: normal;
       font-size: clamp(1.2vw, 4.0vw, 1.3vw); 
-      line-height: 24px;
+      line-height: clamp(1.5vw, 1.5vw,1.5vw); 
   
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
+   
+     
       -webkit-line-clamp: 3;
-      width: 1019px;
+      width: clamp(100rem, 50rem, 50rem); 
+      max-width: 70vw;
   
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
     }
   
     span {
@@ -164,17 +166,10 @@
   }
   
   .hero-section__button-wrapper {
-    margin-top: 7rem;
+    margin-top: 13rem;
   }
   
   .hero-section__button {
-    text-decoration: none;
-    padding: clamp(0.5rem, 1vw, 1.5rem) clamp(1rem, 2vw, 3rem);
-    background: #f74137;
-    color: white;
-    font: bold clamp(1rem, 1.5vw, 2rem) "Metropolis", sans-serif;
-    letter-spacing: -0.02em;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+    
+
   }

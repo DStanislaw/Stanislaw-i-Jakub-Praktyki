@@ -28,8 +28,10 @@
     
   
       .menu__phone {
-        margin-top: 1px;
-        margin-bottom: 12.5px;
+        margin-right: 1rem;
+       
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
         right: 10px;
         display: flex;
         align-items: center;
@@ -117,22 +119,27 @@
       }
   
       .cart {
-        margin: 16.5px 0 12.5px 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
         border: 1px solid #e1e2e8;
         display: flex;
         
        
         width: clamp(20vw, 20vw, 20vw); 
         max-width: clamp(5.4vw, 13vw, 13.7vw); 
-        height: 55px;
+        height: clamp(3vw, 3vw, 3vw);
         
   
         .icon-cart {
+          
           margin-left: 0.4vw;
-          margin-top: 0.5vw;
+         
           font-size: clamp(1.4vw, 2vw, 1.7vw); 
-          margin-bottom: 0.4vw;
+         
           margin-right: 0.4vw;
+          
+          margin-top:  clamp(1vw, 1vw, 1vw); 
         }
   
         .cart__info {
@@ -144,12 +151,12 @@
           .cart__info-wrapper {
             position: relative;
             .cart__info-amount {
-              font-size: 13px;
+              font-size: clamp(0.05rem, 0.6vw, 2.5rem); 
               color: #ffffff;
               background: #9bcb3b;
               border-radius: 2px;
               width: clamp(1.3vw, 1.3vw, 1.3vw); 
-              height: 14px;
+              height: clamp(0.8vw, 0.8vw, 0.8vw); 
               display: flex;
               align-items: center;
               justify-content: center;
@@ -196,8 +203,8 @@
       }
   
       .cart__green-box {
-        width: 35px;
-        height: 55px;
+        width: clamp(2.4vw, 2vw, 2.7vw);
+        height: clamp(2.4vw, 13vw, 3.05vw);
         background: #9bcb3b;
       }
     }
