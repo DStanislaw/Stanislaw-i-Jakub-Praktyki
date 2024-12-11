@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.carousel');
+    const carousel = document.querySelector('.recommended-products__carousel');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     const scrollAmount = 350; // Ilość przesuwania w px
