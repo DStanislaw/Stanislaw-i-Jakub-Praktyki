@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding:  clamp(1vw, 1vw, 1vw); 
     background: #ffffff 0% 0% no-repeat padding-box;
     
   
@@ -122,7 +122,7 @@
         display: flex;
         
        
-        width: 100%;
+        width: clamp(20vw, 20vw, 20vw); 
         max-width: clamp(5.4vw, 13vw, 13.7vw); 
         height: 55px;
         
