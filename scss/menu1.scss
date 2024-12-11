@@ -1,7 +1,7 @@
 
 
 .menu{
-  width: calc(100% - 43px);
+  width: clamp(100vw, 100vw, vw); 
     border: 0.5px solid ;
     position: relative;
     display: flex;
@@ -36,10 +36,8 @@
         gap: 10px;
         margin-left: 522px;
   
-        img {
-          max-width: 100%;
-          width: 28px;
-          height: 28px;
+        .icon-phone {
+          font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
@@ -67,10 +65,8 @@
         align-items: center;
         gap: 10px;
   
-        img {
-          max-width: 100%;
-          width: 28px;
-          height: 27px;
+        .icon-star{
+          font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
@@ -98,12 +94,8 @@
         align-items: center;
         gap: 10px;
   
-        img {
-          width: 100vw; // Pełna szerokość ekranu
-          height: 100vh; // Pełna wysokość ekranu
-          object-fit: cover;
-          width: 25px;
-          height: 29px;
+        .icon-person {
+          font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
@@ -125,21 +117,22 @@
       }
   
       .cart {
-        margin: 12.5px 0 12.5px 0;
+        margin: 16.5px 0 12.5px 0;
         border: 1px solid #e1e2e8;
         display: flex;
         
        
         width: 100%;
-        max-width: 320px; 
+        max-width: clamp(5.4vw, 13vw, 13.7vw); 
         height: 55px;
         
   
-        img {
-          width: 39px;
-          height: 36px;
-          margin-left: 10px;
-          margin-top: 10px;
+        .icon-cart {
+          margin-left: 0.4vw;
+          margin-top: 0.5vw;
+          font-size: clamp(1.4vw, 2vw, 1.7vw); 
+          margin-bottom: 0.4vw;
+          margin-right: 0.4vw;
         }
   
         .cart__info {
@@ -155,14 +148,14 @@
               color: #ffffff;
               background: #9bcb3b;
               border-radius: 2px;
-              width: 26px;
+              width: clamp(1.3vw, 1.3vw, 1.3vw); 
               height: 14px;
               display: flex;
               align-items: center;
               justify-content: center;
   
               margin-top: -16px;
-              margin-left: -15px;
+              margin-left: clamp(-0.2vw, -0.1vw, -0.9vw); 
             }
           }
   
