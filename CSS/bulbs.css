@@ -268,13 +268,13 @@ img.zarowka_1 {
   line-height: 14px;
 }
 
-.button-overlay-tiruriru {
+.recommended-products__button-overlay {
   position: relative;
   left: 42%;
   width: 318px;
   height: 55px;
 }
-.button-overlay-tiruriru .cta-button-tiruriru {
+.recommended-products__button-overlay .recommended-products__cta-button {
   text-decoration: none;
   padding: 21px 45px;
   background: #f74137 0% 0% no-repeat padding-box;
