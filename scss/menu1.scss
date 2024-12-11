@@ -12,16 +12,16 @@
     
   
     .menu__logo {
-      margin-left: 11px;
-      max-width: 100%;
-      margin-top: 12.5px;
-      margin-bottom: 12.5px;
+      margin-left: 1rem;
+      max-width: 1clamp(2vw, 2vw, 2vw); 
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
       display: flex;
       align-items: center;
   
       .menu__logo-img {
-        width: 249px;
-        height: 58px;
+        width: clamp(15vw, 15vw, 15vw); 
+        height: clamp(3vw, 3vw, 3vw); 
       }
     }
   
