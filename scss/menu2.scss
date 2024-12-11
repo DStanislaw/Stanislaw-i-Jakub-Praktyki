@@ -1,9 +1,9 @@
 .navigation {
   background: #ffffff 0% 0% no-repeat padding-box;
-  padding: 20px;
+  padding:  clamp(1vw, 1vw, 1vw); 
   border: 1px solid #ccc;
   margin: 0;
-  width: calc(100% - 43px);
+  width:   clamp(100vw, 100vw, 100vw); 
  
 
   .navigation__list {
@@ -14,14 +14,15 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 105px;
+    
   }
 
    .navigation__item{
     flex: 1 1 auto;
     min-width: 10px;
-    text-align: center;
-
+    text-align: left;
+    margin-left: clamp(0.7vw, 0.7vw, 0.7vw); 
+    
     .navigation__link {
       text-align: left;
       font: normal normal bold 14px/14px Metropolis;
