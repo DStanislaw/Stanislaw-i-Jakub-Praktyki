@@ -1,7 +1,7 @@
 
 
 .menu{
-  width: clamp(100vw, 100vw, vw); 
+  width: clamp(97vw, 97vw, 97vw); 
     border: 0.5px solid ;
     position: relative;
     display: flex;
@@ -32,26 +32,27 @@
        
         margin-top: clamp(1vw, 1vw, 1vw) ;
         margin-bottom: clamp(1vw, 1vw, 1vw) ;
-        right: 10px;
+        right: 0.521vw;
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin-left: 522px;
+        gap: 0.521vw;
+        margin-left: 27.188vw;
   
         .icon-phone {
           font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
-          width: 67px;
-          height: 14px;
+          width: 3.49vw;
+          height: 0.729vw;
           text-align: left;
           font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           letter-spacing: -0.28px;
+          display: flex;
           color: #111111;
           text-transform: uppercase;
           opacity: 1;
-          margin-left: 17.14px;
+          margin-left: 0.893vw;
           font-family: "Metropolis";
   font-style: normal;
   font-variant: normal;
@@ -60,24 +61,25 @@
       }
   
       .menu__star {
-        margin-top: 12.5px;
-        margin-bottom: 12.5px;
+        margin-top: 0.651vw;
+        margin-bottom: 0.651vw;
         
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.521vw;
   
         .icon-star{
           font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
-          margin-left: 17.14px;
-          width: 72px;
-          height: 14px;
+          margin-left: 0.893vw;
+          width: 3.75vw;
+          height: 0.729vw;
           text-align: left;
           font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           letter-spacing: -0.28px;
+          display: flex;
           color: #111111;
           text-transform: uppercase;
           opacity: 1;
@@ -89,12 +91,12 @@
       }
   
       .menu__person {
-        margin-top: 12.5px;
-        margin-bottom: 12.5px;
-        margin-left: 12.5px;
+        margin-top: 0.651vw;
+        margin-bottom: 0.651vw;
+        margin-left: 0.651vw;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.521vw;
   
         .icon-person {
           font-size: clamp(1vw, 2vw, 1.3vw); 
@@ -102,10 +104,11 @@
   
         span {
           font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
-          margin-left: 18.67px;
-          max-width: 380px;
-          height: 14px text-align left;
-  
+          margin-left: 0.972vw;
+          max-width: 19.792vw;
+          height: 0.729vw;
+           text-align: left;
+           display: flex;
           letter-spacing: -0.28px;
           color: #111111;
           text-transform: uppercase;
@@ -119,10 +122,10 @@
       }
   
       .cart {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 0.833vw;
+        margin-bottom: 0.833vw;
 
-        border: 1px solid #e1e2e8;
+        border: 0.052vw solid #e1e2e8;
         display: flex;
         
        
@@ -146,7 +149,7 @@
           display: flex;
           flex: 1; 
           align-items: center;
-          gap: 10px;
+          gap: 0.521vw;
   
           .cart__info-wrapper {
             position: relative;
@@ -154,21 +157,21 @@
               font-size: clamp(0.05rem, 0.6vw, 2.5rem); 
               color: #ffffff;
               background: #9bcb3b;
-              border-radius: 2px;
+              border-radius: 0.104vw;
               width: clamp(1.3vw, 1.3vw, 1.3vw); 
               height: clamp(0.8vw, 0.8vw, 0.8vw); 
               display: flex;
               align-items: center;
               justify-content: center;
   
-              margin-top: -16px;
+              margin-top: -0.833vw;
               margin-left: clamp(-0.2vw, -0.1vw, -0.9vw); 
             }
           }
   
           .cart__info-line {
-            width: 1px;
-            height: 41px;
+            width: 0.052vw;
+            height: 2.135vw;
             background: #e1e2e8;
           }
   
@@ -176,7 +179,7 @@
             flex: 1; 
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 0.104vw;
   
             .cart__info__price-name {
               font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
@@ -209,25 +212,21 @@
       }
     }
 
-
     @media screen and (max-width: 768px) {
       .menu {
         flex-wrap: wrap;
         padding: 10px;
       }
-    
       .menu__logo-img {
         width: 180px;
         height: auto;
       }
-    
       .menu__phone, .menu__star, .menu__person {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 0;
         gap: 5px;
       }
-    
       .cart {
         flex-direction: column;
         align-items: flex-start;
@@ -235,30 +234,26 @@
         padding: 10px;
       }
     }
-  
     @media screen and (max-width: 400px) {
       .menu {
         flex-direction: column;
         align-items: center;
       }
-    
       .menu__logo-img {
         width: 150px;
         height: auto;
       }
-    
       .menu__phone, .menu__star, .menu__person, .cart {
         width: 100%;
         text-align: center;
       }
-    
       .cart__info__price {
         flex-direction: column;
         text-align: center;
       }
-    
       .cart__green-box {
         width: 100%;
         height: 35px;
       }
     }
+    

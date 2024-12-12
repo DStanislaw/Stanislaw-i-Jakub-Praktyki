@@ -51,7 +51,7 @@
   color: #f2f3f4;
   z-index: 1;
   position: absolute;
-  margin-left: -90.75vw;
+  margin-left: -92.23vw;
   margin-top: 13vw;
 }
 .recommended-products .recommended-products__container .next {
@@ -62,7 +62,6 @@
   margin-top: 13vw;
 }
 .recommended-products .recommended-products__container .recommended-products__carousel {
-  margin-left: 1.56vw;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
   overflow: hidden;
