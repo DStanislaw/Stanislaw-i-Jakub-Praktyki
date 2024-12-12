@@ -11,8 +11,8 @@
 .menu .menu__logo {
   margin-left: 1rem;
   max-width: 1clamp 2vw, 2vw, 2vw;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 0.8vw;
+  margin-bottom: 0.8vw;
   display: flex;
   align-items: center;
 }
@@ -21,9 +21,9 @@
   height: 3vw;
 }
 .menu .menu__phone {
-  margin-right: 1rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   right: 10px;
   display: flex;
   align-items: center;

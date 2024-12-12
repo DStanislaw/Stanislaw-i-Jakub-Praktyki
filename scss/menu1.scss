@@ -14,8 +14,8 @@
     .menu__logo {
       margin-left: 1rem;
       max-width: 1clamp(2vw, 2vw, 2vw); 
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem;
+      margin-top: 0.8vw;
+      margin-bottom: 0.8vw;
       display: flex;
       align-items: center;
   
@@ -28,10 +28,10 @@
     
   
       .menu__phone {
-        margin-right: 1rem;
+        margin-right: clamp(1vw, 1vw, 1vw) ;
        
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
+        margin-top: clamp(1vw, 1vw, 1vw) ;
+        margin-bottom: clamp(1vw, 1vw, 1vw) ;
         right: 10px;
         display: flex;
         align-items: center;
