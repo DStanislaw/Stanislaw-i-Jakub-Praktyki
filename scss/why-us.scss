@@ -177,13 +177,14 @@
       position: absolute;
       
       top: 5.5vw;
+      left: -7vw;
       
       
       font-family: "Metropolis", sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: bold;
-      font-size: 14px;
+      font-size: clamp(1.2vw, 2vw, 0.9vw);
       margin: 0;
       letter-spacing: -0.28px;
       text-transform: uppercase;

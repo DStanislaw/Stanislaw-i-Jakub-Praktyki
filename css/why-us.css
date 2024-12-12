@@ -124,11 +124,12 @@
 .hero-section__icons .hero-section__icon span {
   position: absolute;
   top: 5.5vw;
+  left: -7vw;
   font-family: "Metropolis", sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.9vw;
   margin: 0;
   letter-spacing: -0.28px;
   text-transform: uppercase;
