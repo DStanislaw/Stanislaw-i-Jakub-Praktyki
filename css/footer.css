@@ -1,7 +1,8 @@
 .footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  background: #393E40 0% 0% no-repeat padding-box;
+  background: #393e40 0% 0% no-repeat padding-box;
   color: white;
   padding: 1.56vw 0.52vw;
   flex-wrap: wrap;
@@ -35,7 +36,7 @@
   display: block;
   width: 23.07vw;
   height: 0.1vw;
-  background: linear-gradient(to right, #F74137 1.82vw, rgb(83, 83, 83) 1.56vw); /* 35px -> 1.82vw, 30px -> 1.56vw */
+  background: linear-gradient(to right, #f74137 1.82vw, rgb(83, 83, 83) 1.56vw); /* 35px -> 1.82vw, 30px -> 1.56vw */
   margin-top: 0.26vw;
 }
 
@@ -52,7 +53,7 @@
   font-variant: normal;
   font-weight: normal;
   letter-spacing: -0.0175rem;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   font-size: 0.7vw;
   margin-bottom: 1vw;
