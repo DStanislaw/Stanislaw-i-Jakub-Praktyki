@@ -5,6 +5,7 @@
   background-image: url("../IMG/photos/img_07.jpg");
   background-size: cover;
   background-position: center;
+  top: 3vw;
 }
 
 .hero_section-overlay {
@@ -32,10 +33,9 @@
   }
 
   p {
+    position: absolute;
+    top: 7vw;
 
-   position: absolute;
-   top: 7vw;
-  
     text-align: center;
     color: white;
     letter-spacing: -0.36px;
@@ -50,8 +50,6 @@
     
     width: clamp(50vw, 83.333vw, 150vw);
     max-width: 90vw;
-
-   
   }
 
   span {
@@ -72,11 +70,10 @@
 
 .hero-section__icons {
   position: absolute;
-  top: 15vw;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.042vw;
 
   white-space: nowrap;
 
@@ -228,7 +225,6 @@
 
 
 .hero-section__red-line {
-  
   width: clamp(5vw, 5vw, 5vw);
   height: clamp(0.2vw, 0.2vw, 0.2vw);
   background: #f74137 0% 0% no-repeat padding-box;
@@ -248,7 +244,6 @@
 }
 
 .hero-section__button-wrapper {
- 
   position: absolute;
   top: 34vw;
 }
