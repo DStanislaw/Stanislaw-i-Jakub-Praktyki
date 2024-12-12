@@ -1,0 +1,40 @@
+.navigation {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 1vw;
+  border: 1px solid #ccc;
+  margin: 0;
+  width: 97vw;
+}
+.navigation .navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation .navigation__item {
+  flex: 1 1 auto;
+  min-width: 10px;
+  text-align: left;
+  margin-left: 0.7vw;
+}
+.navigation .navigation__item .navigation__link {
+  text-align: left;
+  font: normal normal bold 14px/14px Metropolis;
+  letter-spacing: -0.28px;
+  color: #111111;
+  text-transform: uppercase;
+  opacity: 1;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Metropolis", sans-serif;
+  font-size: clamp(0.1rem, 0.8vw, 7.5rem);
+  white-space: nowrap;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=menu2.css.map */
