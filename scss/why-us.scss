@@ -47,8 +47,8 @@
     font-size: clamp(1.2vw, 4vw, 1.3vw);
     line-height: clamp(1.5vw, 1.5vw, 1.5vw);
 
-    -webkit-line-clamp: 3;
-    width: clamp(50rem, 83.333vw, 150rem);
+    
+    width: clamp(50vw, 83.333vw, 150vw);
     max-width: 90vw;
 
    
@@ -81,24 +81,86 @@
   white-space: nowrap;
 
   .hero-section__icon-wrapper {
-    margin: 0 clamp(10px, 15px, 20px);
+    margin: clamp(6.7vw, 2.7vw, .7vw);
 
     text-align: center;
     opacity: 1;
     position: relative;
 
     &::before {
-      content: "";
+      
+    }
+    .hero-section__border1{
+     
 
-      position: relative;
+      position: absolute;
+      left: -10vw;
 
-      padding-bottom: clamp(1vw, 9vw, 9vw);
+      padding-bottom: clamp(7vw, 7vw, 7vw);
       padding-right: clamp(15vw, 15vw, 15vw);
+      padding-top: clamp(1vw, 1vw, 1vw);
 
       opacity: 30%;
 
       border: 0.104vw solid white;
+
+
     }
+
+
+    .hero-section__border2{
+   
+
+      position: absolute;
+
+      left: -7.50vw;
+
+      padding-bottom: clamp(7vw, 7vw, 7vw);
+      padding-right: clamp(15vw, 15vw, 15vw);
+      padding-top: clamp(1vw, 1vw, 1vw);
+
+      opacity: 30%;
+
+      border: 0.104vw solid white;
+
+
+    }
+    .hero-section__border3{
+     
+
+      position: absolute;
+      left:-5vw;
+
+      padding-bottom: clamp(7vw, 7vw, 7vw);
+      padding-right: clamp(15vw, 15vw, 15vw);
+      padding-top: clamp(1vw, 1vw, 1vw);
+
+      opacity: 30%;
+
+      border: 0.104vw solid white;
+
+
+    }
+  }
+
+  .hero-section__text-icons1{
+    position: absolute;
+    left: -5.5vw;
+
+
+  }
+
+  .hero-section__text-icons2{
+    position: absolute;
+    left: -3.6vw;
+
+    
+  }
+  .hero-section__text-icons3{
+    position: absolute;
+    left: -1vw;
+
+    
   }
 
   .hero-section__icon {
@@ -107,10 +169,19 @@
     }
 
     img {
-      margin-bottom: 0.521vw;
+      position: absolute;
+      top: 2.5vw;
+      left: -1.9vw;
+      
+      
     }
 
-    p {
+    span {
+      position: absolute;
+      
+      top: 5.5vw;
+      
+      
       font-family: "Metropolis", sans-serif;
       font-style: normal;
       font-variant: normal;
@@ -127,6 +198,9 @@
     padding-top: 3.083vw;
 
     img {
+      
+      
+      
       width: 3.229vw;
       height: 1.563vw;
     }
@@ -149,6 +223,9 @@
     }
   }
 }
+
+
+
 
 .hero-section__red-line {
   
@@ -173,7 +250,7 @@
 .hero-section__button-wrapper {
  
   position: absolute;
-  top: 30vw;
+  top: 34vw;
 }
 
 .hero-section__button {

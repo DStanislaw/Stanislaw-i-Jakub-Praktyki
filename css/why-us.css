@@ -43,8 +43,7 @@
   font-weight: normal;
   font-size: 1.3vw;
   line-height: 1.5vw;
-  -webkit-line-clamp: 3;
-  width: clamp(50rem, 83.333vw, 150rem);
+  width: 83.333vw;
   max-width: 90vw;
 }
 .hero_section-overlay span {
@@ -71,26 +70,61 @@
   white-space: nowrap;
 }
 .hero-section__icons .hero-section__icon-wrapper {
-  margin: 0 15px;
+  margin: 6.7vw;
   text-align: center;
   opacity: 1;
   position: relative;
 }
-.hero-section__icons .hero-section__icon-wrapper::before {
-  content: "";
-  position: relative;
-  padding-bottom: 9vw;
+.hero-section__icons .hero-section__icon-wrapper .hero-section__border1 {
+  position: absolute;
+  left: -10vw;
+  padding-bottom: 7vw;
   padding-right: 15vw;
+  padding-top: 1vw;
   opacity: 30%;
   border: 0.104vw solid white;
+}
+.hero-section__icons .hero-section__icon-wrapper .hero-section__border2 {
+  position: absolute;
+  left: -7.5vw;
+  padding-bottom: 7vw;
+  padding-right: 15vw;
+  padding-top: 1vw;
+  opacity: 30%;
+  border: 0.104vw solid white;
+}
+.hero-section__icons .hero-section__icon-wrapper .hero-section__border3 {
+  position: absolute;
+  left: -5vw;
+  padding-bottom: 7vw;
+  padding-right: 15vw;
+  padding-top: 1vw;
+  opacity: 30%;
+  border: 0.104vw solid white;
+}
+.hero-section__icons .hero-section__text-icons1 {
+  position: absolute;
+  left: -5.5vw;
+}
+.hero-section__icons .hero-section__text-icons2 {
+  position: absolute;
+  left: -3.6vw;
+}
+.hero-section__icons .hero-section__text-icons3 {
+  position: absolute;
+  left: -1vw;
 }
 .hero-section__icons .hero-section__icon:hover {
   transform: scale(1.05);
 }
 .hero-section__icons .hero-section__icon img {
-  margin-bottom: 0.521vw;
+  position: absolute;
+  top: 2.5vw;
+  left: -1.9vw;
 }
-.hero-section__icons .hero-section__icon p {
+.hero-section__icons .hero-section__icon span {
+  position: absolute;
+  top: 5.5vw;
   font-family: "Metropolis", sans-serif;
   font-style: normal;
   font-variant: normal;
@@ -144,7 +178,7 @@
 
 .hero-section__button-wrapper {
   position: absolute;
-  top: 30vw;
+  top: 34vw;
 }
 
 .hero-section__button {
