@@ -1,5 +1,4 @@
 .recommended-products {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +34,7 @@
     button.next {
       background-color: #ccc;
       border: none;
-      
+
       font-size: 0.73vw;
       font-weight: bold;
       cursor: pointer;
@@ -59,7 +58,6 @@
       position: absolute;
       margin-left: -90.75vw;
       margin-top: 13vw;
-     
     }
     .next {
       color: #f2f3f4;
@@ -160,11 +158,11 @@
           line-height: 0.73vw;
           font-family: "Metropolis", sans-serif;
 
-            text-transform: uppercase;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: bold;
-            letter-spacing: -0.0146vw;
+          text-transform: uppercase;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          letter-spacing: -0.0146vw;
         }
 
         .product-card__code {
@@ -268,39 +266,38 @@
   }
 }
 
-
 img.zarowka_1 {
-height: auto;
-width: 100%;
-max-width: 12.5vw;
-margin-bottom: 0.52vw;
-margin-top: 5.2vw;
+  height: auto;
+  width: 100%;
+  max-width: 12.5vw;
+  margin-bottom: 0.52vw;
+  margin-top: 5.2vw;
 }
 
 @media (max-width: 768px) {
-img.zarowka_1 {
-  width: 2.08vw;
-  margin-top: 2.6vw;
-}
+  img.zarowka_1 {
+    width: 2.08vw;
+    margin-top: 2.6vw;
+  }
 }
 
 @media (max-width: 480px) {
-img.zarowka_1 {
-  width: 3.13vw;
-  margin-top: 1.56vw;
-}
+  img.zarowka_1 {
+    width: 3.13vw;
+    margin-top: 1.56vw;
+  }
 }
 
 .product-card__old-price {
-font-family: "Metropolis-regular";
-font-style: normal;
-font-variant: normal;
-font-weight: normal;
-letter-spacing: -0.0146vw;
-color: #a3a3a3;
-opacity: 1;
-font-size: 0.73vw;
-line-height: 1.04vw;
+  font-family: "Metropolis-regular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: -0.0146vw;
+  color: #a3a3a3;
+  opacity: 1;
+  font-size: 0.73vw;
+  line-height: 1.04vw;
 }
 
 .product-card__price {
@@ -310,31 +307,28 @@ line-height: 1.04vw;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  letter-spacing: -0.28px; 
+  letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
-  font-size: 0.875rem; 
-  line-height: 0.875rem; 
+  font-size: 0.875rem;
+  line-height: 0.875rem;
 }
 
 .recommended-products__button-overlay {
-  position: relative;
+  position: absolute;
 
-  left: 42%;
-
-  width: 60rem;
-  height: 5.5rem;
-  margin-top: 2rem;
+  left: 38.5vw;
+  margin-top: 1.667vw;
+  margin-bottom: 1vw;
 
   .recommended-products__cta-button {
-    width: 100%;
     text-decoration: none;
-    padding: clamp(0.1rem, 1vw, 4.2rem) ;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: clamp(0.083vw, 1.5vw, 3.5vw);
+    padding-left: 5vw;
+    padding-right: 5vw;
     font-size: clamp(0.1rem, 0.8vw, 7.5rem);
-    line-height: 17px;
-    
+    line-height: 0.885vw;
+
     background: #f74137 0% 0% no-repeat padding-box;
     opacity: 1;
     text-align: center;

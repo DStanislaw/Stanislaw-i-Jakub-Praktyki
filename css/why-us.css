@@ -5,6 +5,7 @@
   background-image: url("../IMG/photos/img_07.jpg");
   background-size: cover;
   background-position: center;
+  top: 3vw;
 }
 
 .hero_section-overlay {
