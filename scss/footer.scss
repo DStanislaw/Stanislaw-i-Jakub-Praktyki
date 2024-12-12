@@ -3,14 +3,14 @@
   justify-content: space-between;
   background: #393E40 0% 0% no-repeat padding-box;
   color: white;
-  padding: 1.56vw 0.52vw; /* 30px -> 1.56vw, 10px -> 0.52vw */
+  padding: 1.56vw 0.52vw; 
   flex-wrap: wrap;
 }
 
 .footer-section {
   flex: 1;
-  min-width: 10.42vw; /* 200px -> 10.42vw */
-  margin: 0 0.52vw; /* 10px -> 0.52vw */
+  min-width: 10.42vw; 
+  margin: 0 0.52vw; 
   text-align: left;
 }
 
@@ -19,9 +19,9 @@
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  letter-spacing: -0.0175rem; /* -0.28px -> -0.0175rem */
-  font-size: 0.875rem; /* 14px -> 0.875rem */
-  margin-bottom: 0.68vw; /* 13px -> 0.68vw */
+  letter-spacing: -0.0175rem; 
+  font-size: clamp(1.2vw, 2vw, 0.9vw);
+  margin-bottom: 0.68vw; 
   color: white;
   text-transform: uppercase;
   position: relative;
@@ -33,10 +33,13 @@
   text-decoration: none;
   content: "";
   display: block;
-  width: 23.07vw; /* 443px -> 23.07vw */
-  height: 0.1vw; /* 2px -> 0.1vw */
+  width: 23.07vw;
+
+ 
+  
+  height: 0.1vw; 
   background: linear-gradient(to right, #F74137 1.82vw, rgb(83, 83, 83) 1.56vw); /* 35px -> 1.82vw, 30px -> 1.56vw */
-  margin-top: 0.26vw; /* 5px -> 0.26vw */
+  margin-top: 0.26vw; 
 }
 
 .footer-section ul {
@@ -51,18 +54,18 @@
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  letter-spacing: -0.0175rem; /* -0.28px -> -0.0175rem */
+  letter-spacing: -0.0175rem; 
   color: #FFFFFF;
   opacity: 1;
-  font-size: 0.875rem; /* 14px -> 0.875rem */
-  line-height: 1.25rem; /* 20px -> 1.25rem */
-  margin-bottom: 0.68vw; /* 13px -> 0.68vw */
+  font-size: clamp(1vw, 1.5vw, 0.7vw);
+ 
+  margin-bottom: clamp(1vw, 1vw, 1vw); 
 }
 
 a .footer-section ul li a {
   color: white;
   text-decoration: none;
-  font-size: 0.875rem; /* 14px -> 0.875rem */
+  font-size: 0.875rem; 
   transition: color 0.3s;
 }
 
