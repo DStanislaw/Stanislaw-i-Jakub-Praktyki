@@ -43,32 +43,29 @@
 
   @media (max-width: 768px) {
     .navigation__list {
-      justify-content: center;
-      gap: 10px;
+      
     }
 
     .navigation__item {
-      flex: 1 1 45%;
-      min-width: 120px;
+      
     }
 
     .navigation__link  {
-      font-size: 0.9rem;
+     
     }
   }
 
   @media (max-width: 480px) {
     .navigation__list {
-      flex-direction: column;
-      gap: 5px;
+     
     }
 
     .navigation__item {
-      flex: 1 1 100%;
+      
     }
 
     .navigation__link  {
-      font-size: 0.8rem;
+      
     }
   }
 }
