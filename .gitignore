@@ -1,9 +1,8 @@
 # Node modules
 node_modules/
 
-# Pliki zależności
-package-lock.json
-.npm/
+
+
 
 # Kompilowane pliki
 *.css
