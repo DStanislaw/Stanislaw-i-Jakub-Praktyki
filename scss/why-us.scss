@@ -32,10 +32,9 @@
   }
 
   p {
+    position: absolute;
+    top: 7vw;
 
-   position: absolute;
-   top: 7vw;
-  
     text-align: center;
     color: white;
     letter-spacing: -0.36px;
@@ -50,8 +49,6 @@
     -webkit-line-clamp: 3;
     width: clamp(50rem, 83.333vw, 150rem);
     max-width: 90vw;
-
-   
   }
 
   span {
@@ -72,11 +69,10 @@
 
 .hero-section__icons {
   position: absolute;
-  top: 15vw;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.042vw;
 
   white-space: nowrap;
 
@@ -151,7 +147,6 @@
 }
 
 .hero-section__red-line {
-  
   width: clamp(5vw, 5vw, 5vw);
   height: clamp(0.2vw, 0.2vw, 0.2vw);
   background: #f74137 0% 0% no-repeat padding-box;
@@ -171,7 +166,6 @@
 }
 
 .hero-section__button-wrapper {
- 
   position: absolute;
   top: 30vw;
 }

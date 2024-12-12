@@ -63,11 +63,9 @@
 
 .hero-section__icons {
   position: absolute;
-  top: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.042vw;
   white-space: nowrap;
 }
 .hero-section__icons .hero-section__icon-wrapper {
