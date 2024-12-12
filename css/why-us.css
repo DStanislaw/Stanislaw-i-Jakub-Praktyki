@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .hero_section-overlay h1 {
-  margin-top: -2rem;
+  margin-top: 1.667vw;
   color: white;
   text-align: center;
   font-family: "Metropolis", sans-serif;
@@ -41,8 +41,8 @@
   font-size: 1.3vw;
   line-height: 1.5vw;
   -webkit-line-clamp: 3;
-  width: 100rem;
-  max-width: 70vw;
+  width: clamp(50rem, 83.333vw, 150rem);
+  max-width: 90vw;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.042vw;
   white-space: nowrap;
 }
 .hero-section__icons .hero-section__icon-wrapper {
@@ -85,7 +85,7 @@
   transform: scale(1.05);
 }
 .hero-section__icons .hero-section__icon img {
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
 }
 .hero-section__icons .hero-section__icon p {
   font-family: "Metropolis", sans-serif;
@@ -99,25 +99,25 @@
   color: white;
 }
 .hero-section__icons .hero-section__icon:first-child {
-  padding-top: 40px;
+  padding-top: 2.083vw;
 }
 .hero-section__icons .hero-section__icon:first-child img {
-  width: 62px;
-  height: 30px;
+  width: 3.229vw;
+  height: 1.563vw;
 }
 .hero-section__icons .hero-section__icon:nth-child(2) {
-  padding-top: 40px;
+  padding-top: 2.083vw;
 }
 .hero-section__icons .hero-section__icon:nth-child(2) img {
-  width: 40px;
-  height: 32px;
+  width: 2.083vw;
+  height: 1.667vw;
 }
 .hero-section__icons .hero-section__icon:last-child {
-  padding-top: 40px;
+  padding-top: 2.083vw;
 }
 .hero-section__icons .hero-section__icon:last-child img {
-  width: 40px;
-  height: 27px;
+  width: 2.083vw;
+  height: 1.406vw;
 }
 
 .hero-section__red-line {
@@ -136,11 +136,11 @@
   width: clamp(100%, 100vw, 100%);
   height: clamp(1px, 0.1vw, 5px);
   position: absolute;
-  margin-top: -398px;
+  margin-top: -20.729vw;
 }
 
 .hero-section__button-wrapper {
-  margin-top: 13rem;
+  margin-top: 10.833vw;
 }
 
 .hero-section__button {
