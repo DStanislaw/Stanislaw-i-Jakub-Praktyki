@@ -48,14 +48,16 @@
   background-color: #aaa;
 }
 .recommended-products .recommended-products__container .prev {
+  color: #f2f3f4;
   z-index: 1;
   position: absolute;
-  margin-left: -93.75vw;
+  margin-left: -90.75vw;
   margin-top: 13vw;
 }
 .recommended-products .recommended-products__container .next {
+  color: #f2f3f4;
   z-index: 1;
-  margin-left: 93.23vw;
+  margin-left: 92.23vw;
   position: absolute;
   margin-top: 13vw;
 }

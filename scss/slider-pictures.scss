@@ -9,12 +9,12 @@
 .left__arrow {
   z-index: 5;
 
-  margin-left: 0.521vw;
+  margin-left: 0vw;
 }
 
 .right__arrow {
   z-index: 1;
-  margin-right: 0.521vw;
+  margin-right: 0vw;
 }
 
 body {
@@ -170,16 +170,18 @@ body {
 
       .slider__arrow {
         border: none;
-        font-size: 14px;
+        font-size:  clamp(1vw, 1vw, 1vw) ;
         font-weight: bold;
         cursor: pointer;
-        padding: 5px;
-        width: 50px;
-        height: 50px;
+        
+      
+        width:  clamp(2.5vw, 2.5vw, 2.5vw) ;
+        height: clamp(2.5vw, 2.5vw, 2.5vw) ;
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 4px;
+      
         background: #ffffff 0% 0% no-repeat padding-box;
         opacity: 0.4;
       }

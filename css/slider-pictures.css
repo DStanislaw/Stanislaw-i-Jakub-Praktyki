@@ -8,12 +8,12 @@
 
 .left__arrow {
   z-index: 5;
-  margin-left: 0.521vw;
+  margin-left: 0vw;
 }
 
 .right__arrow {
   z-index: 1;
-  margin-right: 0.521vw;
+  margin-right: 0vw;
 }
 
 body {
@@ -153,16 +153,14 @@ body .slider .slider__nav img {
 }
 body .slider .slider__nav .slider__arrow {
   border: none;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: bold;
   cursor: pointer;
-  padding: 5px;
-  width: 50px;
-  height: 50px;
+  width: 2.5vw;
+  height: 2.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 0.4;
 }
