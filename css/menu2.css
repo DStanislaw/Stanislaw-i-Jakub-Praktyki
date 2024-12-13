@@ -3,28 +3,29 @@
   padding: 1vw;
   border: 0.052vw solid #ccc;
   margin: 0;
-  width: 97vw;
+  width: 96.6vw;
   margin-top: 0;
 }
 .navigation .navigation__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 .navigation .navigation__item {
-  flex: 1 1 auto;
-  min-width: 10px;
-  text-align: left;
-  margin-left: 0.7vw;
+  flex: 0 1 auto;
+  min-width: 0.521vw;
+  text-align: center;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 .navigation .navigation__item .navigation__link {
-  text-align: left;
-  font: normal normal bold 14px/14px Metropolis;
-  letter-spacing: -0.28px;
+  display: block;
+  width: 100%;
+  letter-spacing: -0.015vw;
   color: #111111;
   text-transform: uppercase;
   opacity: 1;

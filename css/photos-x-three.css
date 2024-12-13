@@ -43,10 +43,9 @@
 }
 .pictures__box .pictures__box-wrapper .pictures__box-text1 p {
   font-size: clamp(0.5rem, 2.3vw, 10.5rem);
-  line-height: 1.2;
+  line-height: 1.2vw;
   font-family: "Metropolis", sans-serif;
   font-weight: bold;
-  line-height: 1.2;
 }
 .pictures__box .pictures__box-wrapper .pictures__box-text2 {
   position: absolute;
@@ -59,10 +58,8 @@
 }
 .pictures__box .pictures__box-wrapper .pictures__box-text2 p {
   font-size: clamp(0.5rem, 2.3vw, 10.5rem);
-  line-height: 1.2;
   font-family: "Metropolis-Light", sans-serif;
   font-weight: 300;
-  line-height: 1.2;
 }
 .pictures__box .pictures__box-wrapper .pictures__box-button {
   width: clamp(600px, 40%, 600px);
@@ -82,7 +79,7 @@
   color: #ffffff;
   font-family: "Metropolis";
   font-weight: bold;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   transition: background-color 0.3s, color 0.3s;
 }
 .pictures__box .pictures__box-wrapper .pictures__box__button-text:hover {
@@ -128,10 +125,9 @@
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2-text1 p {
   font-size: clamp(0.5rem, 2.3vw, 10.5rem);
-  line-height: 1.2;
+  line-height: 1.2vw;
   font-family: "Metropolis", sans-serif;
   font-weight: bold;
-  line-height: 1.2;
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2-text2 {
   position: absolute;
@@ -144,10 +140,8 @@
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2-text2 p {
   font-size: clamp(0.5rem, 2.3vw, 10.5rem);
-  line-height: 1.2;
   font-family: "Metropolis-Light", sans-serif;
   font-weight: 300;
-  line-height: 1.2;
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2-button {
   width: clamp(600px, 40%, 600px);
@@ -161,13 +155,12 @@
   padding: clamp(0.1rem, 1vw, 4.2rem);
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
   text-decoration: none;
-  line-height: 1.2;
   background: transparent;
   border: 0.052vw solid #ffffff;
   color: #ffffff;
   font-family: "Metropolis";
   font-weight: bold;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   transition: background-color 0.3s, color 0.3s;
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2__button-text:hover {
@@ -211,10 +204,9 @@
 }
 .pictures__box .pictures__box3-wrapper .pictures__box3-text1 p {
   font-size: clamp(0.5rem, 2.3vw, 10.5rem);
-  line-height: 1.2;
+  line-height: 1.2vw;
   font-family: "Metropolis", sans-serif;
   font-weight: bold;
-  line-height: 1.2;
 }
 .pictures__box .pictures__box3-wrapper .pictures__box3-text2 {
   position: absolute;
@@ -249,7 +241,7 @@
   color: #ffffff;
   font-family: "Metropolis";
   font-weight: bold;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   transition: background-color 0.3s, color 0.3s;
 }
 .pictures__box .pictures__box3-wrapper .pictures__box3__button-text:hover {

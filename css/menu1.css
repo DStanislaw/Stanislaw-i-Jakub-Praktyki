@@ -1,5 +1,5 @@
 .menu {
-  width: 97vw;
+  width: 96.6vw;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@
   height: 0.729vw;
   text-align: left;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   display: flex;
   color: #111111;
   text-transform: uppercase;
@@ -64,7 +64,7 @@
   height: 0.729vw;
   text-align: left;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   display: flex;
   color: #111111;
   text-transform: uppercase;
@@ -95,7 +95,7 @@
   height: 0.729vw;
   text-align: left;
   display: flex;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
@@ -159,7 +159,7 @@
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.015vw;
   color: #111111;
 }
 .menu .cart .cart__info .cart__info__price .cart__info__price-price {

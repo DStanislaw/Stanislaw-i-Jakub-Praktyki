@@ -79,7 +79,7 @@ body .slider .slider__image-container .slider__text1.slider__text1,
 body .slider .slider__image-container .slider__text2.slider__text1,
 body .slider .slider__image-container .slider__text3.slider__text1 {
   top: 18.5%;
-  font-size: clamp(0.5rem, 2.3vw, 10.5rem);
+  font-size: 2.3vw;
   font-weight: bold;
   font-family: "Metropolis", sans-serif;
   font-style: normal;
@@ -90,7 +90,7 @@ body .slider .slider__image-container .slider__text1.slider__text2,
 body .slider .slider__image-container .slider__text2.slider__text2,
 body .slider .slider__image-container .slider__text3.slider__text2 {
   top: 27%;
-  font-size: clamp(0.5rem, 2.3vw, 10.5rem);
+  font-size: 2.3vw;
   font-family: "Metropolis-Light";
   font-style: normal;
   font-variant: normal;
@@ -120,12 +120,11 @@ body .slider .slider__image-container .slider__button {
   z-index: 2;
 }
 body .slider .slider__image-container .slider__button .slider__button-text {
-  width: 100%;
   text-decoration: none;
   padding: clamp(0.1rem, 1vw, 4.2rem);
   padding-left: 1.8vw;
   padding-right: 1.8vw;
-  font-size: clamp(0.1rem, 0.75vw, 7.5rem);
+  font-size: 0.75vw;
   background: #f74137 0% 0% no-repeat padding-box;
   opacity: 1;
   text-align: center;
@@ -147,7 +146,7 @@ body .slider .slider__nav {
   z-index: 3;
 }
 body .slider .slider__nav img {
-  width: 15px;
+  width: 0.781vw;
 }
 body .slider .slider__nav .slider__arrow {
   border: none;
