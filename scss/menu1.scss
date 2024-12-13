@@ -2,7 +2,7 @@
 
 .menu{
   width: clamp(97vw, 97vw, 97vw); 
-    border: 0.5px solid ;
+   
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,8 @@
     
   
     .menu__logo {
-      margin-left: 1rem;
+      position: absolute;
+      margin-left: clamp(1vw, 1vw, 1vw);
       max-width: 1clamp(2vw, 2vw, 2vw); 
       margin-top: 0.8vw;
       margin-bottom: 0.8vw;
@@ -28,10 +29,11 @@
     
   
       .menu__phone {
-        margin-right: clamp(1vw, 1vw, 1vw) ;
+        position: absolute;
+        left:27vw;
+        
+        
        
-        margin-top: clamp(1vw, 1vw, 1vw) ;
-        margin-bottom: clamp(1vw, 1vw, 1vw) ;
         right: 0.521vw;
         display: flex;
         align-items: center;
@@ -39,10 +41,12 @@
         margin-left: 27.188vw;
   
         .icon-phone {
+          
           font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
+         
           width: 3.49vw;
           height: 0.729vw;
           text-align: left;
@@ -61,8 +65,10 @@
       }
   
       .menu__star {
-        margin-top: 0.651vw;
-        margin-bottom: 0.651vw;
+         
+        position: absolute;
+        left:64vw;
+        
         
         display: flex;
         align-items: center;
@@ -73,6 +79,7 @@
         }
   
         span {
+         
           margin-left: 0.893vw;
           width: 3.75vw;
           height: 0.729vw;
@@ -91,18 +98,24 @@
       }
   
       .menu__person {
-        margin-top: 0.651vw;
-        margin-bottom: 0.651vw;
-        margin-left: 0.651vw;
+                
         display: flex;
         align-items: center;
         gap: 0.521vw;
   
         .icon-person {
+          position: absolute;
+          left: 74vw;
+          top: 2.8vw;
           font-size: clamp(1vw, 2vw, 1.3vw); 
         }
   
         span {
+          position: absolute;
+          left: 75vw;
+          top: 3.1vw;
+          
+          
           font-size: clamp(0.1rem, 0.8vw, 7.5rem); 
           margin-left: 0.972vw;
           max-width: 19.792vw;
