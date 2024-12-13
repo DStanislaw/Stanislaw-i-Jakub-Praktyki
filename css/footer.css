@@ -20,7 +20,7 @@
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  letter-spacing: -0.0175rem;
+  letter-spacing: -0.015vw;
   font-size: 0.9vw;
   margin-bottom: 0.68vw;
   color: white;
@@ -36,7 +36,7 @@
   display: block;
   width: 23.07vw;
   height: 0.1vw;
-  background: linear-gradient(to right, #f74137 1.82vw, rgb(83, 83, 83) 1.56vw); /* 35px -> 1.82vw, 30px -> 1.56vw */
+  background: linear-gradient(to right, #f74137 1.82vw, rgb(83, 83, 83) 1.56vw);
   margin-top: 0.26vw;
 }
 
@@ -55,7 +55,7 @@
   letter-spacing: -0.0175rem;
   color: #ffffff;
   opacity: 1;
-  font-size: 0.7vw;
+  font-size: 1vw;
   margin-bottom: 1vw;
 }
 
