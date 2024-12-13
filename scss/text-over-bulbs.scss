@@ -17,8 +17,9 @@
   }
 
   .red_line {
-    width: clamp(50px, 3.2vw, 280px);
-    height: clamp(2px, 0.3vw, 4px);
+    
+    width: clamp(5vw, 5vw, 5vw);
+    height: clamp(0.3vw, 0.3vw, 0.3vw);
     background: #f74137 0% 0% no-repeat padding-box;
     margin: 0 auto;
     align-items: center;
