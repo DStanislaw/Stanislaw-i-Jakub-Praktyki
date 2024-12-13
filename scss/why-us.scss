@@ -38,7 +38,7 @@
 
     text-align: center;
     color: white;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.019vw;
     opacity: 1;
     font-family: "Metropolis-regular", sans-serif;
     font-style: normal;
@@ -47,7 +47,6 @@
     font-size: clamp(1.2vw, 4vw, 1.3vw);
     line-height: clamp(1.5vw, 1.5vw, 1.5vw);
 
-    
     width: clamp(50vw, 83.333vw, 150vw);
     max-width: 90vw;
   }
@@ -55,7 +54,7 @@
   span {
     text-align: center;
     color: white;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.019vw;
     opacity: 1;
     font-family: "Metropolis";
     font-style: normal;
@@ -78,18 +77,15 @@
   white-space: nowrap;
 
   .hero-section__icon-wrapper {
-    margin: clamp(6.7vw, 2.7vw, .7vw);
+    margin: clamp(6.7vw, 2.7vw, 0.7vw);
 
     text-align: center;
     opacity: 1;
     position: relative;
 
     &::before {
-      
     }
-    .hero-section__border1{
-     
-
+    .hero-section__border1 {
       position: absolute;
       left: -10vw;
 
@@ -100,17 +96,12 @@
       opacity: 30%;
 
       border: 0.104vw solid white;
-
-
     }
 
-
-    .hero-section__border2{
-   
-
+    .hero-section__border2 {
       position: absolute;
 
-      left: -7.50vw;
+      left: -7.5vw;
 
       padding-bottom: clamp(7vw, 7vw, 7vw);
       padding-right: clamp(15vw, 15vw, 15vw);
@@ -119,14 +110,10 @@
       opacity: 30%;
 
       border: 0.104vw solid white;
-
-
     }
-    .hero-section__border3{
-     
-
+    .hero-section__border3 {
       position: absolute;
-      left:-5vw;
+      left: -5vw;
 
       padding-bottom: clamp(7vw, 7vw, 7vw);
       padding-right: clamp(15vw, 15vw, 15vw);
@@ -135,95 +122,89 @@
       opacity: 30%;
 
       border: 0.104vw solid white;
-
-
     }
   }
 
-  .hero-section__text-icons1{
+  .hero-section__text-icons1 {
     position: absolute;
-    left: -8.5vw;
 
+    top: 5.5vw;
+    left: -6.5vw;
 
+    font-family: "Metropolis", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: clamp(1.2vw, 2vw, 0.9vw);
+    margin: 0;
+    letter-spacing: -0.015vw;
+    text-transform: uppercase;
+    color: white;
   }
 
-  .hero-section__text-icons2{
+  .hero-section__text-icons2 {
     position: absolute;
-    left: -3.6vw;
 
-    
+    top: 5.5vw;
+    left: -5vw;
+
+    font-family: "Metropolis", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: clamp(1.2vw, 2vw, 0.9vw);
+    margin: 0;
+    letter-spacing: -0.015vw;
+    text-transform: uppercase;
+    color: white;
   }
-  .hero-section__text-icons3{
+  .hero-section__text-icons3 {
     position: absolute;
-    left: -1vw;
 
-    
+    top: 5.5vw;
+    left: -2.5vw;
+
+    font-family: "Metropolis", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: clamp(1.2vw, 2vw, 0.9vw);
+    margin: 0;
+    letter-spacing: -0.015vw;
+    text-transform: uppercase;
+    color: white;
   }
 
   .hero-section__icon {
     &:hover {
       transform: scale(1.05);
     }
-
-    img {
-      position: absolute;
-      top: 2.5vw;
-      left: -1.9vw;
-      
-      
-    }
-
-    span {
-      position: absolute;
-      
-      top: 5.5vw;
-      left: -7vw;
-      
-      
-      font-family: "Metropolis", sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: bold;
-      font-size: clamp(1.2vw, 2vw, 0.9vw);
-      margin: 0;
-      letter-spacing: -0.28px;
-      text-transform: uppercase;
-      color: white;
-    }
   }
 
-  .hero-section__icon:first-child {
-    padding-top: 3.083vw;
-
-    img {
-      
-      
-      
-      width: 3.229vw;
-      height: 1.563vw;
-    }
-  }
-
-  .hero-section__icon:nth-child(2) {
+  .hero-section__icon-image1 {
     padding-top: 2.083vw;
-
-    img {
-      width: 2.083vw;
-      height: 1.667vw;
-    }
+    width: 2.083vw;
+    height: 1.406vw;
+    position: absolute;
+    left: -3.1vw;
   }
 
-  .hero-section__icon:last-child {
+  .hero-section__icon-image2 {
     padding-top: 2.083vw;
-    img {
-      width: 2.083vw;
-      height: 1.406vw;
-    }
+    width: 2.083vw;
+    height: 1.406vw;
+    position: absolute;
+    left: -0.5vw;
+  }
+
+  .hero-section__icon-image3 {
+    padding-top: 2.083vw;
+    width: 2.083vw;
+    height: 1.406vw;
+    position: absolute;
+    left: 1.5vw;
   }
 }
-
-
-
 
 .hero-section__red-line {
   width: clamp(5vw, 5vw, 5vw);
