@@ -13,7 +13,11 @@
   font-weight: bold;
   line-height: 1.2;
   color: #111111;
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
 }
 .produkty .red_line {
   width: 5vw;
@@ -26,8 +30,8 @@
   background: #e1e2e8 0% 0% no-repeat padding-box;
   width: clamp(100%, 100vw, 100%);
   max-width: 100%;
-  height: clamp(1px, 0.1vw, 5px);
-  margin: clamp(1px, 5vw, -50px) auto;
+  height: 0.1vw;
+  margin: clamp(0.052vw, 5vw, -50px) auto;
 }
 
 /*# sourceMappingURL=text-over-bulbs.css.map */

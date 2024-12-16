@@ -35,7 +35,7 @@
 .pictures__box .pictures__box-wrapper .pictures__box-text1 {
   position: absolute;
   top: 17%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -50,7 +50,7 @@
 .pictures__box .pictures__box-wrapper .pictures__box-text2 {
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -62,18 +62,20 @@
   font-weight: 300;
 }
 .pictures__box .pictures__box-wrapper .pictures__box-button {
-  width: clamp(600px, 40%, 600px);
+  width: 40%;
   position: absolute;
   top: 60%;
-  left: 5%;
+  left: 8%;
   z-index: 3;
   pointer-events: auto;
 }
 .pictures__box .pictures__box-wrapper .pictures__box__button-text {
-  padding: clamp(0.1rem, 1vw, 4.2rem);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
   text-decoration: none;
-  line-height: 1.2;
   background: transparent;
   border: 0.052vw solid #ffffff;
   color: #ffffff;
@@ -117,7 +119,7 @@
 .pictures__box .pictures__box2-wrapper .pictures__box2-text1 {
   position: absolute;
   top: 17%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -132,7 +134,7 @@
 .pictures__box .pictures__box2-wrapper .pictures__box2-text2 {
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -147,12 +149,15 @@
   width: clamp(600px, 40%, 600px);
   position: absolute;
   top: 60%;
-  left: 5%;
+  left: 8%;
   z-index: 3;
   pointer-events: auto;
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2__button-text {
-  padding: clamp(0.1rem, 1vw, 4.2rem);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
   text-decoration: none;
   background: transparent;
@@ -196,7 +201,7 @@
 .pictures__box .pictures__box3-wrapper .pictures__box3-text1 {
   position: absolute;
   top: 17%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -211,7 +216,7 @@
 .pictures__box .pictures__box3-wrapper .pictures__box3-text2 {
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 8%;
   text-align: left;
   color: #ffffff;
   z-index: 2;
@@ -227,12 +232,15 @@
   width: clamp(600px, 40%, 600px);
   position: absolute;
   top: 60%;
-  left: 5%;
+  left: 8%;
   z-index: 3;
   pointer-events: auto;
 }
 .pictures__box .pictures__box3-wrapper .pictures__box3__button-text {
-  padding: clamp(0.1rem, 1vw, 4.2rem);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
   text-decoration: none;
   line-height: 1.2;
