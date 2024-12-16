@@ -191,6 +191,7 @@
   height: 2.4vw;
   text-align: center;
   border: 0.052vw solid #ccc;
+  font-size: 0.8vw;
   border-radius: 0.21vw;
 }
 .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__add-to-cart {
