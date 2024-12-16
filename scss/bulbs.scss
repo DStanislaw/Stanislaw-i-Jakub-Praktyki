@@ -1,3 +1,6 @@
+.produkty {
+  margin-bottom: 5vw;
+}
 .recommended-products {
   display: flex;
   justify-content: center;
@@ -68,7 +71,6 @@
     }
 
     .recommended-products__carousel {
-      
       scrollbar-width: none;
       scroll-snap-type: x mandatory;
 
@@ -119,8 +121,6 @@
           margin-top: 5.2vw;
           width: 100%;
           height: auto;
-
-     
 
           .product-card__hover-overlay {
             display: none;
@@ -295,8 +295,6 @@ img.zarowka_1 {
   display: block;
 }
 
-
-
 .recommended-products__button-overlay {
   position: absolute;
 
@@ -307,8 +305,9 @@ img.zarowka_1 {
   .recommended-products__cta-button {
     text-decoration: none;
     padding: clamp(0.083vw, 1.5vw, 3.5vw);
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin-left: 1.85vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     font-size: clamp(0.1rem, 0.8vw, 7.5rem);
     line-height: 0.885vw;
 
