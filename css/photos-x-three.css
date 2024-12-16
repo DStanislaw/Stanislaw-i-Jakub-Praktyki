@@ -7,7 +7,7 @@
   gap: 1.563vw;
 }
 .pictures__box .pictures__box-wrapper {
-  flex: 1 1 calc(33.333% - 1.563vw); /* Trzy kolumny */
+  flex: 1 1 calc(33.333% - 1.563vw);
   max-width: calc(33.333% - 1.563vw);
   position: relative;
   overflow: hidden;
@@ -89,11 +89,10 @@
   color: #f74137;
 }
 .pictures__box .pictures__box2-wrapper {
-  flex: 1 1 calc(33.333% - 1.563vw); /* Trzy kolumny */
+  flex: 1 1 calc(33.333% - 1.563vw);
   max-width: calc(33.333% - 1.563vw);
   position: relative;
   overflow: hidden;
-  /* Napisy */
   /* Przycisk */
 }
 .pictures__box .pictures__box2-wrapper:hover img {
@@ -146,7 +145,7 @@
   font-weight: 300;
 }
 .pictures__box .pictures__box2-wrapper .pictures__box2-button {
-  width: clamp(600px, 40%, 600px);
+  width: 40%;
   position: absolute;
   top: 60%;
   left: 8%;
@@ -229,7 +228,7 @@
   font-weight: 300;
 }
 .pictures__box .pictures__box3-wrapper .pictures__box3-button {
-  width: clamp(600px, 40%, 600px);
+  width: 40%;
   position: absolute;
   top: 60%;
   left: 8%;
