@@ -1,5 +1,5 @@
 .menu {
-  width: 96.6vw;
+  width: 97vw;
 
   position: relative;
   display: flex;
@@ -10,7 +10,7 @@
 
   .menu__logo {
     position: absolute;
-    margin-left: clamp(1vw, 1vw, 1vw);
+    margin-left: clamp(0.4vw, 0.4vw, 0.4vw);
     max-width: 1clamp (2vw, 2vw, 2vw);
     margin-top: 0.8vw;
     margin-bottom: 0.8vw;
@@ -123,6 +123,7 @@
   .cart {
     margin-top: 0.833vw;
     margin-bottom: 0.833vw;
+    margin-right: clamp(0.4vw, 0.4vw, 0.4vw);
 
     border: 0.052vw solid #e1e2e8;
     display: flex;

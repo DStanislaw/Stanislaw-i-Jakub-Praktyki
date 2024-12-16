@@ -1,5 +1,5 @@
 .menu {
-  width: 96.6vw;
+  width: 97vw;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 .menu .menu__logo {
   position: absolute;
-  margin-left: 1vw;
+  margin-left: 0.4vw;
   max-width: 1clamp 2vw, 2vw, 2vw;
   margin-top: 0.8vw;
   margin-bottom: 0.8vw;
@@ -108,6 +108,7 @@
 .menu .cart {
   margin-top: 0.833vw;
   margin-bottom: 0.833vw;
+  margin-right: 0.4vw;
   border: 0.052vw solid #e1e2e8;
   display: flex;
   width: 20vw;
