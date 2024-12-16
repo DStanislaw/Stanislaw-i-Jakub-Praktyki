@@ -8,7 +8,7 @@
  
 
   .pictures__box-wrapper {
-    flex: 1 1 calc(33.333% - 1.563vw); /* Trzy kolumny */
+    flex: 1 1 calc(33.333% - 1.563vw); 
     max-width: calc(33.333% - 1.563vw);
     position: relative;
     overflow: hidden;
@@ -108,7 +108,7 @@
   }
 
   .pictures__box2-wrapper {
-    flex: 1 1 calc(33.333% - 1.563vw); /* Trzy kolumny */
+    flex: 1 1 calc(33.333% - 1.563vw); 
     max-width: calc(33.333% - 1.563vw);
     position: relative;
     overflow: hidden;
@@ -140,7 +140,7 @@
       z-index: 1;
     }
 
-    /* Napisy */
+   
     .pictures__box2-text1 {
       position: absolute;
       top: 17%;
@@ -176,7 +176,7 @@
 
     /* Przycisk */
     .pictures__box2-button {
-      width: clamp(600px, 40%, 600px);
+      width: clamp(30%, 40%, 60%);
       position: absolute;
       top: 60%;
       left: 8%;
@@ -278,7 +278,7 @@
     }
 
     .pictures__box3-button {
-      width: clamp(600px, 40%, 600px);
+      width: clamp(30%, 40%, 60%);
       position: absolute;
       top: 60%;
       left: 8%;
