@@ -1,3 +1,7 @@
+.produkty {
+  margin-bottom: 5vw;
+}
+
 .recommended-products {
   display: flex;
   justify-content: center;
@@ -259,8 +263,9 @@ img.zarowka_1 {
 .recommended-products__button-overlay .recommended-products__cta-button {
   text-decoration: none;
   padding: 1.5vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  margin-left: 1.85vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-size: clamp(0.1rem, 0.8vw, 7.5rem);
   line-height: 0.885vw;
   background: #f74137 0% 0% no-repeat padding-box;
