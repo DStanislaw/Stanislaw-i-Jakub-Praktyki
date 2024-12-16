@@ -120,15 +120,7 @@
           width: 100%;
           height: auto;
 
-          &:hover {
-            ~ .product-card__description,
-            ~ .product-card__code,
-            ~ .product-card__old-price,
-            ~ .product-card__price {
-              transform: translateY(-0.26vw);
-              transition: transform 0.3s ease;
-            }
-          }
+     
 
           .product-card__hover-overlay {
             display: none;
@@ -179,11 +171,12 @@
         }
 
         .product-card__price {
-          text-align: left;
+          text-align: center;
           font: normal normal bold 0.73vw/0.73vw Metropolis;
           letter-spacing: -0.0146vw;
           color: #111111;
           opacity: 1;
+          display: block;
         }
 
         .product-card__hover-overlay {
@@ -298,21 +291,10 @@ img.zarowka_1 {
   opacity: 1;
   font-size: 0.73vw;
   line-height: 1.04vw;
+  display: block;
 }
 
-.product-card__price {
-  display: inline-block;
-  position: relative;
-  font-family: "Metropolis";
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  letter-spacing: -0.28px;
-  color: #111111;
-  opacity: 1;
-  font-size: 0.875rem;
-  line-height: 0.875rem;
-}
+
 
 .recommended-products__button-overlay {
   position: absolute;
