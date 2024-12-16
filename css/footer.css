@@ -16,7 +16,7 @@
   text-align: left;
 }
 
-.footer-section h4 {
+.footer-section--title {
   font-family: "Metropolis";
   font-style: normal;
   font-variant: normal;
@@ -30,8 +30,7 @@
   text-decoration: none;
   opacity: 1;
 }
-
-.footer-section h4::after {
+.footer-section--title::after {
   text-decoration: none;
   content: "";
   display: block;
@@ -41,13 +40,10 @@
   margin-top: 0.26vw;
 }
 
-.footer-section ul {
+.footer-section--list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.footer-section ul li {
   text-decoration: none;
   font-family: "Metropolis-regular";
   font-style: normal;
@@ -59,15 +55,16 @@
   font-size: 1vw;
   margin-bottom: 1vw;
 }
-
-a .footer-section ul li a {
+.footer-section--list .footer-section--text {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   color: white;
   text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.3s;
+  font-size: 1vw;
+  transition: color 0.2s;
 }
-
-.footer-section ul li a:hover {
+.footer-section--list .footer-section--text:hover {
   color: red;
 }
 

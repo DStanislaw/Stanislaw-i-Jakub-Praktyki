@@ -16,7 +16,7 @@
   text-align: left;
 }
 
-.footer-section h4 {
+.footer-section--title {
   font-family: "Metropolis";
   font-style: normal;
   font-variant: normal;
@@ -29,26 +29,27 @@
   position: relative;
   text-decoration: none;
   opacity: 1;
+
+  &::after {
+    text-decoration: none;
+    content: "";
+    display: block;
+    width: 23.07vw;
+
+    height: 0.1vw;
+    background: linear-gradient(
+      to right,
+      #f74137 1.82vw,
+      rgb(83, 83, 83) 1.56vw
+    );
+    margin-top: 0.26vw;
+  }
 }
 
-.footer-section h4::after {
-  text-decoration: none;
-  content: "";
-  display: block;
-  width: 23.07vw;
-
-  height: 0.1vw;
-  background: linear-gradient(to right, #f74137 1.82vw, rgb(83, 83, 83) 1.56vw);
-  margin-top: 0.26vw;
-}
-
-.footer-section ul {
+.footer-section--list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.footer-section ul li {
   text-decoration: none;
   font-family: "Metropolis-regular";
   font-style: normal;
@@ -60,15 +61,18 @@
   font-size: clamp(1vw, 1.5vw, 1vw);
 
   margin-bottom: clamp(1vw, 1vw, 1vw);
-}
 
-a .footer-section ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.3s;
-}
+  .footer-section--text {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1vw, 1.5vw, 1vw);
+    transition: color 0.2s;
 
-.footer-section ul li a:hover {
-  color: red;
+    &:hover {
+      color: red;
+    }
+  }
 }
