@@ -41,9 +41,9 @@
 }
 
 .footer-section--list {
+  margin-top: 1.5vw;
   list-style-type: none;
   padding: 0;
-  margin: 0;
   text-decoration: none;
   font-family: "Metropolis-regular", sans-serif;
   font-style: normal;
@@ -53,10 +53,9 @@
   color: #ffffff;
   opacity: 1;
   font-size: 1vw;
-  margin-bottom: 1vw;
 }
 .footer-section--list .footer-section--text {
-  padding: 0;
+  padding-top: 1.4vw;
   margin: 0;
   list-style-type: none;
   color: white;
