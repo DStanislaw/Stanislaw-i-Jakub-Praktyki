@@ -1,13 +1,12 @@
 .navigation {
   background: #ffffff 0% 0% no-repeat padding-box;
-  padding: clamp(1vw, 1vw, 1vw);
+  padding: clamp(1px, 1vw, 30px);
   border: 0.052vw solid #ccc;
   margin: 0;
   width: (96.5vw, 97vw, 97.5vw);
   margin-top: 0;
 
   .navigation__list {
-    
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -21,8 +20,6 @@
     flex: 0 1 auto;
     min-width: 0.521vw;
     text-align: center;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
 
     .navigation__link {
       display: block;
@@ -43,25 +40,90 @@
     }
   }
 
-  @media (max-width: 768px) {
+  .vertical-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigation {
+      background-color: #ffffff;
+      padding: 0.521vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.042vw;
+
+      .navigation__item {
+        width: 2.083vw;
+        height: 2.083vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+    .menu__button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .icon-phone-mobile,
+    .icon-star-mobile,
+    .icon-person-mobile,
+    .icon-cart-mobile,
+    .icon-menu {
+      padding: 7vw;
+      margin-left: 1vw;
+      font-size: 3vw;
+      cursor: pointer;
+    }
+
     .navigation__list {
+      position: fixed;
+      top: 0;
+      left: -45vw;
+      width: 30vw;
+      height: 100%;
+      background-color: #f8f9fa;
+      box-shadow: 0.104vw 0 0.26vw rgba(0, 0, 0, 0.1);
+      transition: left 0.3s ease;
+      padding: 0;
+      z-index: 10;
+
+      display: flex;
+      flex-direction: column;
+
+      .navigation__item {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        list-style: none;
+        padding: 0;
+
+        .navigation__link {
+          margin: 0.781vw 0;
+          font-size: 1.4vw;
+          font-family: "Metropolis", sans-serif;
+          color: #111111;
+          cursor: pointer;
+        }
+      }
     }
 
-    .navigation__item {
-    }
-
-    .navigation__link {
+    .navigation__list.active {
+      left: 0;
     }
   }
 
-  @media (max-width: 480px) {
-    .navigation__list {
-    }
-
-    .navigation__item {
-    }
-
-    .navigation__link {
+  @media screen and (min-width: 769px) {
+    .icon-phone-mobile,
+    .icon-star-mobile,
+    .icon-person-mobile,
+    .icon-cart-mobile,
+    .icon-menu,
+    .menu__button {
+      display: none;
     }
   }
 }

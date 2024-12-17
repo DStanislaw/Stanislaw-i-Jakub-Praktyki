@@ -17,8 +17,8 @@
   align-items: center;
 }
 .menu .menu__logo .menu__logo-img {
-  width: 15vw;
-  height: 3vw;
+  width: clamp(80px, 30vw, 15vw);
+  height: auto;
 }
 .menu .menu__phone {
   position: absolute;
@@ -177,6 +177,34 @@
   width: 2.4vw;
   height: 3.05vw;
   background: #9bcb3b;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    background-color: #ffffff;
+  }
+  .menu .menu__phone,
+  .menu .menu__star,
+  .menu .menu__person,
+  .menu .cart {
+    display: none;
+  }
+  .menu .menu__logo-img {
+    width: clamp(200px, 22vw, 350px);
+    height: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu__phone,
+  .menu__star,
+  .menu__person,
+  .cart {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=menu1.css.map */
