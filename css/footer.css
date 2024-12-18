@@ -71,22 +71,28 @@
   .footer__button {
     background: none;
     border: none;
-    bottom: 0.6vw;
-    left: 6.5vw;
+    bottom: 1.35vw;
+    left: 11.5vw;
     position: absolute;
     cursor: pointer;
     color: #ffffff;
-    font-size: 1.7vw;
+    font-size: 2.7vw;
   }
   .footer-section--list {
     display: none !important;
     max-height: 0;
+  }
+  .footer-section--title {
+    font-size: 1.6vw;
   }
   .footer-section--list.active {
     display: block !important;
     max-height: 300px !important;
     overflow: hidden !important;
     transition: max-height 3.3s ease-in-out !important;
+  }
+  .footer-section--text {
+    font-size: 1.2vw !important;
   }
 }
 @media screen and (min-width: 769px) {
