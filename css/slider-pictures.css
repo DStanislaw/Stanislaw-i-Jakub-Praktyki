@@ -163,6 +163,18 @@ body .slider .slider__nav .slider__arrow {
 }
 
 @media screen and (max-width: 768px) {
+  .left__arrow {
+    z-index: 5;
+    width: 5vw !important;
+    height: 5vw !important;
+    margin-left: 0vw;
+  }
+  .right__arrow {
+    z-index: 1;
+    width: 5vw !important;
+    height: 5vw !important;
+    margin-right: 0vw;
+  }
   .slider {
     position: relative;
     width: calc(100% - 3.125vw);
