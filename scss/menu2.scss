@@ -5,6 +5,7 @@
   margin: 0;
   width: (96.5vw, 97vw, 97.5vw);
   margin-top: 0;
+  justify-content: space-between;
 
   .navigation__list {
     display: flex;
@@ -52,6 +53,7 @@
       justify-content: center;
       align-items: center;
       gap: 1.042vw;
+      justify-content: space-between !important;
 
       .navigation__item {
         width: 2.083vw;
@@ -74,9 +76,11 @@
     .icon-person-mobile,
     .icon-cart-mobile,
     .icon-menu {
-      padding: 7vw;
-      margin-left: 1vw;
-      font-size: 3vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-left: 4vw;
+
+      font-size: 4vw;
       cursor: pointer;
     }
 
@@ -84,7 +88,7 @@
       position: fixed;
       top: 0;
       left: -45vw;
-      width: 30vw;
+      width: 35vw;
       height: 100%;
       background-color: #f8f9fa;
       box-shadow: 0.104vw 0 0.26vw rgba(0, 0, 0, 0.1);
@@ -96,14 +100,14 @@
       flex-direction: column;
 
       .navigation__item {
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         list-style: none;
         padding: 0;
 
         .navigation__link {
-          margin: 0.781vw 0;
-          font-size: 1.4vw;
+          margin: 0;
+          font-size: 1.8vw;
           font-family: "Metropolis", sans-serif;
           color: #111111;
           cursor: pointer;
