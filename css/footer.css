@@ -69,11 +69,11 @@
 
 @media screen and (max-width: 768px) {
   .footer {
+    top: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(50px);
-    animation: fadeInUp 1.2s ease-in-out forwards;
+    padding: 1.56vw 0.52vw;
   }
   .footer-section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;

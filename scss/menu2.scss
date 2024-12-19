@@ -10,7 +10,6 @@
   .navigation__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     padding: 0;
@@ -53,7 +52,16 @@
       justify-content: center;
       align-items: center;
       gap: 1.042vw;
-      justify-content: space-between !important;
+
+      .navigation__list {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 5vw !important;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
 
       .navigation__item {
         width: 2.083vw;
@@ -61,6 +69,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
+        padding-top: 5vw !important;
       }
     }
     .menu__button {
@@ -100,10 +109,11 @@
       flex-direction: column;
 
       .navigation__item {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 3.5vh !important;
+        margin-bottom: 3vw;
         list-style: none;
         padding: 0;
+        height: 3vh !important;
 
         .navigation__link {
           margin: 0;
@@ -111,6 +121,7 @@
           font-family: "Metropolis", sans-serif;
           color: #111111;
           cursor: pointer;
+          height: 20% !important;
         }
       }
     }
