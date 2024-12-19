@@ -14,6 +14,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    justify-content: space-between;
   }
 
   .navigation__item {
@@ -52,25 +53,7 @@
       justify-content: center;
       align-items: center;
       gap: 1.042vw;
-
-      .navigation__list {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-top: 5vw !important;
-        align-items: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .navigation__item {
-        width: 2.083vw;
-        height: 2.083vw;
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        padding-top: 5vw !important;
-      }
+      justify-content: none !important;
     }
     .menu__button {
       background: none;
@@ -107,6 +90,7 @@
 
       display: flex;
       flex-direction: column;
+      justify-content: start;
 
       .navigation__item {
         margin-top: 3.5vh !important;

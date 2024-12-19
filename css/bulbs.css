@@ -105,7 +105,7 @@
 }
 .recommended-products .recommended-products__container .recommended-products__carousel .product-card img.zarowka_1 {
   margin-bottom: 0.52vw;
-  margin-top: 5.2vw;
+  margin-top: 4.8vw;
   width: 100%;
   height: auto;
 }
@@ -157,13 +157,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 0.78vw;
+  margin-left: 2vw;
   transition: bottom 0.3s ease;
 }
 .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 4.9vw;
+  margin-left: 2vw;
 }
 .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls button {
   width: 1.2vw;
@@ -194,7 +195,7 @@
   height: 2.6vw;
   display: flex;
   position: absolute;
-  left: 10.16vw;
+  margin-left: 9.5vw;
   background: #9bcb3b 0% 0% no-repeat padding-box;
   align-items: center;
   justify-content: center;
@@ -241,11 +242,11 @@ img.zarowka_1 {
 }
 .recommended-products__button-overlay .recommended-products__cta-button {
   text-decoration: none;
-  padding: 1.5vw;
-  margin-left: 1.85vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-size: clamp(0.1rem, 0.8vw, 7.5rem);
+  padding: 1.8vw;
+  margin-left: -0.6vw !important;
+  padding-left: 2.2vw;
+  padding-right: 2.2vw;
+  font-size: 1.2vw;
   line-height: 0.885vw;
   background: #f74137 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -379,7 +380,7 @@ img.zarowka_1 {
     display: block;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__description {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     color: #333;
     margin: 0.52vw 0;
     line-height: 1vw;
@@ -390,6 +391,7 @@ img.zarowka_1 {
     font-weight: bold;
     letter-spacing: -0.0146vw;
     padding-bottom: -5vw;
+    margin-left: 2vw;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__code {
     margin-top: 0.52vw;
@@ -400,17 +402,19 @@ img.zarowka_1 {
     letter-spacing: -0.0146vw;
     color: #111111;
     opacity: 1;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     line-height: 1.04vw;
+    margin-left: 2vw;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__price {
     text-align: center;
-    font: normal normal bold 1.2vw/1.2vw Metropolis;
+    font: normal normal bold 1.4vw/1.4vw Metropolis;
     letter-spacing: -0.0146vw;
     color: #111111;
     opacity: 1;
     display: block;
     margin-top: 0.5vw;
+    margin-left: 2vw;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay {
     position: absolute;
@@ -428,16 +432,16 @@ img.zarowka_1 {
     position: absolute;
     display: flex;
     align-items: center;
-    left: 10.5vw;
+    margin-left: 6vw;
     bottom: 0.8vw;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__quantity-controls button {
     width: 2vw;
-    height: 3vw;
+    height: 3.95vw;
     background: #f2f2f2;
     border: 0.052vw solid #ccc;
     border-radius: 0.21vw;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,7 +455,7 @@ img.zarowka_1 {
     height: 3.5vw;
     text-align: center;
     border: 0.052vw solid #ccc;
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     border-radius: 0.21vw;
   }
   .recommended-products .recommended-products__container .recommended-products__carousel .product-card .product-card__hover-overlay .product-card__add-to-cart {
@@ -460,9 +464,9 @@ img.zarowka_1 {
     height: 3.5vw;
     display: flex;
     position: absolute;
-    left: 19.16vw;
+    margin-left: 19.5vw;
     background: #9bcb3b 0% 0% no-repeat padding-box;
-    bottom: 0.8vw;
+    bottom: 1.2vw;
     align-items: center;
     justify-content: center;
     border-radius: 0.21vw;
@@ -480,6 +484,7 @@ img.zarowka_1 {
     width: 100%;
     max-width: 20vw;
     margin-top: 2vw;
+    margin-left: 2vw;
   }
   .product-card__old-price {
     font-family: "Metropolis-regular";
@@ -489,9 +494,10 @@ img.zarowka_1 {
     letter-spacing: -0.0146vw;
     color: #a3a3a3;
     opacity: 1;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     line-height: 1.04vw;
     display: block;
+    margin-left: 2vw;
   }
   .recommended-products__button-overlay {
     position: absolute;
