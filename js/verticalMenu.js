@@ -1,8 +1,7 @@
-// Pobranie elementów
-const menuButton = document.querySelector(".menu__button"); // Przycisk menu
-const navigationList = document.querySelector(".navigation__list"); // Lista nawigacyjna
 
-// Funkcja do przełączania klasy aktywnej w menu
+const menuButton = document.querySelector(".menu__button"); 
+const navigationList = document.querySelector(".navigation__list"); 
+
 menuButton.addEventListener("click", () => {
-  navigationList.classList.toggle("active"); // Dodanie lub usunięcie klasy 'active'
+  navigationList.classList.toggle("active"); 
 });

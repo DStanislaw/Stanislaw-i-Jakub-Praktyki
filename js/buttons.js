@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Pobranie wszystkich kontrolek zmiany ilości
+   
     const productCards = document.querySelectorAll(".product-card");
   
     productCards.forEach((card) => {
@@ -7,25 +7,25 @@ document.addEventListener("DOMContentLoaded", function () {
       const plusBtn = card.querySelector(".product-card__quantity-controls button:last-child"); // Przycisk "+"
       const quantityInput = card.querySelector(".product-card__quantity-controls .product-card__quantity-input"); // Pole ilości
   
-      // Obsługa zmniejszania ilości
+      
       minusBtn.addEventListener("click", () => {
-        let currentValue = parseInt(quantityInput.value) || 1; // Aktualna wartość
+        let currentValue = parseInt(quantityInput.value) || 1; 
         if (currentValue > 1) {
-          quantityInput.value = currentValue - 1; // Zmniejsz ilość
+          quantityInput.value = currentValue - 1; 
         }
       });
   
-      // Obsługa zwiększania ilości
+     
       plusBtn.addEventListener("click", () => {
-        let currentValue = parseInt(quantityInput.value) || 1; // Aktualna wartość
-        quantityInput.value = currentValue + 1; // Zwiększ ilość
+        let currentValue = parseInt(quantityInput.value) || 1; 
+        quantityInput.value = currentValue + 1; 
       });
   
-      // Obsługa wpisywania ręcznie w polu ilości
+      
       quantityInput.addEventListener("input", () => {
         let value = parseInt(quantityInput.value);
         if (isNaN(value) || value < 1) {
-          quantityInput.value = 1; // Minimalna ilość to 1
+          quantityInput.value = 1; 
         }
       });
     });
