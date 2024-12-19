@@ -68,22 +68,36 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s ease-in-out forwards;
+  }
+  .footer-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
   .footer__button {
     background: none;
     border: none;
-    bottom: 1.35vw;
-    left: 11.5vw;
+    bottom: 5vw;
+    left: 34.5vw;
     position: absolute;
     cursor: pointer;
     color: #ffffff;
-    font-size: 2.7vw;
+    font-size: 6.7vw;
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   .footer-section--list {
     display: none !important;
     max-height: 0;
+    transform: translateY(20px);
+    animation: listItemFadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--item-order) * 0.2s);
   }
   .footer-section--title {
-    font-size: 1.6vw;
+    font-size: 4.6vw;
   }
   .footer-section--list.active {
     display: block !important;
@@ -92,7 +106,7 @@
     transition: max-height 3.3s ease-in-out !important;
   }
   .footer-section--text {
-    font-size: 1.2vw !important;
+    font-size: 2.2vw !important;
   }
 }
 @media screen and (min-width: 769px) {

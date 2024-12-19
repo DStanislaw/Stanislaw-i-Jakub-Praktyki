@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.recommended-products__carousel');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
-    const scrollAmount = 350; // Ilość przesuwania w px
+    const scrollAmount = 350; 
   
-    // Obsługa kliknięcia przycisku "prev"
+   
     prevButton.addEventListener('click', () => {
       carousel.scrollBy({
         left: -scrollAmount,
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // Obsługa kliknięcia przycisku "next"
+   
     nextButton.addEventListener('click', () => {
       carousel.scrollBy({
         left: scrollAmount,
